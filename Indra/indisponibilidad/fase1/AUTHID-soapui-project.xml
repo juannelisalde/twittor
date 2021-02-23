@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="f8a81eb3-60cd-447b-9b5a-7f5f699694b1" activeEnvironment="Default" name="AUTHID" resourceRoot="${projectDir}" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="431f7cc3-1803-4bb0-8620-db510460aa51" wsaVersion="NONE" name="BasicHttpBinding_IIndex" type="wsdl" bindingName="{http://tempuri.org/}BasicHttpBinding_IIndex" soapVersion="1_1" anonymous="optional" definition="http://internal-authidpro1-pro-1009841129.eu-central-1.elb.amazonaws.com:8080/services/ingen/Index.svc?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://internal-authidpro1-pro-1009841129.eu-central-1.elb.amazonaws.com:8080/services/ingen/Index.svc?wsdl"><con:part><con:url>http://internal-authidpro1-pro-1009841129.eu-central-1.elb.amazonaws.com:8080/services/ingen/Index.svc?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="Index" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:tns="http://tempuri.org/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://internal-authidpro1-pro-1009841129.eu-central-1.elb.amazonaws.com:8080/services/ingen/Index.svc?xsd=xsd0" namespace="http://tempuri.org/"/>
+      <xsd:import schemaLocation="http://internal-authidpro1-pro-1009841129.eu-central-1.elb.amazonaws.com:8080/services/ingen/Index.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/"/>
+      <xsd:import schemaLocation="http://internal-authidpro1-pro-1009841129.eu-central-1.elb.amazonaws.com:8080/services/ingen/Index.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Endesa.AUTHID.Processes.API.Models"/>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IIndex_Indisp_InputMessage">
+    <wsdl:part name="parameters" element="tns:Indisp"/>
+  </wsdl:message>
+  <wsdl:message name="IIndex_Indisp_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IndispResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="IIndex">
+    <wsdl:operation name="Indisp">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIndex/Indisp" message="tns:IIndex_Indisp_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/IIndex/IndispResponse" message="tns:IIndex_Indisp_OutputMessage"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IIndex" type="tns:IIndex">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="Indisp">
+      <soap:operation soapAction="http://tempuri.org/IIndex/Indisp" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Index">
+    <wsdl:port name="BasicHttpBinding_IIndex" binding="tns:BasicHttpBinding_IIndex">
+      <soap:address location="http://internal-authidpro1-pro-1009841129.eu-central-1.elb.amazonaws.com:8080/services/ingen/Index.svc"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://internal-authidpro1-pro-1009841129.eu-central-1.elb.amazonaws.com:8080/services/ingen/Index.svc?xsd=xsd0</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://tempuri.org/">
+  <xs:import schemaLocation="http://internal-authidpro1-pro-1009841129.eu-central-1.elb.amazonaws.com:8080/services/ingen/Index.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Endesa.AUTHID.Processes.API.Models"/>
+  <xs:element name="Indisp">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="values" nillable="true" type="q1:ArrayOfIndispModel" xmlns:q1="http://schemas.datacontract.org/2004/07/Endesa.AUTHID.Processes.API.Models"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IndispResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IndispResult" type="xs:boolean"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://internal-authidpro1-pro-1009841129.eu-central-1.elb.amazonaws.com:8080/services/ingen/Index.svc?xsd=xsd2</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Endesa.AUTHID.Processes.API.Models" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.datacontract.org/2004/07/Endesa.AUTHID.Processes.API.Models">
+  <xs:complexType name="ArrayOfIndispModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="IndispModel" nillable="true" type="tns:IndispModel"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfIndispModel" nillable="true" type="tns:ArrayOfIndispModel"/>
+  <xs:complexType name="IndispModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AvailablePower" type="xs:double"/>
+      <xs:element minOccurs="0" name="CentralCode" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="CentralName" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="DateBegin" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="DateEnd" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="DegeDetalle" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="DegeInge" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="GroupCode" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="GroupFunction" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="GroupName" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="IndispCode" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="IngeDetalle" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Reason" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="TipoModif" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="UPCode" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="UnavailableEnergy" type="xs:double"/>
+      <xs:element minOccurs="0" name="UnavailablePower" type="xs:double"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="IndispModel" nillable="true" type="tns:IndispModel"/>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://internal-authidpro1-pro-1009841129.eu-central-1.elb.amazonaws.com:8080/services/ingen/Index.svc?xsd=xsd1</con:url><con:content><![CDATA[<xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/">
+  <xs:element name="anyType" nillable="true" type="xs:anyType"/>
+  <xs:element name="anyURI" nillable="true" type="xs:anyURI"/>
+  <xs:element name="base64Binary" nillable="true" type="xs:base64Binary"/>
+  <xs:element name="boolean" nillable="true" type="xs:boolean"/>
+  <xs:element name="byte" nillable="true" type="xs:byte"/>
+  <xs:element name="dateTime" nillable="true" type="xs:dateTime"/>
+  <xs:element name="decimal" nillable="true" type="xs:decimal"/>
+  <xs:element name="double" nillable="true" type="xs:double"/>
+  <xs:element name="float" nillable="true" type="xs:float"/>
+  <xs:element name="int" nillable="true" type="xs:int"/>
+  <xs:element name="long" nillable="true" type="xs:long"/>
+  <xs:element name="QName" nillable="true" type="xs:QName"/>
+  <xs:element name="short" nillable="true" type="xs:short"/>
+  <xs:element name="string" nillable="true" type="xs:string"/>
+  <xs:element name="unsignedByte" nillable="true" type="xs:unsignedByte"/>
+  <xs:element name="unsignedInt" nillable="true" type="xs:unsignedInt"/>
+  <xs:element name="unsignedLong" nillable="true" type="xs:unsignedLong"/>
+  <xs:element name="unsignedShort" nillable="true" type="xs:unsignedShort"/>
+  <xs:element name="char" nillable="true" type="tns:char"/>
+  <xs:simpleType name="char">
+    <xs:restriction base="xs:int"/>
+  </xs:simpleType>
+  <xs:element name="duration" nillable="true" type="tns:duration"/>
+  <xs:simpleType name="duration">
+    <xs:restriction base="xs:duration">
+      <xs:pattern value="\-?P(\d*D)?(T(\d*H)?(\d*M)?(\d*(\.\d*)?S)?)?"/>
+      <xs:minInclusive value="-P10675199DT2H48M5.4775808S"/>
+      <xs:maxInclusive value="P10675199DT2H48M5.4775807S"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="guid" nillable="true" type="tns:guid"/>
+  <xs:simpleType name="guid">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[\da-fA-F]{8}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{12}"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:attribute name="FactoryType" type="xs:QName"/>
+  <xs:attribute name="Id" type="xs:ID"/>
+  <xs:attribute name="Ref" type="xs:IDREF"/>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://internal-authidpro1-pro-1009841129.eu-central-1.elb.amazonaws.com:8080/services/ingen/Index.svc</con:endpoint></con:endpoints><con:operation id="9fe7c1f6-40fa-43f7-9885-589d961685d7" isOneWay="false" action="http://tempuri.org/IIndex/Indisp" name="Indisp" bindingOperationName="Indisp" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="8eac4169-8672-4e75-b4e0-cf317514b1b4" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://S20AEGGDIF00.enelint.global:8091/Services/InGen/Index.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:end="http://schemas.datacontract.org/2004/07/Endesa.AUTHID.Processes.API.Models">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:Indisp>\r
+         <!--Optional:-->\r
+         <tem:values>\r
+            <!--Zero or more repetitions:-->\r
+            <end:IndispModel>\r
+               <!--Optional:-->\r
+               <end:AvailablePower>0</end:AvailablePower>\r
+               <!--Optional:-->\r
+               <end:CentralCode>ESH-BRRD</end:CentralCode>\r
+               <!--Optional:-->\r
+               <end:CentralName>BARRADOS</end:CentralName>\r
+               <!--Optional:-->\r
+               <end:DateBegin>2020-03-26T13:40:00Z</end:DateBegin>\r
+               <!--Optional:-->\r
+               <end:DateEnd>2020-03-26T13:45:00Z</end:DateEnd>\r
+               <!--Optional:-->\r
+               <end:DegeDetalle>87749 - 97501</end:DegeDetalle>\r
+               <!--Optional:-->\r
+               <end:DegeInge></end:DegeInge>\r
+               <!--Optional:-->\r
+               <end:Description>prueba, fallos de ingen</end:Description>\r
+               <!--Optional:-->\r
+               <end:GroupCode>ESH-BRRD-U1</end:GroupCode>\r
+               <!--Optional:-->\r
+               <end:GroupFunction>Producción</end:GroupFunction>\r
+               <!--Optional:-->\r
+               <end:GroupName>GRUPO 1 CH BARRADOS</end:GroupName>\r
+               <!--Optional:-->\r
+               <end:IndispCode>ESH-BRRD-U1-04693-2020</end:IndispCode>\r
+               <!--Optional:-->\r
+               <end:IngeDetalle></end:IngeDetalle>\r
+               <!--Optional:-->\r
+               <end:Reason>150 - Mantenimiento preventivo</end:Reason>\r
+               <!--Optional:-->\r
+               <end:Status>Anulada</end:Status>\r
+               <!--Optional:-->\r
+               <end:TipoModif>CAMB_EST_DEGE</end:TipoModif>\r
+               <!--Optional:-->\r
+               <end:UPCode>BRD1</end:UPCode>\r
+               <!--Optional:-->\r
+               <end:UnavailableEnergy>0</end:UnavailableEnergy>\r
+               <!--Optional:-->\r
+               <end:UnavailablePower>0</end:UnavailablePower>\r
+               <!-- Nuevo -->
+               <end:Prueba>xXx</end:Prueba>
+            </end:IndispModel>\r
+         </tem:values>\r
+      </tem:Indisp>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/IIndex/Indisp"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:testSuite id="c298660e-4b2f-44c6-b404-0a6f759eda3e" name="BasicHttpBinding_IIndex TestSuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="9975b722-18d7-4c57-9e1e-6cec0fd6beee" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Indisp TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="316ec17b-0ab3-465c-97fb-75a55766956e" name="Indisp"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IIndex</con:interface><con:operation>Indisp</con:operation><con:request name="Indisp" id="a2ec16d2-8468-41fc-9528-a7d004643e18"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://internal-authidpro1-pro-1009841129.eu-central-1.elb.amazonaws.com:8080/services/ingen/Index.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:end="http://schemas.datacontract.org/2004/07/Endesa.AUTHID.Processes.API.Models">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:Indisp>\r
+         <!--Optional:-->\r
+         <tem:values>\r
+            <!--Zero or more repetitions:-->\r
+            <end:IndispModel>\r
+               <!--Optional:-->\r
+               <end:AvailablePower>?</end:AvailablePower>\r
+               <!--Optional:-->\r
+               <end:CentralCode>?</end:CentralCode>\r
+               <!--Optional:-->\r
+               <end:CentralName>?</end:CentralName>\r
+               <!--Optional:-->\r
+               <end:DateBegin>?</end:DateBegin>\r
+               <!--Optional:-->\r
+               <end:DateEnd>?</end:DateEnd>\r
+               <!--Optional:-->\r
+               <end:DegeDetalle>?</end:DegeDetalle>\r
+               <!--Optional:-->\r
+               <end:DegeInge>?</end:DegeInge>\r
+               <!--Optional:-->\r
+               <end:Description>?</end:Description>\r
+               <!--Optional:-->\r
+               <end:GroupCode>?</end:GroupCode>\r
+               <!--Optional:-->\r
+               <end:GroupFunction>?</end:GroupFunction>\r
+               <!--Optional:-->\r
+               <end:GroupName>?</end:GroupName>\r
+               <!--Optional:-->\r
+               <end:IndispCode>?</end:IndispCode>\r
+               <!--Optional:-->\r
+               <end:IngeDetalle>?</end:IngeDetalle>\r
+               <!--Optional:-->\r
+               <end:Reason>?</end:Reason>\r
+               <!--Optional:-->\r
+               <end:Status>?</end:Status>\r
+               <!--Optional:-->\r
+               <end:TipoModif>?</end:TipoModif>\r
+               <!--Optional:-->\r
+               <end:UPCode>?</end:UPCode>\r
+               <!--Optional:-->\r
+               <end:UnavailableEnergy>?</end:UnavailableEnergy>\r
+               <!--Optional:-->\r
+               <end:UnavailablePower>?</end:UnavailablePower>\r
+            </end:IndispModel>\r
+         </tem:values>\r
+      </tem:Indisp>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://tempuri.org/IIndex/Indisp"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>

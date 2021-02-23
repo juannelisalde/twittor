@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="e16b51f1-c3d3-44bd-93d2-50747279a72a" activeEnvironment="Default" name="servicioSoapLocalhost" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" resourceRoot="" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="181e3902-d081-43dd-92ce-2ddbeebda379" wsaVersion="NONE" name="greportingBinding" type="wsdl" bindingName="{urn:greporting}greportingBinding" soapVersion="1_1" anonymous="optional" definition="http://localhost:8080/Emgesa/soap/servicioSoap.php?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://localhost:8080/Emgesa/soap/servicioSoap.php?wsdl"><con:part><con:url>http://localhost:8080/Emgesa/soap/servicioSoap.php?wsdl</con:url><con:content><![CDATA[<definitions targetNamespace="urn:greporting" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="urn:greporting" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema targetNamespace="urn:greporting">
+      <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+      <xsd:import namespace="http://schemas.xmlsoap.org/wsdl/"/>
+    </xsd:schema>
+  </types>
+  <message name="getDataRequest">
+    <part name="user" type="xsd:string"/>
+    <part name="pass" type="xsd:string"/>
+    <part name="idAgrupadorMedidas" type="xsd:string"/>
+    <part name="zonaHoraria" type="xsd:string"/>
+    <part name="fechaInicio" type="xsd:string"/>
+    <part name="fechaFin" type="xsd:string"/>
+    <part name="fechaInicioUtc" type="xsd:string"/>
+    <part name="fechaFinUtc" type="xsd:string"/>
+  </message>
+  <message name="getDataResponse">
+    <part name="return" type="xsd:string"/>
+  </message>
+  <portType name="greportingPortType">
+    <operation name="getData">
+      <documentation>Retorna una lista de datos</documentation>
+      <input message="tns:getDataRequest"/>
+      <output message="tns:getDataResponse"/>
+    </operation>
+  </portType>
+  <binding name="greportingBinding" type="tns:greportingPortType">
+    <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="getData">
+      <soap:operation soapAction="urn:greporting#getData" style="rpc"/>
+      <input>
+        <soap:body use="encoded" namespace="urn:greporting" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:greporting" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+      </output>
+    </operation>
+  </binding>
+  <service name="greporting">
+    <port name="greportingPort" binding="tns:greportingBinding">
+      <soap:address location="http://localhost:8080/Emgesa/soap/servicioSoap.php"/>
+    </port>
+  </service>
+</definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://localhost:8080/Emgesa/soap/servicioSoap.php</con:endpoint></con:endpoints><con:operation id="434ce977-29e0-4e73-8a83-f660ab888e18" isOneWay="false" action="urn:greporting#getData" name="getData" bindingOperationName="getData" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="7f4df091-c49f-4444-9b47-9b49f0f88ce8" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/Emgesa/soap/servicioSoap.php</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:greporting">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <urn:getData soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+          <user xsi:type="xsd:string">egel</user>
+          <pass xsi:type="xsd:string">passegel</pass>
+          <idAgrupadorMedidas xsi:type="xsd:string">GRPER</idAgrupadorMedidas>
+          <zonaHoraria xsi:type="xsd:string">2</zonaHoraria>
+          <fechaInicio xsi:type="xsd:string">2020-01-26 00:00:00</fechaInicio>
+          <fechaFin xsi:type="xsd:string">2020-01-27 00:00:00</fechaFin>
+          <fechaInicioUtc xsi:type="xsd:string">?</fechaInicioUtc>
+          <fechaFinUtc xsi:type="xsd:string">?</fechaFinUtc>
+        </urn:getData>
+    </soapenv:Body>
+  </soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:greporting#getData"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>

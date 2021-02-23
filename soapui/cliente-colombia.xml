@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="d581c313-5559-468d-a002-0be017cf4a2e" activeEnvironment="Default" name="cliente-colombia" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="6efed6c1-9357-4d15-a99a-dfec23cf389b" wsaVersion="NONE" name="CenBdiWebServiceInterfaceSoapBinding" type="wsdl" bindingName="{http://interfaces.ocen.soluzionasf.com}CenBdiWebServiceInterfaceSoapBinding" soapVersion="1_1" anonymous="optional" definition="http://e80awgesif00.enelint.global:23005/esim/services/CenBdiWebServiceInterface?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://e80awgesif00.enelint.global:23005/esim/services/CenBdiWebServiceInterface?wsdl"><con:part><con:url>http://e80awgesif00.enelint.global:23005/esim/services/CenBdiWebServiceInterface?wsdl</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://interfaces.ocen.soluzionasf.com" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://interfaces.ocen.soluzionasf.com" xmlns:intf="http://interfaces.ocen.soluzionasf.com" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!--WSDL created by Apache Axis version: 1.3
+Built on Oct 05, 2005 (05:23:37 EDT)-->
+  <wsdl:types>
+    <schema targetNamespace="http://interfaces.ocen.soluzionasf.com" xmlns="http://www.w3.org/2001/XMLSchema">
+      <import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+      <complexType name="ArrayOf_xsd_anyType">
+        <complexContent>
+          <restriction base="soapenc:Array">
+            <attribute ref="soapenc:arrayType" wsdl:arrayType="xsd:anyType[]"/>
+          </restriction>
+        </complexContent>
+      </complexType>
+      <complexType name="CenBdiWebServiceOutputData">
+        <sequence>
+          <element name="data_output" nillable="true" type="impl:ArrayOf_xsd_anyType"/>
+          <element name="str_error_code" nillable="true" type="soapenc:string"/>
+          <element name="str_error_extmsg" nillable="true" type="soapenc:string"/>
+          <element name="str_error_msg" nillable="true" type="soapenc:string"/>
+        </sequence>
+      </complexType>
+    </schema>
+  </wsdl:types>
+  <wsdl:message name="callInterfaceStringRequest">
+    <wsdl:part name="strUser" type="xsd:string"/>
+    <wsdl:part name="strPassword" type="xsd:string"/>
+    <wsdl:part name="strInterfaceCode" type="xsd:string"/>
+    <wsdl:part name="paramInterface" type="xsd:string"/>
+  </wsdl:message>
+  <wsdl:message name="callInterfaceResponse">
+    <wsdl:part name="callInterfaceReturn" type="impl:CenBdiWebServiceOutputData"/>
+  </wsdl:message>
+  <wsdl:message name="callInterfaceRequest">
+    <wsdl:part name="strUser" type="xsd:string"/>
+    <wsdl:part name="strPassword" type="xsd:string"/>
+    <wsdl:part name="strInterfaceCode" type="xsd:string"/>
+    <wsdl:part name="paramInterface" type="impl:ArrayOf_xsd_anyType"/>
+  </wsdl:message>
+  <wsdl:message name="callInterfaceStringResponse">
+    <wsdl:part name="callInterfaceStringReturn" type="xsd:string"/>
+  </wsdl:message>
+  <wsdl:portType name="CenBdiWebService">
+    <wsdl:operation name="callInterfaceString" parameterOrder="strUser strPassword strInterfaceCode paramInterface">
+      <wsdl:input message="impl:callInterfaceStringRequest" name="callInterfaceStringRequest"/>
+      <wsdl:output message="impl:callInterfaceStringResponse" name="callInterfaceStringResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="callInterface" parameterOrder="strUser strPassword strInterfaceCode paramInterface">
+      <wsdl:input message="impl:callInterfaceRequest" name="callInterfaceRequest"/>
+      <wsdl:output message="impl:callInterfaceResponse" name="callInterfaceResponse"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CenBdiWebServiceInterfaceSoapBinding" type="impl:CenBdiWebService">
+    <wsdlsoap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="callInterfaceString">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="callInterfaceStringRequest">
+        <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://interfaces.ocen.soluzionasf.com" use="encoded"/>
+      </wsdl:input>
+      <wsdl:output name="callInterfaceStringResponse">
+        <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://interfaces.ocen.soluzionasf.com" use="encoded"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="callInterface">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="callInterfaceRequest">
+        <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://interfaces.ocen.soluzionasf.com" use="encoded"/>
+      </wsdl:input>
+      <wsdl:output name="callInterfaceResponse">
+        <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://interfaces.ocen.soluzionasf.com" use="encoded"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CenBdiWebServiceService">
+    <wsdl:port binding="impl:CenBdiWebServiceInterfaceSoapBinding" name="CenBdiWebServiceInterface">
+      <wsdlsoap:address location="http://e80awgesif00.enelint.global:23005/esim/services/CenBdiWebServiceInterface"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://e80awgesif00.enelint.global:23005/esim/services/CenBdiWebServiceInterface</con:endpoint></con:endpoints><con:operation id="27e9b8b1-b21e-4de2-a39c-1ce85dbd40c5" isOneWay="false" action="" name="callInterface" bindingOperationName="callInterface" type="Request-Response" outputName="callInterfaceResponse" inputName="callInterfaceRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="d047a617-d679-4e53-8922-5bcfbd40c639" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://e80awgesif00.enelint.global:23005/esim/services/CenBdiWebServiceInterface</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:int="http://interfaces.ocen.soluzionasf.com" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+			   <soapenv:Header/>
+			   <soapenv:Body>
+			      <int:callInterface soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+			         <strUser xsi:type="xsd:string">LOAD_OPE</strUser>
+			         <strPassword xsi:type="xsd:string">LOAD_OPE1</strPassword>
+			         <strInterfaceCode xsi:type="xsd:string">BDI_GREP</strInterfaceCode>
+			         <paramInterface xsi:type="cen:ArrayOf_xsd_anyType" soapenc:arrayType="xsd:anyType[]" xmlns:cen="http://localhost:7070/ocen/services/CenBdiWebServiceInterface">
+								<item xsi:type="xsd:string"><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+								<CenBdiMedidasGrupoQuery>
+								  <CodGrupo>GRCOL</CodGrupo>
+								  <IdZonaHoraria>4</IdZonaHoraria>
+								  <FechaInicio>2020-07-06 00:00:01</FechaInicio>
+								  <FechaFin>2020-07-06 23:59:00</FechaFin>
+								  <FechaInicioUTC></FechaInicioUTC>
+								  <FechaFinUTC></FechaFinUTC>
+								</CenBdiMedidasGrupoQuery>]]]]>><![CDATA[ </item>
+							</paramInterface>
+			      </int:callInterface>
+			   </soapenv:Body>
+			</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://interfaces.ocen.soluzionasf.com/CenBdiWebService/callInterfaceRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="662118b0-f988-4f72-9eda-d1336f73b77c" isOneWay="false" action="" name="callInterfaceString" bindingOperationName="callInterfaceString" type="Request-Response" outputName="callInterfaceStringResponse" inputName="callInterfaceStringRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="61860226-c936-4e3d-91d7-2b0310bbec10" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://e80awgesif00.enelint.global:23005/esim/services/CenBdiWebServiceInterface</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:int="http://interfaces.ocen.soluzionasf.com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <int:callInterfaceString soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">\r
+         <strUser xsi:type="xsd:string">?</strUser>\r
+         <strPassword xsi:type="xsd:string">?</strPassword>\r
+         <strInterfaceCode xsi:type="xsd:string">?</strInterfaceCode>\r
+         <paramInterface xsi:type="xsd:string">?</paramInterface>\r
+      </int:callInterfaceString>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://interfaces.ocen.soluzionasf.com/CenBdiWebService/callInterfaceStringRequest"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>

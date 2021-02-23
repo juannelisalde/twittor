@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="6dd140c2-20c9-4ec8-9a5a-81607b134a1b" activeEnvironment="Default" name="descargar factura" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" resourceRoot="" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="7079d37e-7dc8-4e4d-b21d-d4213a21c6bf" wsaVersion="NONE" name="ZEPMCE003" type="wsdl" bindingName="{urn:sap-com:document:sap:soap:functions:mc-style}ZEPMCE003" soapVersion="1_1" anonymous="optional" definition="http://elaawmgeua17.enelint.global:8031/sap/bc/srt/wsdl/srvc_0050568862771ED49CFC19C0341F4800/wsdl11/allinone/ws_policy/document?sap-client=420" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://elaawmgeua17.enelint.global:8331/sap/bc/srt/rfc/sap/zbi_ws_mce003_descarga_factura/420/zepmce003/zepmce003</con:endpoint></con:endpoints><con:operation id="7b3ca8d5-42fb-469d-97c5-e54d6d674ee6" isOneWay="false" action="urn:sap-com:document:sap:soap:functions:mc-style:ZBI_WS_MCE003_DESCARGA_FACTURA:ZbiWsMce003DescargaFacturaRequest" name="ZbiWsMce003DescargaFactura" bindingOperationName="ZbiWsMce003DescargaFactura" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="0d0a3a2f-9e05-45b5-b42b-3d73bdbb883d" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting><con:setting id="com.eviware.soapui.impl.support.AbstractHttpRequest@follow-redirects">true</con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://elaawmgeua17.enelint.global:8331/sap/bc/srt/rfc/sap/zbi_ws_mce003_descarga_factura/420/zepmce003/zepmce003</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:sap-com:document:sap:soap:functions:mc-style">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <urn:ZbiWsMce003DescargaFactura>\r
+         <Pnumfact>FN-147738</Pnumfact>\r
+      </urn:ZbiWsMce003DescargaFactura>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:username>enportalweb</con:username><con:password>Codensa2012</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:sap-com:document:sap:soap:functions:mc-style:ZBI_WS_MCE003_DESCARGA_FACTURA:ZbiWsMce003DescargaFacturaRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="8bcaf508-ac10-4824-a39b-eb40c644b7d8" wsaVersion="NONE" name="ZEPMCE003_SOAP12" type="wsdl" bindingName="{urn:sap-com:document:sap:soap:functions:mc-style}ZEPMCE003_SOAP12" soapVersion="1_2" anonymous="optional" definition="http://elaawmgeua17.enelint.global:8031/sap/bc/srt/wsdl/srvc_0050568862771ED49CFC19C0341F4800/wsdl11/allinone/ws_policy/document?sap-client=420" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://elaawmgeua17.enelint.global:8031/sap/bc/srt/wsdl/srvc_0050568862771ED49CFC19C0341F4800/wsdl11/allinone/ws_policy/document?sap-client=420"><con:part><con:url>http://elaawmgeua17.enelint.global:8031/sap/bc/srt/wsdl/srvc_0050568862771ED49CFC19C0341F4800/wsdl11/allinone/ws_policy/document?sap-client=420</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="urn:sap-com:document:sap:soap:functions:mc-style" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsoap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="urn:sap-com:document:sap:soap:functions:mc-style" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:n1="urn:sap-com:document:sap:rfc:functions">
+  <wsdl:documentation>
+    <sidl:sidl xmlns:sidl="http://www.sap.com/2007/03/sidl"/>
+  </wsdl:documentation>
+  <wsp:UsingPolicy wsdl:required="true"/>
+  <wsp:Policy wsu:Id="BN_BN_ZEPMCE003">
+    <saptrnbnd:OptimizedXMLTransfer uri="http://xml.sap.com/2006/11/esi/esp/binxml" wsp:Optional="true" xmlns:saptrnbnd="http://www.sap.com/webas/710/soap/features/transportbinding/"/>
+    <saptrnbnd:OptimizedMimeSerialization wsp:Optional="true" xmlns:saptrnbnd="http://schemas.xmlsoap.org/ws/2004/09/policy/optimizedmimeserialization"/>
+    <sapattahnd:Enabled xmlns:sapattahnd="http://www.sap.com/710/features/attachment/">false</sapattahnd:Enabled>
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:TransportBinding xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702" xmlns:sapsp="http://www.sap.com/webas/630/soap/features/security/policy" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512" xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken>
+                  <wsp:Policy>
+                    <sp:HttpBasicAuthentication/>
+                  </wsp:Policy>
+                </sp:HttpsToken>
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic128Rsa15/>
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict/>
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+      </wsp:All>
+    </wsp:ExactlyOne>
+    <wsaw:UsingAddressing wsp:Optional="true" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl"/>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="BN_BN_ZEPMCE003_SOAP12">
+    <saptrnbnd:OptimizedXMLTransfer uri="http://xml.sap.com/2006/11/esi/esp/binxml" wsp:Optional="true" xmlns:saptrnbnd="http://www.sap.com/webas/710/soap/features/transportbinding/"/>
+    <saptrnbnd:OptimizedMimeSerialization wsp:Optional="true" xmlns:saptrnbnd="http://schemas.xmlsoap.org/ws/2004/09/policy/optimizedmimeserialization"/>
+    <sapattahnd:Enabled xmlns:sapattahnd="http://www.sap.com/710/features/attachment/">false</sapattahnd:Enabled>
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:TransportBinding xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702" xmlns:sapsp="http://www.sap.com/webas/630/soap/features/security/policy" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512" xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken>
+                  <wsp:Policy>
+                    <sp:HttpBasicAuthentication/>
+                  </wsp:Policy>
+                </sp:HttpsToken>
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic128Rsa15/>
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict/>
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+      </wsp:All>
+    </wsp:ExactlyOne>
+    <wsaw:UsingAddressing wsp:Optional="true" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl"/>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="IF_IF_ZBI_WS_MCE003_DESCARGA_FACTURA">
+    <sapsession:Session xmlns:sapsession="http://www.sap.com/webas/630/soap/features/session/">
+      <sapsession:enableSession>false</sapsession:enableSession>
+    </sapsession:Session>
+    <sapcentraladmin:CentralAdministration wsp:Optional="true" xmlns:sapcentraladmin="http://www.sap.com/webas/700/soap/features/CentralAdministration/">
+      <sapcentraladmin:BusinessApplicationID>0050568862771EE497F501FB1A850129</sapcentraladmin:BusinessApplicationID>
+    </sapcentraladmin:CentralAdministration>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="OP_IF_OP_ZbiWsMce003DescargaFactura">
+    <sapcomhnd:enableCommit xmlns:sapcomhnd="http://www.sap.com/NW05/soap/features/commit/">false</sapcomhnd:enableCommit>
+    <sapblock:enableBlocking xmlns:sapblock="http://www.sap.com/NW05/soap/features/blocking/">true</sapblock:enableBlocking>
+    <saptrhnw05:required xmlns:saptrhnw05="http://www.sap.com/NW05/soap/features/transaction/">no</saptrhnw05:required>
+    <saprmnw05:enableWSRM xmlns:saprmnw05="http://www.sap.com/NW05/soap/features/wsrm/">false</saprmnw05:enableWSRM>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema attributeFormDefault="qualified" targetNamespace="urn:sap-com:document:sap:rfc:functions">
+      <xsd:simpleType name="char16">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="16"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char200">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="200"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char24">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="24"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+    </xsd:schema>
+    <xsd:schema attributeFormDefault="qualified" targetNamespace="urn:sap-com:document:sap:soap:functions:mc-style" xmlns:n0="urn:sap-com:document:sap:rfc:functions">
+      <xsd:import namespace="urn:sap-com:document:sap:rfc:functions"/>
+      <xsd:complexType name="ZdmEtError">
+        <xsd:sequence>
+          <xsd:element name="CodigoError" type="n0:char24"/>
+          <xsd:element name="MensajeError" type="n0:char200"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ZbiWsMce003DescargaFactura">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="Pnumfact" type="n0:char16"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ZbiWsMce003DescargaFacturaResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="Psalida" type="xsd:base64Binary"/>
+            <xsd:element name="Psalidaerror" type="tns:ZdmEtError"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ZbiWsMce003DescargaFactura">
+    <wsdl:part name="parameters" element="tns:ZbiWsMce003DescargaFactura"/>
+  </wsdl:message>
+  <wsdl:message name="ZbiWsMce003DescargaFacturaResponse">
+    <wsdl:part name="parameter" element="tns:ZbiWsMce003DescargaFacturaResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="ZBI_WS_MCE003_DESCARGA_FACTURA">
+    <wsdl:documentation>
+      <sapdoc:sapdoc xmlns:sapdoc="urn:sap:esi:documentation">
+        <sapdoc:docitem docURL="http://elaawmgeua17.enelint.global:8031/sap/bc/esdt/docu/sd_text?sap-client=420&amp;sd_name=ZBI_WS_MCE003_DESCARGA_FACTURA"/>
+      </sapdoc:sapdoc>
+    </wsdl:documentation>
+    <wsp:Policy>
+      <wsp:PolicyReference URI="#IF_IF_ZBI_WS_MCE003_DESCARGA_FACTURA"/>
+    </wsp:Policy>
+    <wsdl:operation name="ZbiWsMce003DescargaFactura">
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP_IF_OP_ZbiWsMce003DescargaFactura"/>
+      </wsp:Policy>
+      <wsdl:input message="tns:ZbiWsMce003DescargaFactura"/>
+      <wsdl:output message="tns:ZbiWsMce003DescargaFacturaResponse"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ZEPMCE003" type="tns:ZBI_WS_MCE003_DESCARGA_FACTURA">
+    <wsp:Policy>
+      <wsp:PolicyReference URI="#BN_BN_ZEPMCE003"/>
+    </wsp:Policy>
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <wsdl:operation name="ZbiWsMce003DescargaFactura">
+      <soap:operation soapAction="urn:sap-com:document:sap:soap:functions:mc-style:ZBI_WS_MCE003_DESCARGA_FACTURA:ZbiWsMce003DescargaFacturaRequest" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ZEPMCE003_SOAP12" type="tns:ZBI_WS_MCE003_DESCARGA_FACTURA">
+    <wsp:Policy>
+      <wsp:PolicyReference URI="#BN_BN_ZEPMCE003_SOAP12"/>
+    </wsp:Policy>
+    <wsoap12:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <wsdl:operation name="ZbiWsMce003DescargaFactura">
+      <wsoap12:operation soapAction="urn:sap-com:document:sap:soap:functions:mc-style:ZBI_WS_MCE003_DESCARGA_FACTURA:ZbiWsMce003DescargaFacturaRequest" style="document"/>
+      <wsdl:input>
+        <wsoap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <wsoap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ZEPMCE003">
+    <wsdl:port name="ZEPMCE003" binding="tns:ZEPMCE003">
+      <soap:address location="https://elaawmgeua17.enelint.global:8331/sap/bc/srt/rfc/sap/zbi_ws_mce003_descarga_factura/420/zepmce003/zepmce003"/>
+    </wsdl:port>
+    <wsdl:port name="ZEPMCE003_SOAP12" binding="tns:ZEPMCE003_SOAP12">
+      <wsoap12:address location="https://elaawmgeua17.enelint.global:8331/sap/bc/srt/rfc/sap/zbi_ws_mce003_descarga_factura/420/zepmce003/zepmce003"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>https://elaawmgeua17.enelint.global:8331/sap/bc/srt/rfc/sap/zbi_ws_mce003_descarga_factura/420/zepmce003/zepmce003</con:endpoint></con:endpoints><con:operation id="ba20d73e-9640-4493-b91b-344c8ccb59a8" isOneWay="false" action="urn:sap-com:document:sap:soap:functions:mc-style:ZBI_WS_MCE003_DESCARGA_FACTURA:ZbiWsMce003DescargaFacturaRequest" name="ZbiWsMce003DescargaFactura" bindingOperationName="ZbiWsMce003DescargaFactura" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="27096054-61ab-47ac-8859-4504ffcfddd7" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://elaawmgeua17.enelint.global:8331/sap/bc/srt/rfc/sap/zbi_ws_mce003_descarga_factura/420/zepmce003/zepmce003</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:urn="urn:sap-com:document:sap:soap:functions:mc-style">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <urn:ZbiWsMce003DescargaFactura>\r
+         <Pnumfact>?</Pnumfact>\r
+      </urn:ZbiWsMce003DescargaFactura>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:sap-com:document:sap:soap:functions:mc-style/ZBI_WS_MCE003_DESCARGA_FACTURA/ZbiWsMce003DescargaFacturaRequest"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>

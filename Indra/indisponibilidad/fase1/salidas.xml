@@ -1,0 +1,44 @@
+<!-- respuesta proceso ok -->
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/">
+   <SOAP-ENV:Body>
+      <ns1:IndispResponse xmlns:ns1="urn:greporting">
+         <IndispResult>true</IndispResult>
+      </ns1:IndispResponse>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+<!-- respuesta error en formato de fecha  -->
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/">
+   <SOAP-ENV:Body>
+      <ns1:IndispResponse xmlns:ns1="urn:greporting">
+         <IndispResult>error en fomato de fecha</IndispResult>
+      </ns1:IndispResponse>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+<!-- faltan parametros  -->
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/">
+   <SOAP-ENV:Body>
+      <ns1:IndispResponse xmlns:ns1="urn:greporting">
+         <IndispResult>faltan parametros</IndispResult>
+      </ns1:IndispResponse>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+<!-- faltan parametros  -->
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/">
+   <SOAP-ENV:Body>
+      <ns1:IndispResponse xmlns:ns1="urn:greporting">
+         <IndispResult>faltan parametros</IndispResult>
+      </ns1:IndispResponse>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+<!-- tipo de dato incorrecto  -->
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/">
+   <SOAP-ENV:Body>
+      <ns1:IndispResponse xmlns:ns1="urn:greporting">
+         <IndispResult>tipo de dato incorrecto</IndispResult>
+      </ns1:IndispResponse>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

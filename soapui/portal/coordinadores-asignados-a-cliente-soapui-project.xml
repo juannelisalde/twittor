@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="7941f33d-8b06-4e7b-9332-c674e35064e5" activeEnvironment="Default" name="coordinadores asignados a cliente" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="506200d2-299f-461a-bf56-25f93fa935b2" wsaVersion="NONE" name="ZEPCENE002" type="wsdl" bindingName="{urn:sap-com:document:sap:rfc:functions}ZEPCENE002" soapVersion="1_1" anonymous="optional" definition="http://elaawmgeua17.enelint.global:8031/sap/bc/srt/wsdl/srvc_0050568862771ED49CFC5D6C79C6482E/wsdl11/allinone/ws_policy/document?sap-client=420" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://elaawmgeua17.enelint.global:8331/sap/bc/srt/rfc/sap/zcs_ws_cene002_lista_coord/420/zepcene002/zepcene002</con:endpoint></con:endpoints><con:operation id="6dedd2e1-1b5d-4f4b-b251-922a1778f156" isOneWay="false" action="urn:sap-com:document:sap:rfc:functions:ZCS_WS_CENE002_LISTA_COORD:ZCS_WS_CENE002_LISTA_COORDRequest" name="ZCS_WS_CENE002_LISTA_COORD" bindingOperationName="ZCS_WS_CENE002_LISTA_COORD" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="aca1fa26-2db4-451a-b311-b324a016a99a" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://elaawmgeua17.enelint.global:8331/sap/bc/srt/rfc/sap/zcs_ws_cene002_lista_coord/420/zepcene002/zepcene002</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:sap-com:document:sap:rfc:functions">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <urn:ZCS_WS_CENE002_LISTA_COORD>\r
+         <!--Optional:-->\r
+         <PCAMPORDEN>?</PCAMPORDEN>\r
+         <PNIT>?</PNIT>\r
+         <!--Optional:-->\r
+         <PNUMREG>?</PNUMREG>\r
+         <!--Optional:-->\r
+         <PORDEN>?</PORDEN>\r
+         <!--Optional:-->\r
+         <PPOSICION>?</PPOSICION>\r
+      </urn:ZCS_WS_CENE002_LISTA_COORD>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:sap-com:document:sap:rfc:functions:ZCS_WS_CENE002_LISTA_COORD:ZCS_WS_CENE002_LISTA_COORDRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="514e63ea-f226-4324-b02b-6c19e873668b" wsaVersion="NONE" name="ZEPCENE002_SOAP12" type="wsdl" bindingName="{urn:sap-com:document:sap:rfc:functions}ZEPCENE002_SOAP12" soapVersion="1_2" anonymous="optional" definition="http://elaawmgeua17.enelint.global:8031/sap/bc/srt/wsdl/srvc_0050568862771ED49CFC5D6C79C6482E/wsdl11/allinone/ws_policy/document?sap-client=420" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://elaawmgeua17.enelint.global:8031/sap/bc/srt/wsdl/srvc_0050568862771ED49CFC5D6C79C6482E/wsdl11/allinone/ws_policy/document?sap-client=420"><con:part><con:url>http://elaawmgeua17.enelint.global:8031/sap/bc/srt/wsdl/srvc_0050568862771ED49CFC5D6C79C6482E/wsdl11/allinone/ws_policy/document?sap-client=420</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="urn:sap-com:document:sap:rfc:functions" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsoap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="urn:sap-com:document:sap:rfc:functions" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+  <wsdl:documentation>
+    <sidl:sidl xmlns:sidl="http://www.sap.com/2007/03/sidl"/>
+  </wsdl:documentation>
+  <wsp:UsingPolicy wsdl:required="true"/>
+  <wsp:Policy wsu:Id="BN_BN_ZEPCENE002">
+    <saptrnbnd:OptimizedXMLTransfer uri="http://xml.sap.com/2006/11/esi/esp/binxml" wsp:Optional="true" xmlns:saptrnbnd="http://www.sap.com/webas/710/soap/features/transportbinding/"/>
+    <saptrnbnd:OptimizedMimeSerialization wsp:Optional="true" xmlns:saptrnbnd="http://schemas.xmlsoap.org/ws/2004/09/policy/optimizedmimeserialization"/>
+    <sapattahnd:Enabled xmlns:sapattahnd="http://www.sap.com/710/features/attachment/">false</sapattahnd:Enabled>
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:TransportBinding xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702" xmlns:sapsp="http://www.sap.com/webas/630/soap/features/security/policy" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512" xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken>
+                  <wsp:Policy>
+                    <sp:HttpBasicAuthentication/>
+                  </wsp:Policy>
+                </sp:HttpsToken>
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic128Rsa15/>
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict/>
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+      </wsp:All>
+    </wsp:ExactlyOne>
+    <wsaw:UsingAddressing wsp:Optional="true" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl"/>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="BN_BN_ZEPCENE002_SOAP12">
+    <saptrnbnd:OptimizedXMLTransfer uri="http://xml.sap.com/2006/11/esi/esp/binxml" wsp:Optional="true" xmlns:saptrnbnd="http://www.sap.com/webas/710/soap/features/transportbinding/"/>
+    <saptrnbnd:OptimizedMimeSerialization wsp:Optional="true" xmlns:saptrnbnd="http://schemas.xmlsoap.org/ws/2004/09/policy/optimizedmimeserialization"/>
+    <sapattahnd:Enabled xmlns:sapattahnd="http://www.sap.com/710/features/attachment/">false</sapattahnd:Enabled>
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:TransportBinding xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702" xmlns:sapsp="http://www.sap.com/webas/630/soap/features/security/policy" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512" xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken>
+                  <wsp:Policy>
+                    <sp:HttpBasicAuthentication/>
+                  </wsp:Policy>
+                </sp:HttpsToken>
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic128Rsa15/>
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict/>
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+      </wsp:All>
+    </wsp:ExactlyOne>
+    <wsaw:UsingAddressing wsp:Optional="true" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl"/>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="IF_IF_ZCS_WS_CENE002_LISTA_COORD">
+    <sapsession:Session xmlns:sapsession="http://www.sap.com/webas/630/soap/features/session/">
+      <sapsession:enableSession>false</sapsession:enableSession>
+    </sapsession:Session>
+    <sapcentraladmin:CentralAdministration wsp:Optional="true" xmlns:sapcentraladmin="http://www.sap.com/webas/700/soap/features/CentralAdministration/">
+      <sapcentraladmin:BusinessApplicationID>0050568862771EE497F501FB1A850129</sapcentraladmin:BusinessApplicationID>
+    </sapcentraladmin:CentralAdministration>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="OP_IF_OP_ZCS_WS_CENE002_LISTA_COORD">
+    <sapcomhnd:enableCommit xmlns:sapcomhnd="http://www.sap.com/NW05/soap/features/commit/">false</sapcomhnd:enableCommit>
+    <sapblock:enableBlocking xmlns:sapblock="http://www.sap.com/NW05/soap/features/blocking/">true</sapblock:enableBlocking>
+    <saptrhnw05:required xmlns:saptrhnw05="http://www.sap.com/NW05/soap/features/transaction/">no</saptrhnw05:required>
+    <saprmnw05:enableWSRM xmlns:saprmnw05="http://www.sap.com/NW05/soap/features/wsrm/">false</saprmnw05:enableWSRM>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema attributeFormDefault="qualified" targetNamespace="urn:sap-com:document:sap:rfc:functions">
+      <xsd:simpleType name="char11">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="11"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char15">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="15"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char2">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="2"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char20">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="20"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char200">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="200"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char24">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="24"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char35">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="35"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char4">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="4"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char5">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="5"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:complexType name="ZCS_ET_LISTA_COORDINADOR">
+        <xsd:sequence>
+          <xsd:element name="NOMBRE" type="tns:char35"/>
+          <xsd:element name="EMAIL" type="tns:char35"/>
+          <xsd:element name="CELULAR" type="tns:char15"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ZDM_ET_ERROR">
+        <xsd:sequence>
+          <xsd:element name="CODIGO_ERROR" type="tns:char24"/>
+          <xsd:element name="MENSAJE_ERROR" type="tns:char200"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ZCS_TT_LISTA_COORDINADOR">
+        <xsd:sequence>
+          <xsd:element name="item" type="tns:ZCS_ET_LISTA_COORDINADOR" minOccurs="0" maxOccurs="unbounded"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ZCS_WS_CENE002_LISTA_COORD">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="PCAMPORDEN" type="tns:char15" minOccurs="0"/>
+            <xsd:element name="PNIT" type="tns:char20"/>
+            <xsd:element name="PNUMREG" type="tns:char2" minOccurs="0"/>
+            <xsd:element name="PORDEN" type="tns:char11" minOccurs="0"/>
+            <xsd:element name="PPOSICION" type="tns:char4" minOccurs="0"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ZCS_WS_CENE002_LISTA_COORDResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="PSALIDA" type="tns:ZCS_TT_LISTA_COORDINADOR"/>
+            <xsd:element name="PSALIDAERROR" type="tns:ZDM_ET_ERROR"/>
+            <xsd:element name="PTOTALREG" type="tns:char5"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ZCS_WS_CENE002_LISTA_COORD">
+    <wsdl:part name="parameters" element="tns:ZCS_WS_CENE002_LISTA_COORD"/>
+  </wsdl:message>
+  <wsdl:message name="ZCS_WS_CENE002_LISTA_COORDResponse">
+    <wsdl:part name="parameter" element="tns:ZCS_WS_CENE002_LISTA_COORDResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="ZCS_WS_CENE002_LISTA_COORD">
+    <wsdl:documentation>
+      <sapdoc:sapdoc xmlns:sapdoc="urn:sap:esi:documentation">
+        <sapdoc:docitem docURL="http://elaawmgeua17.enelint.global:8031/sap/bc/esdt/docu/sd_text?sap-client=420&amp;sd_name=ZCS_WS_CENE002_LISTA_COORD"/>
+      </sapdoc:sapdoc>
+    </wsdl:documentation>
+    <wsp:Policy>
+      <wsp:PolicyReference URI="#IF_IF_ZCS_WS_CENE002_LISTA_COORD"/>
+    </wsp:Policy>
+    <wsdl:operation name="ZCS_WS_CENE002_LISTA_COORD">
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP_IF_OP_ZCS_WS_CENE002_LISTA_COORD"/>
+      </wsp:Policy>
+      <wsdl:input message="tns:ZCS_WS_CENE002_LISTA_COORD"/>
+      <wsdl:output message="tns:ZCS_WS_CENE002_LISTA_COORDResponse"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ZEPCENE002" type="tns:ZCS_WS_CENE002_LISTA_COORD">
+    <wsp:Policy>
+      <wsp:PolicyReference URI="#BN_BN_ZEPCENE002"/>
+    </wsp:Policy>
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <wsdl:operation name="ZCS_WS_CENE002_LISTA_COORD">
+      <soap:operation soapAction="urn:sap-com:document:sap:rfc:functions:ZCS_WS_CENE002_LISTA_COORD:ZCS_WS_CENE002_LISTA_COORDRequest" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ZEPCENE002_SOAP12" type="tns:ZCS_WS_CENE002_LISTA_COORD">
+    <wsp:Policy>
+      <wsp:PolicyReference URI="#BN_BN_ZEPCENE002_SOAP12"/>
+    </wsp:Policy>
+    <wsoap12:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <wsdl:operation name="ZCS_WS_CENE002_LISTA_COORD">
+      <wsoap12:operation soapAction="urn:sap-com:document:sap:rfc:functions:ZCS_WS_CENE002_LISTA_COORD:ZCS_WS_CENE002_LISTA_COORDRequest" style="document"/>
+      <wsdl:input>
+        <wsoap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <wsoap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ZEPCENE002">
+    <wsdl:port name="ZEPCENE002" binding="tns:ZEPCENE002">
+      <soap:address location="https://elaawmgeua17.enelint.global:8331/sap/bc/srt/rfc/sap/zcs_ws_cene002_lista_coord/420/zepcene002/zepcene002"/>
+    </wsdl:port>
+    <wsdl:port name="ZEPCENE002_SOAP12" binding="tns:ZEPCENE002_SOAP12">
+      <wsoap12:address location="https://elaawmgeua17.enelint.global:8331/sap/bc/srt/rfc/sap/zcs_ws_cene002_lista_coord/420/zepcene002/zepcene002"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>https://elaawmgeua17.enelint.global:8331/sap/bc/srt/rfc/sap/zcs_ws_cene002_lista_coord/420/zepcene002/zepcene002</con:endpoint></con:endpoints><con:operation id="4a6507d8-9eb9-4d21-9447-a7968b59567c" isOneWay="false" action="urn:sap-com:document:sap:rfc:functions:ZCS_WS_CENE002_LISTA_COORD:ZCS_WS_CENE002_LISTA_COORDRequest" name="ZCS_WS_CENE002_LISTA_COORD" bindingOperationName="ZCS_WS_CENE002_LISTA_COORD" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="c24b75d5-5af3-48b8-953c-b697c0b2e418" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://elaawmgeua17.enelint.global:8331/sap/bc/srt/rfc/sap/zcs_ws_cene002_lista_coord/420/zepcene002/zepcene002</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:urn="urn:sap-com:document:sap:rfc:functions">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <urn:ZCS_WS_CENE002_LISTA_COORD>\r
+         <!--Optional:-->\r
+         <PCAMPORDEN>?</PCAMPORDEN>\r
+         <PNIT>?</PNIT>\r
+         <!--Optional:-->\r
+         <PNUMREG>?</PNUMREG>\r
+         <!--Optional:-->\r
+         <PORDEN>?</PORDEN>\r
+         <!--Optional:-->\r
+         <PPOSICION>?</PPOSICION>\r
+      </urn:ZCS_WS_CENE002_LISTA_COORD>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:sap-com:document:sap:rfc:functions/ZCS_WS_CENE002_LISTA_COORD/ZCS_WS_CENE002_LISTA_COORDRequest"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>

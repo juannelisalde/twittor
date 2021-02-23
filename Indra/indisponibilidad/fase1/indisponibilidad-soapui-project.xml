@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="2d7603bd-4005-4782-bd4b-92d4ae109667" activeEnvironment="Default" name="indisponibilidad" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="b7639131-6215-4e29-bac9-df596aac8818" wsaVersion="NONE" name="greportingBinding" type="wsdl" bindingName="{urn:greporting}greportingBinding" soapVersion="1_1" anonymous="optional" definition="http://10.152.165.45:8080/indisponibilidad/servicio_soap.php?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://10.152.165.45:8080/indisponibilidad/servicio_soap.php?wsdl"><con:part><con:url>http://10.152.165.45:8080/indisponibilidad/servicio_soap.php?wsdl</con:url><con:content><![CDATA[<definitions targetNamespace="urn:greporting" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="urn:greporting" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema targetNamespace="urn:greporting">
+      <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+      <xsd:import namespace="http://schemas.xmlsoap.org/wsdl/"/>
+      <xsd:complexType name="IndispModel">
+        <xsd:sequence>
+          <xsd:element name="AvailablePower" type="xsd:double"/>
+          <xsd:element name="CentralCode" type="xsd:string" nillable="true"/>
+          <xsd:element name="CentralName" type="xsd:string" nillable="true"/>
+          <xsd:element name="DateBegin" type="xsd:dateTime"/>
+          <xsd:element name="DateEnd" type="xsd:dateTime"/>
+          <xsd:element name="DegeDetalle" type="xsd:string" nillable="true"/>
+          <xsd:element name="DegeInge" type="xsd:string" nillable="true"/>
+          <xsd:element name="Description" type="xsd:string" nillable="true"/>
+          <xsd:element name="GroupCode" type="xsd:string" nillable="true"/>
+          <xsd:element name="GroupFunction" type="xsd:string" nillable="true"/>
+          <xsd:element name="GroupName" type="xsd:string" nillable="true"/>
+          <xsd:element name="IndispCode" type="xsd:string" nillable="true"/>
+          <xsd:element name="IngeDetalle" type="xsd:string" nillable="true"/>
+          <xsd:element name="Reason" type="xsd:string" nillable="true"/>
+          <xsd:element name="Status" type="xsd:string" nillable="true"/>
+          <xsd:element name="TipoModif" type="xsd:string" nillable="true"/>
+          <xsd:element name="UPCode" type="xsd:string" nillable="true"/>
+          <xsd:element name="UnavailableEnergy" type="xsd:double"/>
+          <xsd:element name="UnavailablePower" type="xsd:double"/>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+  </types>
+  <message name="IndispRequest">
+    <part name="AvailablePower" type="xsd:double"/>
+    <part name="CentralCode" type="xsd:string"/>
+    <part name="CentralName" type="xsd:string"/>
+    <part name="DateBegin" type="xsd:dateTime"/>
+    <part name="DateEnd" type="xsd:dateTime"/>
+    <part name="DegeDetalle" type="xsd:string"/>
+    <part name="DegeInge" type="xsd:string"/>
+    <part name="Description" type="xsd:string"/>
+    <part name="GroupCode" type="xsd:string"/>
+    <part name="GroupFunction" type="xsd:string"/>
+    <part name="GroupName" type="xsd:string"/>
+    <part name="IndispCode" type="xsd:string"/>
+    <part name="IngeDetalle" type="xsd:string"/>
+    <part name="Reason" type="xsd:string"/>
+    <part name="Status" type="xsd:string"/>
+    <part name="TipoModif" type="xsd:string"/>
+    <part name="UPCode" type="xsd:string"/>
+    <part name="UnavailableEnergy" type="xsd:double"/>
+    <part name="UnavailablePower" type="xsd:double"/>
+  </message>
+  <message name="IndispResponse">
+    <part name="IndispResult" type="xsd:string"/>
+  </message>
+  <portType name="greportingPortType">
+    <operation name="Indisp">
+      <documentation>Retorna una lista de datos</documentation>
+      <input message="tns:IndispRequest"/>
+      <output message="tns:IndispResponse"/>
+    </operation>
+  </portType>
+  <binding name="greportingBinding" type="tns:greportingPortType">
+    <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="Indisp">
+      <soap:operation soapAction="urn:greporting#Indisp" style="rpc"/>
+      <input>
+        <soap:body use="literal" namespace="urn:greporting"/>
+      </input>
+      <output>
+        <soap:body use="literal" namespace="urn:greporting"/>
+      </output>
+    </operation>
+  </binding>
+  <service name="greporting">
+    <port name="greportingPort" binding="tns:greportingBinding">
+      <soap:address location="http://10.152.165.45:8080/indisponibilidad/servicio_soap.php"/>
+    </port>
+  </service>
+</definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://10.152.165.45:8080/indisponibilidad/servicio_soap.php</con:endpoint></con:endpoints><con:operation id="1d4d7f58-075b-4c5b-9d7d-e85b6c1a7031" isOneWay="false" action="urn:greporting#Indisp" name="Indisp" bindingOperationName="Indisp" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="8fda8a63-2557-4ad6-8000-589ef1961127" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.152.165.45:8080/indisponibilidad/servicio_soap.php</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:greporting">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <urn:Indisp>\r
+         <AvailablePower>0</AvailablePower>
+		<CentralCode>ESH-BRRD</CentralCode>
+		<CentralName>2</CentralName>
+		<DateBegin>2020-03-26T13:40:00Z</DateBegin>
+		<DateEnd>2020-03-26T13:45:00Z</DateEnd>
+		<DegeDetalle>87749 - 97501</DegeDetalle>
+		<DegeInge></DegeInge>
+		<Description>prueba, fallos de ingen</Description>
+		<GroupCode>ESH-BRRD-U1</GroupCode>
+		<GroupFunction>Producción</GroupFunction>
+		<GroupName>GRUPO 1 CH BARRADOS</GroupName>
+		<IndispCode>ESH-BRRD-U1-04693-2020</IndispCode>
+		<IngeDetalle></IngeDetalle>
+		<Reason>150 - Mantenimiento preventivo</Reason>
+		<Status>Anulada</Status>
+		<TipoModif>CAMB_EST_DEGE</TipoModif>
+		<UPCode>BRD1</UPCode>
+		<UnavailableEnergy>0</UnavailableEnergy>
+		<UnavailablePower>0</UnavailablePower>
+      </urn:Indisp>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:greporting#Indisp"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>

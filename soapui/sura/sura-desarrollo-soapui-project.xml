@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="dd43700d-e363-4d94-943d-dce64c8f2f0c" activeEnvironment="Default" name="sura-desarrollo" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="ea948bf0-d878-4a99-885a-d24cb5d3848d" wsaVersion="NONE" name="SI_o_WS_RecaudosExternosBinding" type="wsdl" bindingName="{http://suramericana.servicioscompartidos.tesoreria.recaudos}SI_o_WS_RecaudosExternosBinding" soapVersion="1_1" anonymous="optional" definition="https://devsurasappi.suramericana.com.co/dir/wsdl?p=ic/2a83090c2327389cb0859be05c8d2298" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="https://devsurasappi.suramericana.com.co/dir/wsdl?p=ic/2a83090c2327389cb0859be05c8d2298"><con:part><con:url>https://devsurasappi.suramericana.com.co/dir/wsdl?p=ic/2a83090c2327389cb0859be05c8d2298</con:url><con:content><![CDATA[<wsdl:definitions name="SI_o_WS_RecaudosExternos" targetNamespace="http://suramericana.servicioscompartidos.tesoreria.recaudos" xmlns:p2="http://suramericana.global.exceptions" xmlns:p1="http://suramericana.servicioscompartidos.tesoreria.recaudos" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation/>
+  <wsp:UsingPolicy wsdl:required="true"/>
+  <wsp:Policy wsu:Id="OP_OP_ConsultarRecaudos"/>
+  <wsp:Policy wsu:Id="OP_OP_ConsultaRecaudosBancos"/>
+  <wsp:Policy wsu:Id="OP_OP_RecibirRecaudo"/>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://suramericana.global.exceptions" xmlns="http://suramericana.global.exceptions" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:p11="http://suramericana.global.coredt">
+      <xsd:import namespace="http://suramericana.global.coredt"/>
+      <xsd:element name="BusinessException">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="standard" type="ExchangeFaultData"/>
+            <xsd:element name="addition" type="BusinessAdditionalData"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:complexType name="BusinessAdditionalData">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">Respuesta de Ejecución de Operación</xsd:documentation>
+          <xsd:appinfo source="http://sap.com/xi/VersionID">83022921dbd811dfb02486f704a2ca22</xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element name="cdMensaje" type="p11:CodMensaje">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">1952791078c511dfb5ab001dd977c5f2</xsd:appinfo>
+              <xsd:documentation>Código del mensaje SAP</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="dsMensaje" type="p11:TextoMensaje" minOccurs="0">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">1952791178c511dfc26f001dd977c5f2</xsd:appinfo>
+              <xsd:documentation>Texto descriptivo del mensaje</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="dsDato1" type="p11:TextoDato" minOccurs="0">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">1952791278c511dfcd74001dd977c5f2</xsd:appinfo>
+              <xsd:documentation>Campo para dato 1</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="dsDato2" type="p11:TextoDato" minOccurs="0">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">1952791378c511df99b1001dd977c5f2</xsd:appinfo>
+              <xsd:documentation>Campo para dato 2</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="dsDato3" type="p11:TextoDato" minOccurs="0">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">1952a02078c511dfb65b001dd977c5f2</xsd:appinfo>
+              <xsd:documentation>Campo para dato 3</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="dsDato4" type="p11:TextoDato" minOccurs="0">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">898a07707e4211dfb3d5001dd977c5f2</xsd:appinfo>
+              <xsd:documentation>Campo para dato 4</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ExchangeLogData">
+        <xsd:annotation>
+          <xsd:appinfo source="http://sap.com/xi/VersionID">03329501dbbe11dfb85386f704a2ca22</xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element name="severity" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="text" type="xsd:string"/>
+          <xsd:element name="url" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="id" type="xsd:string" minOccurs="0"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ExchangeFaultData">
+        <xsd:annotation>
+          <xsd:appinfo source="http://sap.com/xi/VersionID">f916258015d411e5c39700000090a3ef</xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element name="faultText" type="xsd:string">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">f69f6b1a15d411e5bc23e8b1fc65d9d8</xsd:appinfo>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="faultUrl" type="xsd:string" minOccurs="0">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">f69fb57215d411e5a349e8b1fc65d9d8</xsd:appinfo>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="faultDetail" type="ExchangeLogData" minOccurs="0" maxOccurs="unbounded">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">f69fe18515d411e5a44fe8b1fc65d9d8</xsd:appinfo>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema targetNamespace="http://suramericana.sap.global" xmlns="http://suramericana.sap.global" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:simpleType name="TextoMensaje">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">Texto de mensaje largo</xsd:documentation>
+          <xsd:appinfo source="http://sap.com/xi/VersionID">de4cb1e07f0011dfc5bf86f704a2ca22</xsd:appinfo>
+          <xsd:appinfo source="http://sap.com/esi/RepresentationTerm">Text</xsd:appinfo>
+          <xsd:appinfo source="http://sap.com/esi/FixedValues">false</xsd:appinfo>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="220"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="TextoDato">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">Texto para datos</xsd:documentation>
+          <xsd:appinfo source="http://sap.com/xi/VersionID">681d6c400eac11e4ab7a86f704a2ca22</xsd:appinfo>
+          <xsd:appinfo source="http://sap.com/esi/RepresentationTerm">Text</xsd:appinfo>
+          <xsd:appinfo source="http://sap.com/esi/FixedValues">false</xsd:appinfo>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="500"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="CodMensaje">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">Codigo de mensaje en SAP</xsd:documentation>
+          <xsd:appinfo source="http://sap.com/xi/VersionID">e7b412f07f0011df900786f704a2ca22</xsd:appinfo>
+          <xsd:appinfo source="http://sap.com/esi/RepresentationTerm">Text</xsd:appinfo>
+          <xsd:appinfo source="http://sap.com/esi/FixedValues">false</xsd:appinfo>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="10"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:complexType name="RespuestaOperacion">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">Respuesta de Ejecución de Operación</xsd:documentation>
+          <xsd:appinfo source="http://sap.com/xi/VersionID">37bfb905e99511eace0200000090a3ee</xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element name="cdMensaje" type="CodMensaje" minOccurs="0">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">1952791078c511dfb5ab001dd977c5f2</xsd:appinfo>
+              <xsd:documentation>Código del mensaje SAP</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="dsMensaje" type="TextoMensaje" minOccurs="0">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">1952791178c511dfc26f001dd977c5f2</xsd:appinfo>
+              <xsd:documentation>Texto descriptivo del mensaje</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="dsDato1" type="TextoDato" minOccurs="0">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">1952791278c511dfcd74001dd977c5f2</xsd:appinfo>
+              <xsd:documentation>Campo para dato 1</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="dsDato2" type="TextoDato" minOccurs="0">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">1952791378c511df99b1001dd977c5f2</xsd:appinfo>
+              <xsd:documentation>Campo para dato 2</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="dsDato3" type="TextoDato" minOccurs="0">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">1952a02078c511dfb65b001dd977c5f2</xsd:appinfo>
+              <xsd:documentation>Campo para dato 3</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="dsDato4" type="TextoDato" minOccurs="0">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">898a07707e4211dfb3d5001dd977c5f2</xsd:appinfo>
+              <xsd:documentation>Campo para dato 4</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="dsDato5" type="TextoDato" minOccurs="0">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">37a724e8e99511eaadb95435ded27e06</xsd:appinfo>
+              <xsd:documentation>Campo para dato 5</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="dsDato6" type="TextoDato" minOccurs="0">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">37a724e9e99511ea974b5435ded27e06</xsd:appinfo>
+              <xsd:documentation>Campo para dato 6</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="dsDato7" type="TextoDato" minOccurs="0">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">37a724eae99511eac6bd5435ded27e06</xsd:appinfo>
+              <xsd:documentation>Campo para dato 7</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="dsDato8" type="TextoDato" minOccurs="0">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">37a724ebe99511eabdce5435ded27e06</xsd:appinfo>
+              <xsd:documentation>Campo para dato 8</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="dsDato9" type="TextoDato" minOccurs="0">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">37a724ece99511ea802f5435ded27e06</xsd:appinfo>
+              <xsd:documentation>Campo para dato 9</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="dsDato10" type="TextoDato" minOccurs="0">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">37a724ede99511ea851e5435ded27e06</xsd:appinfo>
+              <xsd:documentation>Campo para dato 10</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema targetNamespace="http://suramericana.servicioscompartidos.tesoreria.recaudos" xmlns:p5="http://suramericana.sap.global" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://suramericana.servicioscompartidos.tesoreria.recaudos">
+      <xsd:import namespace="http://suramericana.sap.global"/>
+      <xsd:element name="MT_ConsultaRecaudosBancosReq" type="DT_ConsultarRecaudosReq"/>
+      <xsd:element name="MT_ConsultarRecaudosRes" type="DT_ConsultarRecaudosRes"/>
+      <xsd:element name="MT_ConsultarRecaudosReq" type="DT_ConsultarRecaudosReq"/>
+      <xsd:element name="MT_ConsultaRecaudosBancosRes" type="DT_ConsultaRecaudosBancosRes"/>
+      <xsd:element name="MT_NotificarRecaudoReq" type="DT_NotificarRecaudoReq"/>
+      <xsd:element name="MT_NotificarRecaudoRes" type="DT_NotificarRecaudoRes"/>
+      <xsd:complexType name="DT_NotificarRecaudoRes">
+        <xsd:annotation>
+          <xsd:appinfo source="http://sap.com/xi/VersionID">69ccd000e47e11e48c8f46257847fb02</xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element name="respuesta" type="p5:RespuestaOperacion" minOccurs="0" maxOccurs="unbounded">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">396c3b40403b11e4c32e7e7a914061ae</xsd:appinfo>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="DT_NotificarPosiciones">
+        <xsd:annotation>
+          <xsd:appinfo source="http://sap.com/xi/VersionID">21808300e47e11e4af0346257847fb02</xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element name="identificacion" type="xsd:string" minOccurs="0">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">8efaaa50401511e3c62378dd08a270ce</xsd:appinfo>
+              <xsd:documentation>Identificacion</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="referencia1" type="xsd:string" minOccurs="0">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">8efaaa51401511e3ac9278dd08a270ce</xsd:appinfo>
+              <xsd:documentation>Referencia que se utilizaria en la notificacion del recaudo 1</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="referencia2" type="xsd:string" minOccurs="0">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">8efaaa52401511e3c43d78dd08a270ce</xsd:appinfo>
+              <xsd:documentation>Referencia que se utilizaria en la notificacion del recaudo 2</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="DT_ConsultaRecaudosBancosRes">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">DT Consulta recaudos externos bancos response</xsd:documentation>
+          <xsd:appinfo source="http://sap.com/xi/VersionID">85826820056511e5c1c446257847fb02</xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element name="respuesta" type="xsd:string" minOccurs="0">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">4cd6d65103da11e5bfc350b7c3d24f47</xsd:appinfo>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="DT_RecaudoExterno">
+        <xsd:annotation>
+          <xsd:appinfo source="http://sap.com/xi/VersionID">03d4fde0e47e11e4cf8646257847fb02</xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element name="identificacion" type="xsd:string" minOccurs="0">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">80c22410401311e39b7078dd08a270ce</xsd:appinfo>
+              <xsd:documentation>Identificación</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="nombre1" type="xsd:string" minOccurs="0">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">80c22411401311e38bef78dd08a270ce</xsd:appinfo>
+              <xsd:documentation>Nombre 1</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="nombre2" type="xsd:string" minOccurs="0">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">80c22412401311e3916178dd08a270ce</xsd:appinfo>
+              <xsd:documentation>Nombre2</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="referencia1" type="xsd:string" minOccurs="0">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">80c22413401311e3c37b78dd08a270ce</xsd:appinfo>
+              <xsd:documentation>Referencia que se utilizaria en la notificacion del recaudo 1</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="referencia2" type="xsd:string" minOccurs="0">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">7f95bc20a93011e28dcfd0df9a58918c</xsd:appinfo>
+              <xsd:documentation>Referencia que se utilizaria en la notificacion del recaudo 2</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="fechaVencimiento" type="xsd:date" minOccurs="0">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">7f95bc21a93011e2ca04d0df9a58918c</xsd:appinfo>
+              <xsd:documentation>fecha de vencimiento de este recaudo</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="valor" type="xsd:decimal" minOccurs="0">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">7f95bc22a93011e2b9f8d0df9a58918c</xsd:appinfo>
+              <xsd:documentation>Valor del recaudo</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="referencia3" type="xsd:string" minOccurs="0">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">83c97d80b90611e48f5550b7c3d24f47</xsd:appinfo>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="DT_ConsultarRecaudosRes">
+        <xsd:annotation>
+          <xsd:appinfo source="http://sap.com/xi/VersionID">32150c90e47e11e4c72346257847fb02</xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element name="recaudos" type="DT_RecaudoExterno" minOccurs="0" maxOccurs="unbounded">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">9b30b0c0a93011e2c19fd0df9a58918c</xsd:appinfo>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="respuesta" type="p5:RespuestaOperacion">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">7bec8d00b90611e482c350b7c3d24f47</xsd:appinfo>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="DT_ConsultarRecaudosReq">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">DT Consulta recaudos externos request</xsd:documentation>
+          <xsd:appinfo source="http://sap.com/xi/VersionID">a78278f1e09d11e993c100000090a3ee</xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element name="convenio" type="xsd:string">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">a449fcd0401511e3847c78dd08a270ce</xsd:appinfo>
+              <xsd:documentation>Convenio</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="referencia" type="xsd:string">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">a449fcd1401511e38b5278dd08a270ce</xsd:appinfo>
+              <xsd:documentation>Referencia</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="tipo_id" type="xsd:string" minOccurs="0"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="DT_NotificarRecaudoReq">
+        <xsd:annotation>
+          <xsd:appinfo source="http://sap.com/xi/VersionID">17941370e47e11e4c69746257847fb02</xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element name="cabecera" type="DT_NotificarCabecera">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">18c46870401611e3b01778dd08a270ce</xsd:appinfo>
+              <xsd:documentation>Cabecera</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="posiciones" type="DT_NotificarPosiciones" maxOccurs="unbounded">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">18c46871401611e3cd7a78dd08a270ce</xsd:appinfo>
+              <xsd:documentation>Posiciones</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="DT_NotificarCabecera">
+        <xsd:annotation>
+          <xsd:appinfo source="http://sap.com/xi/VersionID">3cb02858b11b11e880cb00000090a3ef</xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element name="convenio" type="xsd:string">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">b6e88730401511e39a2378dd08a270ce</xsd:appinfo>
+              <xsd:documentation>Convenio</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="fecha" type="xsd:date">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">b6e88731401511e3c84f78dd08a270ce</xsd:appinfo>
+              <xsd:documentation>Fecha</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="valor" type="xsd:decimal">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">b6e88732401511e3b52078dd08a270ce</xsd:appinfo>
+              <xsd:documentation>Valor</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="autorizacion" type="xsd:string" minOccurs="0">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">b6e88733401511e387a778dd08a270ce</xsd:appinfo>
+              <xsd:documentation>Autorizacion</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="texto1" type="xsd:string" minOccurs="0">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">b6e88734401511e3927a78dd08a270ce</xsd:appinfo>
+              <xsd:documentation>texto1</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="texto2" type="xsd:string" minOccurs="0">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">b6e88735401511e3a05278dd08a270ce</xsd:appinfo>
+              <xsd:documentation>texto2</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="nmTelefono" type="xsd:string" minOccurs="0">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">57a713b5b11b11e8cfd554938cabd21e</xsd:appinfo>
+              <xsd:documentation>Número celular</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="email" type="xsd:string" minOccurs="0">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">57a713b6b11b11e8b37154938cabd21e</xsd:appinfo>
+              <xsd:documentation>Correo Electrónico</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema targetNamespace="http://suramericana.global.coredt" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://suramericana.global.coredt">
+      <xsd:simpleType name="Char40">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">Char de 40 Posiciones</xsd:documentation>
+          <xsd:appinfo source="http://sap.com/xi/VersionID">2ddf4191c5b611dfc8f986f704a2ca22</xsd:appinfo>
+          <xsd:appinfo source="http://sap.com/esi/RepresentationTerm">Text</xsd:appinfo>
+          <xsd:appinfo source="http://sap.com/esi/FixedValues">false</xsd:appinfo>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="40"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="Char10">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">Char de 10 Posiciones</xsd:documentation>
+          <xsd:appinfo source="http://sap.com/xi/VersionID">5e1dadc1c5b511dfad5986f704a2ca22</xsd:appinfo>
+          <xsd:appinfo source="http://sap.com/esi/RepresentationTerm">Text</xsd:appinfo>
+          <xsd:appinfo source="http://sap.com/esi/FixedValues">false</xsd:appinfo>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="10"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="CodMensaje">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">Codigo de mensaje en SAP</xsd:documentation>
+          <xsd:appinfo source="http://sap.com/xi/VersionID">e3835c60dbd811dfa6fb86f704a2ca22</xsd:appinfo>
+          <xsd:appinfo source="http://sap.com/esi/RepresentationTerm">Text</xsd:appinfo>
+          <xsd:appinfo source="http://sap.com/esi/FixedValues">false</xsd:appinfo>
+        </xsd:annotation>
+        <xsd:restriction base="Char10"/>
+      </xsd:simpleType>
+      <xsd:simpleType name="TextoMensaje">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">Texto de mensaje largo</xsd:documentation>
+          <xsd:appinfo source="http://sap.com/xi/VersionID">202de8b1dbd911df886f86f704a2ca22</xsd:appinfo>
+          <xsd:appinfo source="http://sap.com/esi/RepresentationTerm">Text</xsd:appinfo>
+          <xsd:appinfo source="http://sap.com/esi/FixedValues">false</xsd:appinfo>
+        </xsd:annotation>
+        <xsd:restriction base="Char220"/>
+      </xsd:simpleType>
+      <xsd:simpleType name="Char220">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">Char de 220 Posiciones</xsd:documentation>
+          <xsd:appinfo source="http://sap.com/xi/VersionID">b41f4aa1dbd911df8b6986f704a2ca22</xsd:appinfo>
+          <xsd:appinfo source="http://sap.com/esi/RepresentationTerm">Text</xsd:appinfo>
+          <xsd:appinfo source="http://sap.com/esi/FixedValues">false</xsd:appinfo>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="220"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="TextoDato">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">Texto para datos</xsd:documentation>
+          <xsd:appinfo source="http://sap.com/xi/VersionID">0de398d1dbd911dfc1ac86f704a2ca22</xsd:appinfo>
+          <xsd:appinfo source="http://sap.com/esi/RepresentationTerm">Text</xsd:appinfo>
+          <xsd:appinfo source="http://sap.com/esi/FixedValues">false</xsd:appinfo>
+        </xsd:annotation>
+        <xsd:restriction base="Char40"/>
+      </xsd:simpleType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="MT_ConsultarRecaudosReq">
+    <wsdl:documentation/>
+    <wsdl:part name="MT_ConsultarRecaudosReq" element="p1:MT_ConsultarRecaudosReq"/>
+  </wsdl:message>
+  <wsdl:message name="MT_ConsultarRecaudosRes">
+    <wsdl:documentation/>
+    <wsdl:part name="MT_ConsultarRecaudosRes" element="p1:MT_ConsultarRecaudosRes"/>
+  </wsdl:message>
+  <wsdl:message name="MT_ConsultaRecaudosBancosReq">
+    <wsdl:documentation/>
+    <wsdl:part name="MT_ConsultaRecaudosBancosReq" element="p1:MT_ConsultaRecaudosBancosReq"/>
+  </wsdl:message>
+  <wsdl:message name="MT_ConsultaRecaudosBancosRes">
+    <wsdl:documentation/>
+    <wsdl:part name="MT_ConsultaRecaudosBancosRes" element="p1:MT_ConsultaRecaudosBancosRes"/>
+  </wsdl:message>
+  <wsdl:message name="MT_NotificarRecaudoReq">
+    <wsdl:documentation/>
+    <wsdl:part name="MT_NotificarRecaudoReq" element="p1:MT_NotificarRecaudoReq"/>
+  </wsdl:message>
+  <wsdl:message name="MT_NotificarRecaudoRes">
+    <wsdl:documentation/>
+    <wsdl:part name="MT_NotificarRecaudoRes" element="p1:MT_NotificarRecaudoRes"/>
+  </wsdl:message>
+  <wsdl:message name="p2.BusinessException">
+    <wsdl:documentation/>
+    <wsdl:part name="BusinessException" element="p2:BusinessException"/>
+  </wsdl:message>
+  <wsdl:portType name="SI_o_WS_RecaudosExternos">
+    <wsdl:documentation/>
+    <wsdl:operation name="OP_ConsultarRecaudos">
+      <wsdl:documentation/>
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP_OP_ConsultarRecaudos"/>
+      </wsp:Policy>
+      <wsdl:input message="p1:MT_ConsultarRecaudosReq"/>
+      <wsdl:output message="p1:MT_ConsultarRecaudosRes"/>
+    </wsdl:operation>
+    <wsdl:operation name="OP_ConsultaRecaudosBancos">
+      <wsdl:documentation/>
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP_OP_ConsultaRecaudosBancos"/>
+      </wsp:Policy>
+      <wsdl:input message="p1:MT_ConsultaRecaudosBancosReq"/>
+      <wsdl:output message="p1:MT_ConsultaRecaudosBancosRes"/>
+    </wsdl:operation>
+    <wsdl:operation name="OP_RecibirRecaudo">
+      <wsdl:documentation/>
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP_OP_RecibirRecaudo"/>
+      </wsp:Policy>
+      <wsdl:input message="p1:MT_NotificarRecaudoReq"/>
+      <wsdl:output message="p1:MT_NotificarRecaudoRes"/>
+      <wsdl:fault name="p2.BusinessException" message="p1:p2.BusinessException"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SI_o_WS_RecaudosExternosBinding" type="p1:SI_o_WS_RecaudosExternos">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"/>
+    <wsdl:operation name="OP_ConsultarRecaudos">
+      <soap:operation soapAction="http://sap.com/xi/WebService/soap1.1" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"/>
+      <wsdl:input>
+        <soap:body use="literal" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OP_ConsultaRecaudosBancos">
+      <soap:operation soapAction="http://sap.com/xi/WebService/soap1.1" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"/>
+      <wsdl:input>
+        <soap:body use="literal" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OP_RecibirRecaudo">
+      <soap:operation soapAction="http://sap.com/xi/WebService/soap1.1" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"/>
+      <wsdl:input>
+        <soap:body use="literal" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"/>
+      </wsdl:output>
+      <wsdl:fault name="p2.BusinessException">
+        <soap:fault use="literal" name="p2.BusinessException" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SI_o_WS_RecaudosExternosService">
+    <wsdl:port name="HTTP_Port" binding="p1:SI_o_WS_RecaudosExternosBinding">
+      <soap:address location="http://inmdesapd12.suranet.com:50000/XISOAPAdapter/MessageServlet?senderParty=&amp;senderService=D_SuraSurabroker&amp;receiverParty=&amp;receiverService=&amp;interface=SI_o_WS_RecaudosExternos&amp;interfaceNamespace=http%3A%2F%2Fsuramericana.servicioscompartidos.tesoreria.recaudos" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"/>
+    </wsdl:port>
+    <wsdl:port name="HTTPS_Port" binding="p1:SI_o_WS_RecaudosExternosBinding">
+      <soap:address location="https://inmdesapd12.suranet.com:50001/XISOAPAdapter/MessageServlet?senderParty=&amp;senderService=D_SuraSurabroker&amp;receiverParty=&amp;receiverService=&amp;interface=SI_o_WS_RecaudosExternos&amp;interfaceNamespace=http%3A%2F%2Fsuramericana.servicioscompartidos.tesoreria.recaudos" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://inmdesapd12.suranet.com:50000/XISOAPAdapter/MessageServlet?senderParty=&amp;senderService=D_SuraSurabroker&amp;receiverParty=&amp;receiverService=&amp;interface=SI_o_WS_RecaudosExternos&amp;interfaceNamespace=http://suramericana.servicioscompartidos.tesoreria.recaudos</con:endpoint><con:endpoint>https://inmdesapd12.suranet.com:50001/XISOAPAdapter/MessageServlet?senderParty=&amp;senderService=D_SuraSurabroker&amp;receiverParty=&amp;receiverService=&amp;interface=SI_o_WS_RecaudosExternos&amp;interfaceNamespace=http://suramericana.servicioscompartidos.tesoreria.recaudos</con:endpoint></con:endpoints><con:operation id="ce7f5cbf-1d5d-4c7e-b6e7-468763ebdc9d" isOneWay="false" action="http://sap.com/xi/WebService/soap1.1" name="OP_ConsultaRecaudosBancos" bindingOperationName="OP_ConsultaRecaudosBancos" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="ccdb4d63-58b9-44b2-9d27-02356480462c" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="x-apikey" value="uhoH6R6RWClg8zNiR2yXTpY4gGcBNAr3" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://devsurasappi.suramericana.com.co/XISOAPAdapter/MessageServlet?senderParty=&amp;senderService=D_SuraSurabroker&amp;receiverParty=&amp;receiverService=&amp;interface=SI_o_WS_RecaudosExternos&amp;interfaceNamespace=http://suramericana.servicioscompartidos.tesoreria.recaudos</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sur="http://suramericana.servicioscompartidos.tesoreria.recaudos">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <sur:MT_ConsultaRecaudosBancosReq>\r
+         <convenio>200001</convenio>\r
+         <referencia>BAN081838310</referencia>\r
+         <!--Optional:-->\r
+         <tipo_id>?</tipo_id>\r
+      </sur:MT_ConsultaRecaudosBancosReq>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:username>SRBRKR_SAP</con:username><con:password>devsrbrkr04$</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://sap.com/xi/WebService/soap1.1"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="9670a017-a4bd-4b3a-ab20-9d1d3aab9a38" isOneWay="false" action="http://sap.com/xi/WebService/soap1.1" name="OP_ConsultarRecaudos" bindingOperationName="OP_ConsultarRecaudos" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="9b7169e5-c51f-4cfe-8762-6c62d43aaddc" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="x-apikey" value="uhoH6R6RWClg8zNiR2yXTpY4gGcBNAr3" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://devsurasappi.suramericana.com.co/XISOAPAdapter/MessageServlet?senderParty=&amp;senderService=D_SuraSurabroker&amp;receiverParty=&amp;receiverService=&amp;interface=SI_o_WS_RecaudosExternos&amp;interfaceNamespace=http://suramericana.servicioscompartidos.tesoreria.recaudos</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sur="http://suramericana.servicioscompartidos.tesoreria.recaudos">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <sur:MT_ConsultarRecaudosReq>\r
+         <convenio>100001</convenio>\r
+         <referencia>BAN081838310</referencia>\r
+         <!--Optional:-->\r
+         <tipo_id>?</tipo_id>\r
+      </sur:MT_ConsultarRecaudosReq>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:username>SRBRKR_SAP</con:username><con:password>devsrbrkr04$</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://sap.com/xi/WebService/soap1.1"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="441ad37f-0792-4eb7-bda3-f6c0100490a9" isOneWay="false" action="http://sap.com/xi/WebService/soap1.1" name="OP_RecibirRecaudo" bindingOperationName="OP_RecibirRecaudo" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="8c5bcd68-d8fd-4d78-a875-a6db4dd34494" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="x-apikey" value="uhoH6R6RWClg8zNiR2yXTpY4gGcBNAr3" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://devsurasappi.suramericana.com.co/XISOAPAdapter/MessageServlet?senderParty=&amp;senderService=D_SuraSurabroker&amp;receiverParty=&amp;receiverService=&amp;interface=SI_o_WS_RecaudosExternos&amp;interfaceNamespace=http://suramericana.servicioscompartidos.tesoreria.recaudos</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sur="http://suramericana.servicioscompartidos.tesoreria.recaudos">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <sur:MT_NotificarRecaudoReq>\r
+         <cabecera>\r
+            <convenio>76</convenio>\r
+            <fecha>87</fecha>\r
+            <valor>876</valor>\r
+            <!--Optional:-->\r
+            <autorizacion>?</autorizacion>\r
+            <!--Optional:-->\r
+            <texto1>?</texto1>\r
+            <!--Optional:-->\r
+            <texto2>?</texto2>\r
+            <!--Optional:-->\r
+            <nmTelefono>?</nmTelefono>\r
+            <!--Optional:-->\r
+            <email>?</email>\r
+         </cabecera>\r
+         <!--1 or more repetitions:-->\r
+         <posiciones>\r
+            <!--Optional:-->\r
+            <identificacion>?</identificacion>\r
+            <!--Optional:-->\r
+            <referencia1>?</referencia1>\r
+            <!--Optional:-->\r
+            <referencia2>?</referencia2>\r
+         </posiciones>\r
+      </sur:MT_NotificarRecaudoReq>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:username>SRBRKR_SAP</con:username><con:password>devsrbrkr04$</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://sap.com/xi/WebService/soap1.1"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
