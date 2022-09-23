@@ -1,0 +1,148 @@
+-- TODAS LAS PETICIONES VAN CON EL BASIC AUTH -- 
+  user          : app envios
+  pass          : pass app envios
+  Authorization : Basic YXBwIGVudmlvczpwYXNzIGFwcCBlbnZpb3M=
+
+-- REGISTRARSE --
+  HOST    : https://tudinerodev.com/envios/appController/saveSender
+  METHOD  : POST
+  JSON    : { name: "Juan da", phone: "3209004207" }
+
+-- LOGIN --
+  HOST    : https://tudinerodev.com/envios/appController/loginApp
+  METHOD  : POST
+  JSON    : { phone: "3231231231" }
+
+-- VERIFICAR CODIGO --
+  HOST    : https://tudinerodev.com/envios/appController/verifyCode
+  METHOD  : POST
+  JSON    : {id: "12", code: "111111"}
+
+-- HOME --
+  -- OBTENER IMAGENES CARRUSEL --
+    HOST    : https://tudinerodev.com/envios/appController/getImages?folder=yampy_home
+    METHOD  : GET
+    DATA    : folder: yampy_home
+
+  -- OBTENER TASA DEL DIA --
+    HOST    : https://tudinerodev.com/envios/appController/getRateAndMoney?remitente_id=12
+    METHOD  : GET
+    DATA    : remitente_id: 12
+
+  -- OBTENER TIPOS DE DOCUMENTO --
+    HOST    : https://tudinerodev.com/envios/appController/getDocumentTypes?
+    METHOD  : GET
+    DATA    : 
+
+  -- OBTENER BANCOS --
+    HOST    : https://tudinerodev.com/envios/appController/getBanks
+    METHOD  : GET
+    DATA    : 
+
+-- AMIGOS --
+  -- OBTENER AMIGOS --
+    HOST    : https://tudinerodev.com/envios/appController/getReceivers?id=12
+    METHOD  : GET
+    DATA    : id: 12
+
+  -- GUARDAR AMIGO --
+    HOST    : https://tudinerodev.com/envios/appController/saveReceiver
+    METHOD  : POST
+    FORMDATA: 
+      file: (binary)
+      receptor_tipo_documento: V
+      receptor_documento: 2222222222
+      receptor_nombre: 2222222222
+      banco: B.O.D
+      receptor_numero_cuenta: 01162121212121211212
+      banco_id: 26
+      remitente_id: 12
+      receptor_tipo_documento: V
+      receptor_documento: 2222222221
+      receptor_nombre: 2222222222
+      banco: B.O.D
+      receptor_numero_cuenta: 01162121212121211212
+      banco_id: 26
+      remitente_id: 12
+
+  -- EDITAR AMIGO --
+    HOST    : https://tudinerodev.com/envios/appController/updateReceiver
+    METHOD  : POST
+    FORMDATA: 
+      file: (binary)
+      receptor_tipo_documento: V
+      receptor_id: 113
+      tipo_documento: Cédula
+      receptor_documento: 13254524
+      receptor_nombre: Test24
+      receptor_cuenta_id: 175
+      receptor_numero_cuenta: 01755555555555555555
+      receptor_imagen: https://tudinerodev.com/envios/assets/files/receivers/113.jpeg?1100202789
+      banco: Banco bicentenario
+      banco_id: 6
+      banco_tasa: 900.00
+      remitente_id: 12
+  
+  -- ELIMINAR AMIGO --
+    HOST    : https://tudinerodev.com/envios/appController/deleteReceiver?receptor_id=119
+    METHOD  : DELETE
+    DATA    : receptor_id: 119
+  
+-- GIROS --
+  -- OBTENER GIROS --
+    HOST    : https://tudinerodev.com/envios/appController/getShipments?remitente_id=12
+    METHOD  : GET
+    DATA    : remitente_id: 12
+  
+  -- DESCARGAR COMPROBANTE --
+    HOST    : https://tudinerodev.com/envios/appController/createVaucher?giro_id=222
+    METHOD  : GET
+    DATA    : giro_id: 222
+    
+-- MI DINERO --
+  -- OBTENER HISTORIAL MI DINERO --
+    HOST    : https://tudinerodev.com/envios/appController/getMoney?remitente_id=12
+    METHOD  : GET
+    DATA    : remitente_id: 12
+  
+  -- DESCARGAR TARJETA DE REACUDO --
+    HOST    : https://tudinerodev.com/envios/appController/getBarcodeYampy?id=12
+    METHOD  : GET
+    DATA    : getBarcodeYampy: 12
+
+-- PERFIL --
+  -- MODIFICAR PERFIL --
+    HOST    : https://tudinerodev.com/envios/appController/updateSender
+    METHOD  : POST
+    FORMDATA: 
+      remitente_id: 12
+      remitente_telefono: 3209004207
+      remitente_code: 966648
+      remitente_nombre: Juan David Naranjo Elisalde 
+      remitente_correo: juan.n.elisalde@gmail.coM
+      remitente_tipo_documento: V
+      remitente_documento: 1030576957
+      remitente_estado_id: 1
+      remitente_regalo: 515892301692
+      remitente_imagen: https://tudinerodev.com/envios/assets/files/senders/12.jpeg?77350318
+      remitente_imagen_documento: https://tudinerodev.com/envios/assets/files/senders_document/12.png?1268619686
+      remitente_asesor: null
+      document: (binary)
+      file: (binary)
+      remitente_id: 12
+      remitente_telefono: 3209004207
+      remitente_code: 966648
+      remitente_nombre: Juan David Naranjo Elisalde 
+      remitente_correo: juan.n.elisalde@gmail.coM
+      remitente_tipo_documento: V
+      remitente_documento: 1030576957
+      remitente_estado_id: 1
+      remitente_regalo: 515892301692
+      remitente_imagen: https://tudinerodev.com/envios/assets/files/senders/12.jpeg?77350318
+      remitente_imagen_documento: https://tudinerodev.com/envios/assets/files/senders_document/12.png?1268619686
+      remitente_asesor: null
+  
+  -- DESCARGAR TARJETA DE REACUDO --
+    HOST    : https://tudinerodev.com/envios/appController/getBarcodeYampy?id=12
+    METHOD  : GET
+    DATA    : getBarcodeYampy: 12

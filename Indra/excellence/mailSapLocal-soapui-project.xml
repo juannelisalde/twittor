@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="71517d0e-6c5b-4bdc-8cd9-c3012134dd26" activeEnvironment="Default" name="mailSapLocal" resourceRoot="" soapui-version="5.6.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="c475ae48-bd8a-40e9-af66-8aeb8ed689ac" wsaVersion="NONE" name="soap correo sapBinding" type="wsdl" bindingName="{urn:soapCorreoSap}soap correo sapBinding" soapVersion="1_1" anonymous="optional" definition="http://localhost:8080/Emgesa/excellenceChile/backend-pwc/soapService/mailSap.php?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://localhost:8080/Emgesa/excellenceChile/backend-pwc/soapService/mailSap.php?wsdl"><con:part><con:url>http://localhost:8080/Emgesa/excellenceChile/backend-pwc/soapService/mailSap.php?wsdl</con:url><con:content><![CDATA[<definitions targetNamespace="urn:soapCorreoSap" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="urn:soapCorreoSap" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema targetNamespace="urn:soapCorreoSap">
+      <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+      <xsd:import namespace="http://schemas.xmlsoap.org/wsdl/"/>
+      <xsd:complexType name="data">
+        <xsd:all>
+          <xsd:element name="corr_destinatario" type="xsd:string"/>
+          <xsd:element name="corr_copia" type="xsd:string"/>
+          <xsd:element name="corr_numero_cliente" type="xsd:string"/>
+          <xsd:element name="corr_razon_social" type="xsd:string"/>
+          <xsd:element name="corr_importe" type="xsd:string"/>
+          <xsd:element name="corr_link_pdf" type="xsd:string"/>
+          <xsd:element name="corr_carta_informativa" type="xsd:string"/>
+          <xsd:element name="corr_tipo_proceso" type="xsd:string"/>
+        </xsd:all>
+      </xsd:complexType>
+    </xsd:schema>
+  </types>
+  <message name="mailSap.sendMailRequest">
+    <part name="data" type="tns:data"/>
+  </message>
+  <message name="mailSap.sendMailResponse">
+    <part name="return" type="xsd:string"/>
+  </message>
+  <portType name="soap correo sapPortType">
+    <operation name="mailSap.sendMail">
+      <documentation>servicio para enviar correos</documentation>
+      <input message="tns:mailSap.sendMailRequest"/>
+      <output message="tns:mailSap.sendMailResponse"/>
+    </operation>
+  </portType>
+  <binding name="soap correo sapBinding" type="tns:soap correo sapPortType">
+    <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="mailSap.sendMail">
+      <soap:operation soapAction="urn:correoSap#enviarCorreo" style="rpc"/>
+      <input>
+        <soap:body use="encoded" namespace="urn:correoSap" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:correoSap" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+      </output>
+    </operation>
+  </binding>
+  <service name="soap correo sap">
+    <port name="soap correo sapPort" binding="tns:soap correo sapBinding">
+      <soap:address location="http://localhost:8080/Emgesa/excellenceChile/backend-pwc/soapService/mailSap.php"/>
+    </port>
+  </service>
+</definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://localhost:8080/Emgesa/excellenceChile/backend-pwc/soapService/mailSap.php</con:endpoint></con:endpoints><con:operation id="c8f5c55c-1c7d-493e-a0b2-64f2dc522234" isOneWay="false" action="urn:correoSap#enviarCorreo" name="mailSap.sendMail" bindingOperationName="mailSap.sendMail" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="0ac03f73-eb67-4de6-86de-d3a38daf681b" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/Emgesa/excellenceChile/backend-pwc/soapService/mailSap.php</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:correoSap">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <urn:mailSap.sendMail soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">\r
+         <data xsi:type="urn:data" xmlns:urn="urn:soapCorreoSap">\r
+            <!--You may enter the following 8 items in any order-->\r
+            <corr_destinatario xsi:type="xsd:string">jdnaranjo@indracompany.com</corr_destinatario>\r
+            <corr_copia xsi:type="xsd:string">jdnaranjo@indracompany.com</corr_copia>\r
+            <corr_numero_cliente xsi:type="xsd:string">123</corr_numero_cliente>\r
+            <corr_razon_social xsi:type="xsd:string">razon social</corr_razon_social>\r
+            <corr_importe xsi:type="xsd:string">1000</corr_importe>\r
+            <corr_link_pdf xsi:type="xsd:string">http://10.152.149.201:9080/DTEPlus/VisualizarDocumentoENC?readyenc=PYLm6Ear1k2_9poBzHGC6m3o1yPT4uwHh1_ZhNXZdvBUZXU_7rVpFGiHgZvhsl_fFOMl9oDEIRvgg93tgnx19WNjZMOYtoudl019wzFqPcY3xica6LwD6JB4CTeR3PUqVBdsW3hh5WCcehgIa_QqnKEnzMQslWtdh-hZ6yBzwLcKRB_pjCTK8Dx59irJIV8Orl1_8rWYEtQ=</corr_link_pdf>\r
+            <corr_carta_informativa xsi:type="xsd:string">carta</corr_carta_informativa>\r
+            <corr_tipo_proceso xsi:type="xsd:string">I</corr_tipo_proceso>\r
+         </data>\r
+      </urn:mailSap.sendMail>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:correoSap#enviarCorreo"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>

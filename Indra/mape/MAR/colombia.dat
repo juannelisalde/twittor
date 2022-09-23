@@ -1,0 +1,1196 @@
+/*          HIDRAULICAS     */
+dathidr
+/*
+Nombre      AnoI      MesI       AnoF    MesF Sort       Pot    Qmin Tipo Rend    ConPp Cesp  Cvnc Tind     Np Prop*11  Barra
+*/
+/*          COLOMBIA      */
+sumpz1      2015         1       2050    12   sumpz1    14.5    0    s    1.5760   0     0    6.80 0.1179   3  sumpz1   colomb1
+               0         7       14.5
+          0.0300    0.1700     0.8000
+          1.5760    1.5760     1.5760
+sumpz2a     2015         1       2050    12   sumpz2a     20    0    s    1.9324   0     0    6.80 0.11500  3  sumpz2a  colomb1
+               0        10         20
+          0.0300    0.1700     0.8000
+          1.9324    1.9324     1.9324
+sumpz2b     2015         1       2050    12   sumpz2b     20    0    s    1.9324   0     0    6.80 0.1150   3  sumpz2b  colomb1
+               0        10         20
+          0.0300    0.1700     0.8000
+          1.9324    1.9324     1.9324
+sumpz4a     2015         1       2050    12   sumpz4a     20    0    s    1.0384   0     0    6.80 0.1150   3  sumpz4a  colomb1
+               0        10         20
+          0.0300    0.1700     0.8000
+          1.0384    1.0384     1.0384
+sumpz4b     2015         1       2050    12   sumpz4b     20    0    s    1.0384   0     0    6.80 0.1150   3  sumpz4b  colomb1
+               0        10         20
+          0.0300    0.1700     0.8000
+          1.0384    1.0384     1.0384
+sumpz4c     2015         1       2050    12   sumpz4c     20    0    s    1.0384   0     0    6.80 0.1150   3  sumpz4c  colomb1
+               0        10         20
+          0.0300    0.1700     0.8000
+          1.0384    1.0384     1.0384
+sumpz5a     2015         1       2050    12   sumpz5a     20    0    s    1.0893   0     0    6.80 0.1150  3  sumpz5a  colomb1
+               0        10         20
+          0.0300    0.1700     0.8000
+          1.0893    1.0893     1.0893
+sumpz5b     2015         1       2050    12   sumpz5b     20    0    s    1.0893   0     0    6.80 0.1150  3  sumpz5b  colomb1
+               0        10         20
+          0.0300    0.1700     0.8000
+          1.0893    1.0893     1.0893
+sumpz5c     2015         1       2050    12   sumpz5c     20    0    s    1.0893   0     0    6.80 0.1150  3  sumpz5c  colomb1
+               0        10         20
+          0.0300    0.1700     0.8000
+          1.0893    1.0893     1.0893
+/* -------------------------- Ajuste -------------------------------------------------------------------------------------------------------- */ 
+guaica      2015         1       2025    11   guaica     0.001  0    s    0.001    0    0    6.80 0.08347  1  guaica   colomb1
+guaica      2025        12       2026     3   guaica     156    0    s    0.2442   0    0    6.80 0.08347  1  guaica   colomb1
+guaica      2026         4       2026    11   guaica     312    0    s    0.4884   0    0    6.80 0.08347  1  guaica   colomb1
+guaica      2026        12       2050    12   guaica     467    0    s    0.7326   0    0    6.80 0.08347  3  guaica   colomb1
+               0     311.3        467
+          0.0232    0.1808     0.7960
+          0.7326    0.7326     0.7326
+chapas      2015         1       2050    12   chapas     385    0    s    4.8974   0     0   6.80 0.08347  3  chapas   colomb1
+               0     192.5        385
+          0.0232    0.1205     0.8563
+          4.8974    4.8974     4.8974
+cahermo     2015         1       2026    11   cahermo    0.001  0    s    1.9971  0     0   6.80 0.08347  1  cahermo  colomb1
+cahermo     2026        12       2050    12   cahermo    168.0  0    s    1.9971  0     0   6.80 0.08347  3  cahermo  colomb1
+               0      84.0      168.0
+          0.0232    0.1205     0.8563
+          1.9971    1.9971     1.9971
+
+/* -------------------------- Ajuste -------------------------------------------------------------------------------------------------------- */ 
+urra        2015         1       2050    12   urra       338    0    s    0.4657    0    0    6.80 0.40618  3  urra     colomb1
+            0         174.28      338.0
+            0.0000    0.8385     0.1615
+            0.4645    0.4645     0.4645
+guatape     2015         1       2050    12   guatape    560    0    s    6.9915    0    0    6.80 0.05915  3  epm      colomb1
+            0.0000    528.71     560.00
+            0.0420    0.3075     0.6506
+            6.9915    6.9915     6.9915
+jaguas      2015         1       2050    12   jaguas     170    0    s    2.3302    0    0    6.80 0.04660  3  isagen   colomb1
+            0.0000    94.54      170.00
+            0.0050    0.0937     0.9013
+            2.4803    2.4803     2.4803
+playas      2015         1       2050    12   playas     207    0    s    1.7193    0    0    6.80 0.15440  3  epm      colomb1
+            0.0000    132.15     207.00
+            0.0887    0.1818     0.7295
+            1.5539    1.5539     1.5539
+sancarl     2015         1       2050    12   sancarl   1240    0    s    5.3318    0    0    6.80 0.13267  3  isagen   colomb1
+            0.0000    892.7      1240.0
+            0.0099    0.4382     0.5519
+            5.3318    5.3318     5.3318
+tronera     2015         1       2050    12   tronera     40    0    s    0.6152    0    0    6.80 0.06065  3  epm      colomb1
+            0.0000     33.61      40.00
+            0.0145    0.2888     0.6967
+            0.6152    0.6152     0.6152
+guadal3     2015         1       2050    12   guadal3    270    0    s    4.3136    0    0    6.80 0.06065  3  epm      colomb1
+            0.0000    226.87     270.00
+            0.0145    0.2888     0.6967
+            4.3136    4.3136     4.3136
+guadal4     2015         1       2050    12   guadal4    202    0    s    3.5158    0    0    6.80 0.06065  3  epm      colomb1
+            0.0000    169.73     202.00
+            0.0145    0.2888     0.6967
+            3.5158    3.5158     3.5158
+tsajera     2015         1       2050    12   tsajera    306    0    s    8.0742    0    0    6.80 0.05905  3  epm      colomb1
+            0.0000    201.82     306.00
+            0.0076    0.1512     0.8412
+            8.0742    8.0742     8.0742
+esmeral     2015         1       2050    12   esmeral     30    0    s    1.3125    0    0    6.80 0.20362  3  epm      colomb1
+            0.0000    20.71       30.00
+            0.0595    0.4653     0.4752
+            1.3125    1.3125     1.3125
+sanfran     2015         1       2050    12   sanfran    135    0    s    1.5781    0    0    6.80 0.73977  3  epm      colomb1
+            0.0000    63.24      135.00
+            0.4749    0.4983     0.0268
+            1.5781    1.5781     1.5781
+guavio      2015         1       2050    12   guavio    1250    0    s    9.8505    0    0    6.80 0.01294  1  emgesa   colomb1   /* Act pot de 1200 a 1250 */
+paraiso     2015         1       2050    12   paraiso  276.0    0    s    7.4921    0    0    6.80 0.01240  1  emgesa   colomb1
+laguaca     2015         1       2050    12   laguaca  324.0    0    s    8.9128    0    0    6.80 0.02169  1  emgesa   colomb1
+chivor      2015         1       2050    12   chivor    1000    0    s    6.8736    0    0    6.80 0.11837  3  aes      colomb1
+            0.0000    784.51     1000.0
+            0.0002    0.5482     0.4515
+            6.8736    6.8736     6.8736
+prado       2015         1       2050    12   prado       51    0    s    0.4783    0    0    6.80 0.16008  3  epsa     colomb1
+            0.0000     34.9       51.00
+            0.0336    0.4006     0.5658
+            0.4817    0.4817     0.4817
+betania     2015         1       2050    12   betania    540    0    s    0.5935    0    0    6.80 0.00645  1  emgesa   colomb1
+altoanc     2015         1       2050    12   altoanc    355    0    s    3.5755    0    0    6.80 0.31091  3  epsa     colomb1
+            0.0000    240.92     355.00
+            0.0005    0.9658     0.0336
+            3.9060    3.9060     3.9060
+bajoanc     2015         1       2050    12   bajoanc     74    0    s    0.6038    0    0    6.80 0.31091  3  epsa     colomb1
+            0.0000     50.22      74.00
+            0.0005    0.9658     0.0336
+            0.6038    0.6038     0.6038
+calima      2015         1       2050    12   calima     132    0    s    1.8320    0    0    6.80 0.14958  3  epsa     colomb1
+            0.0000     91.01     132.00
+            0.0616    0.2835     0.6550
+            1.8546    1.8546     1.8546
+salvaji     2015         1       2050    12   salvaji    315    0    s    0.8483    0    0    6.80 0.21162  3  epsa     colomb1
+            0.0000    192.03     315.00
+            0.0323    0.4592     0.5084
+            0.9794    0.9794     0.9794
+miel1       2015         1       2050    12   miel1      396    0    s    1.9224    0    0    6.80 0.13420  3  isagen   colomb1
+            0.0000    296.29     396.00
+            0.0036    0.5188     0.4776
+            1.9224    1.9224     1.9224
+porce2      2015         1       2050    12   porce2     405    0    s    2.0166    0    0    6.80 0.04439  3  epm      colomb1
+            0.0000    267.84     405.00
+            0.0055    0.1148     0.8797
+            2.2304    2.2304     2.2304
+
+/*   hidraulicas menores   */
+charqui     2015         1       2050    12   charqui   19.4    0    s    1.1483    0    0    6.80 0.03375  1  emgesa    colomb1
+tequend     2015         1       2050    12   tequend   56.8    0    s    3.2346    0    0    6.80 0.03149  1  emgesa    colomb1
+
+/* Repotenciación Casalaco  ------------------------------------------------  */
+limonar     2015         1       2050    12   limonar   36.0    0    s    2.2843    0    0    6.80 0.06151  1  emgesa    colomb1
+sananto     2015         1       2050    12   sananto   35.0    0    s    3.4155    0    0    6.80 0.04632  1  emgesa    colomb1
+tin-jun     2015         1       2050    12   tin-jun  150.0    0    s    8.0779    0    0    6.80 0.06767  1  emgesa    colomb1 /* completa colegio */
+/* ------------------------------------------------------------------------- */
+
+/* Modelamiento Guavio Menor ----------------------------------------------  */
+guavmen     2015         1       2050    12   guavmen    4.95    0    s    9.8605    0    0    6.80 0.02910  1  emgesa    colomb1
+/* ------------------------------------------------------------------------- */
+
+insula      2015         1       2050    12   insula      19    0    s    0.8500    0    0    6.80 0.14122  3  epm      colomb1
+               0     12.67         19
+          0.1000    0.1237     0.7763
+            0.85      0.85       0.85
+florida     2015         1       2050    12   florida   19.9    0    s    0.8333    0    0    6.80 0.14122  1  otros    colomb1
+caldera     2015         1       2050    12   caldera   19.9    0    s    1.6920    0    0    6.80 0.09920  3  isagen   colomb1
+               0         0       19.9
+          0.0560    0.0432     0.9008
+           1.692     1.692      1.692
+riogran     2015         1       2050    12   riogran     19    0    s    2.4285    0    0    6.80 0.07890  3  epm      colomb1
+               0     16.67         19
+           0.0347    0.3605    0.6048
+          2.4285    2.4285     2.4285
+prado4      2015         1       2050    12   prado4       5    0    s    0.4980    0    0    6.80 0.14122  3  epsa    colomb1
+               0         0          5
+          0.1000    0.0412     0.8588
+           0.498     0.498      0.498
+riomayo     2015         1       2050    12   riomayo   19.8    0    s    1.7000    0    0    6.80 0.14021  3  otros    colomb1
+               0    14.141       19.8
+          0.1000    0.1407     0.7593
+             1.7       1.7        1.7
+
+/*          HIDRaULICAS     FUTURAS     */
+amoya       2015         1       2050    12   amoya    80.00    0    s    4.7978    0    0    6.80 0.33590  3  isagen   colomb1
+          0.0000    49.78       80.00
+          0.1080    0.6034     0.2886
+          4.8609    4.8609     4.8609
+cucuana     2015         1       2050    12   cucuana  58.00    0    s    5.9480    0    0    6.80 0.46345  3    epsa   colomb1
+            0.0000   30.6443      58.00
+            0.0733    0.8272     0.0995
+            5.9480    5.9480     5.9480
+manso       2015         1       2050    12   manso     0.01    0    s    1.3300    0    0    6.80 0.05000  1  isagen   colomb1
+porce3      2015         1       2050    12   porce3     700    0    s    3.1911    0    0    6.80 0.05246  3  epm      colomb1
+          0.0000    539.18     700.00
+          0.0191    0.1451     0.8358
+          3.1911    3.1911     3.1911
+porce4      2015         1       2050    11   porce4    0.01    0    s    1.4011    0    0    6.80 0.09350  1  epm      colomb1
+porce4      2050        12       2050    12   porce4     400    0    s    1.4011    0    0    6.80 0.09350  3  epm      colomb1
+               0       200        400
+          0.0500    0.0870     0.8630
+         1.44268   1.44268    1.44268
+miel2       2015         1       2023    11   miel2    0.001   0    s    3.2800    0    0    6.80  0.15000  1  isagen   colomb1
+miel2       2023        12       2050    12   miel2   116.79   0    s    3.2800    0    0    6.80  0.15000  1  isagen   colomb1
+sogamo      2015         1       2050    12   sogamo     819   0    s    1.2372    0    0    6.80  0.10281  3  isagen   colomb1
+          0.0000    601.14     819.00
+          0.0000    0.3865     0.6135
+          1.3047    1.3047     1.3047
+quimbo      2015         1       2050    12   quimbo     400  36    s    1.10709    0    0    6.80 0.01177  1  emgesa   colomb1
+pescad      2015         1       2022     7   pescad   0.001   0    s    1.70190    0    0    6.80 0.09350  1  pescad   colomb1
+pescad      2022         8       2022    10   pescad     300   0    s    1.70190    0    0    6.80 0.09350  1  pescad   colomb1  /* Retraso segun informacion de EPM */
+pescad      2022        11       2023     2   pescad     600   0    s    1.70190    0    0    6.80 0.09350  1  pescad   colomb1
+pescad      2023         3       2023     6   pescad     900   0    s    1.70190    0    0    6.80 0.09350  1  pescad   colomb1
+pescad      2023         7       2024     7   pescad    1200   0    s    1.70190    0    0    6.80 0.09350  3  pescad   colomb1
+               0       900       1200
+          0.0500    0.1740     0.7760
+         1.70190   1.70190    1.70190
+pescad      2024         8       2024   10    pescad    1500   0    s    1.70190    0    0    6.80 0.09350  3  pescad   colomb1  /* Entrada 2 años despues de la primera fase */
+               0      1200       1500
+          0.0500    0.2175     0.7325
+         1.70190   1.70190    1.70190
+pescad      2024        11       2025    2    pescad    1800   0    s    1.70190    0    0    6.80 0.09350  3  pescad   colomb1
+               0      1500       1800
+          0.0500    0.2610     0.6890
+         1.70190   1.70190    1.70190
+pescad      2025         3       2025    6    pescad    2100   0    s    1.70190    0    0    6.80 0.09350  3  pescad   colomb1
+               0      1800       2100
+          0.0500    0.3045     0.6455
+         1.70190   1.70190    1.70190
+pescad      2025         7      2050    12    pescad    2400   0    s    1.70190    0    0    6.80 0.09350  3  pescad   colomb1
+               0      2100       2400
+          0.0500    0.3480     0.6020
+         1.70190   1.70190    1.70190
+porv_ii     2015         1       2050    11   porv_ii  0.001    0    s    1.1844    0    0    6.80 0.15000  1  porven   colomb1
+porv_ii     2050        12       2050    12   porv_ii    352    0    s    1.1844    0    0    6.80 0.15000  3  porven   colomb1
+               0       220        352
+          0.1050    0.1200     0.7750
+          1.1844    1.1844     1.1844
+esanto      2015         1       2019     7   esanto   0.001   0    s    0.5263     0    0    6.80 0.05000  1  esanto   colomb1 /* Central Escuela de Minas (arreglar nombre) */
+esanto      2019         8       2050    12   esanto      55   0    s    1.6030     0    0    6.80 0.15000  3  esanto   colomb1 /* Central Escuela de Minas (arreglar nombre) */
+               0     35.67         55
+          0.0420    0.3075     0.6506
+          1.6030    1.6030     1.6030
+carller     2015         1       2050    12   carller   78.0   0    s     1.1738    0    0    6.80 0.29214  3  otros    colomb1
+          0.0000     54.48      78.00
+          0.0070    0.9455     0.0475
+          1.0635    1.0635     1.0635
+sanmigu     2015         1       2050    12   sanmigu   52.0   0    s     1.4068    0    0    6.80 0.10979  3  otros    colomb1
+          0.0000     33.06      52.00
+          0.0048    0.2883     0.7069
+          1.2000    1.2000     1.2000
+ambeima     2015         1       2050    12   ambeima   45.0   0    s     3.7924    0    0    6.80 0.01500  1  otros    colomb1
+
+/* -------------------------- Hidraulica Generica -------------------------------- */
+Talasa      2015         1       2023    11   Talasa    0.001   0    s    5.001      0    0    6.80 0.08357  1  Talasa   colomb1
+Talasa      2023        12       2050    12   Talasa    170.9   0    s    5.750      0    0    6.80 0.08357  1  Talasa   colomb1
+hid400      2015         1       2033    11   hid400    0.001   0    s    0.001      0    0    6.80 0.10000  1  hid400   colomb1
+hid400      2033        12       2038    11   hid400    250.0   0    s    0.350      0    0    6.80 0.10000  1  hid400   colomb1
+hid400      2038        12       2050    12   hid400    400.0   0    s    0.350      0    0    6.80 0.10000  1  hid400   colomb1
+hida400     2015         1       2050    12   hida400   0.001   0    s    1.00       0    0    6.80 0.08357  1  hida400   colomb1
+hidb400     2015         1       2050    12   hidb400   0.001   0    s    1.00       0    0    6.80 0.08357  1  hidb400   colomb1
+hidc400     2015         1       2050    12   hidc400   0.001   0    s    1.00       0    0    6.80 0.08357  1  hidc400   colomb1
+hidd400     2015         1       2050    12   hidd400   0.001   0    s    1.00       0    0    6.80 0.08357  1  hidd400   colomb1
+hide400     2015         1       2050    12   hide400   0.001   0    s    1.00       0    0    6.80 0.08357  1  hide400   colomb1
+hida20      2015         1       2050    12   hida20    0.001   0    s    0.0001     0    0    6.80 0.08357  1  hida20    colomb1
+pndrik1     2015         1       2050    12   pndrik1   0.001   0    s    1.25861    0    0    6.80 0.0     1    genmas      colomb1     /* Penderisco I */
+pndrik2     2015         1       2050    12   pndrik2   0.001   0    s    1.19616    0    0    6.80 0.0     1    genmas      colomb1     /* Penderisco II */
+
+/* -------------------------- Hidraulica Generica -------------------------------- */
+
+/*          BOCATOMAS       REPRESENTACION    HIDRAULICAS  */
+niquia      2015         1       2050    12   niquia     0.1    0    s    0.001     0    0    0.01 0        1  otros    colomb1
+nechi       2015         1       2050    12   nechi      0.1    0    s    0.001     0    0    0.01 0        1  epm      colomb1
+pajarit     2015         1       2050    12   pajarit    0.1    0    s    0.001     0    0    0.01 0        1  epm      colomb1
+dolores     2015         1       2050    12   dolores    0.1    0    s    0.001     0    0    0.01 0        1  epm      colomb1
+botench     2015         1       2050    12   botench    0.1    0    s    0.001     0    0    0.01 0        1  epm      colomb1
+tenche      2015         1       2050    12   tenche     0.1    0    s    0.001     0    0    0.01 0        1  epm      colomb1
+quebrad     2015         1       2050    12   quebrad    0.1    0    s    0.001     0    0    0.01 0        1  epm      colomb1
+chinchi     2015         1       2050    12   chinchi    0.1    0    s    0.001     0    0    0.01 0        1  otros    colomb1
+campoal     2015         1       2050    12   campoal    0.1    0    s    0.001     0    0    0.01 0        1  otros    colomb1
+estrell     2015         1       2050    12   estrell    0.1    0    s    0.001     0    0    0.01 0        1  otros    colomb1
+desanfr     2015         1       2050    12   desanfr    0.1    0    s    0.001     0    0    0.01 0        1  otros    colomb1
+guafic1     2015         1       2050    12   guafic1    0.1    0    s    0.001     0    0    0.01 0        1  emgesa   colomb1
+guafic2     2015         1       2050    12   guafic2    0.1    0    s    0.001     0    0    0.01 0        1  emgesa   colomb1
+rucio       2015         1       2050    12   rucio      0.1    0    s    0.001     0    0    0.01 0        1  aes      colomb1
+negro       2015         1       2050    12   negro      0.1    0    s    0.001     0    0    0.01 0        1  aes      colomb1
+tunja       2015         1       2050    12   tunja      0.1    0    s    0.001     0    0    0.01 0        1  aes      colomb1
+bobaray     2015         1       2050    12   bobaray    0.1    0    s    0.001     0    0    0.01 0        1  otros    colomb1
+baraya      2015         1       2050    12   baraya     0.1    0    s    0.001     0    0    0.01 0        1  otros    colomb1
+bochecu     2015         1       2050    12   bochecu    0.1    0    s    0.001     0    0    0.01 0        1  otros    colomb1
+checua      2015         1       2050    12   checua     0.1    0    s    0.001     0    0    0.01 0        1  otros    colomb1
+botibit     2015         1       2050    12   botibit    0.1    0    s    0.001     0    0    0.01 0        1  otros    colomb1
+tibito      2015         1       2050    12   tibito     0.1    0    s    0.001     0    0    0.01 0        1  otros    colomb1
+boriobl     2015         1       2050    12   boriobl    0.1    0    s    0.001     0    0    0.01 0        1  otros    colomb1
+rioblan     2015         1       2050    12   rioblan    0.1    0    s    0.001     0    0    0.01 0        1  otros    colomb1
+acueduc     2015         1       2050    12   acueduc    0.1    0    s    0.001     0    0    0.01 0        1  otros    colomb1
+alicach     2015         1       2050    12   alicach    0.1    0    s    0.001     0    0    0.01 0        1  otros    colomb1
+guarino     2015         1       2050    12   guarino    0.1    0    s    0.001     0    0    0.01 0        1  isagen   colomb1
+recuper     2015         1       2050    12   recuper    0.1    0    s    0.001     0    0    0.01 0        1  otros    colomb1
+boparai     2015         1       2050    12   boparai    0.1    0    s    0.001     0    0    0.01 0        1  epm      colomb1
+
+/*          ECUADOR         */
+PAUTE       2015         1       2050    12   PAUTE      1100   0    s   12.500     0    0    2.00 0.08     3  EcuHid   ecuador
+            0            990       1100
+            0.0026       0.774   0.2234
+           12.500       12.500   12.500
+G_MAZAR     2015         1       2050    12   G_MAZAR    170    0    s    2.250     0    0    2.00 0.08     3  EcuHid   ecuador
+            0            85.00      170
+            0.0026       0.1548  0.8426
+            2.250        2.250     2.250
+AGOYAN      2015         1       2050    12   AGOYAN     157    0    s    1.189     0    0    2.00 0.0817   3  EcuHid   ecuador
+            0            78.5       157
+            0.0026       0.1582  0.8392
+            1.189        1.189    1.189
+PUCARA      2015         1       2050    12   PUCARA     73     0    s   16.950     0    0    2.00 0.0827   3  EcuHid   ecuador
+            0            36.548      73
+            0.0028       0.16    0.8372
+           16.950       16.950   16.950
+HIDRONA     2015         1       2050    12   HIDRONA    213    0    s    9.520     0    0    2.00 0.0885   1  EcuHid   ecuador
+G_SANFR     2015         1       2050    12   G_SANFR    212    0    s    1.619     0    0    2.00 0.0775   3  EcuHid   ecuador
+            0            82.08      212
+            0.0001       0.1263  0.8736
+            1.619        1.619    1.619
+SIBIMBE     2015         1       2050    12   SIBIMBE    16     0    s    1.050     0    0    2.00 0.03     3  EcuHid   ecuador
+            0            13.84       16
+            0.0026       0.2     0.7970
+            1.050        1.050      1.050
+
+/*          se           agregaron   */
+BABA        2015         1       2050    12   BABA       42     0    s    0.350     0    0    2.00 0        1  EcuHid   ecuador
+BABAFIC     2015         1       2022    9    BABAFIC       0.001  0    s    0.001     0    0    2.00 0        1  EcuHid   ecuador
+BABAFIC     2022        10       2050    12   BABAFIC      200.0  0    s    3.000     0    0    2.00 0        1  EcuHid   ecuador  /* modelación de eólica 200 MW */
+ABANICO     2015         1       2050    12   ABANICO    38.5   0    s    0.690     0    0    2.00 0.05     1  EcuHid   ecuador
+OCANA       2015         1       2050    12   OCANA      26     0    s    1.401     0    0    2.00 0.0437   1  EcuHid   ecuador
+CALOPE      2015         1       2050    12   CALOPE     18.0   0    s    0.850     0    0    2.00 0.005    1  EcuHid   ecuador
+SOPLADO     2015         1       2050    12   SOPLADO   487.0   0    s    3.176     0    0    2.00 0.005    1  EcuHid   ecuador
+MINAS       2015         1       2017    12   MINAS     0.001   0    s    5.850     0    0    2.00 0.005    1  EcuHid   ecuador
+MINAS       2018         1       2050    12   MINAS     300.0   0    s    6.950     0    0    2.00 0.005    1  EcuHid   ecuador
+PILATON     2015         1       2018     3   PILATON    0.01   0    s    1.325     0    0    2.00 0.005    1  EcuHid   ecuador
+PILATON     2018         4       2050    12   PILATON    49.0   0    s    1.325     0    0    2.00 0.005    1  EcuHid   ecuador
+TOACHI      2015         1       2018     7   TOACHI    0.001   0    s    1.579     0    0    2.00 0.005    1  EcuHid   ecuador
+TOACHI      2018         8       2050    12   TOACHI    205.4   0    s    2.075     0    0    2.00 0.005    1  EcuHid   ecuador
+
+/* -------------------------- Balance ECUADOR Energia vs Demadna -------------------------------- */
+CCS1500     2015         1       2050    12   CCS1500  1500.0   0    s    4.750     0    0    2.00 0.005    1  EcuHid   ecuador /* Central Coca Codo Sinclair  que se usara para equilibrar */
+QUIJOS      2015         1       2018    12   QUIJOS     0.01   0    s    1.070     0    0    2.00 0.005    1  EcuHid   ecuador
+QUIJOS      2019         1       2050    12   QUIJOS     50.0   0    s    1.070     0    0    2.00 0.005    1  EcuHid   ecuador
+BAEZA       2015         1       2050    12   BAEZA     417.0   0    s    7.020     0    0    2.00 0.005    1  EcuHid   ecuador /* DELSITANISAG 180 MW , SABANILLA(30 MW), DUE 49.7 MW, SIGCHOS 17.4 MW, NORMANDIA 38.1 MW  */
+SANTGO      2015         1       2022    12   SANTGO      0.01  0    s     0.069     0    0    2.00 0.005    1  EcuHid   ecuador 
+SANTGO      2023         1       2025    12   SANTGO    138.00  0    s     0.069     0    0    2.00 0.005    1  EcuHid   ecuador 
+SANTGO      2026         1       2026    12   SANTGO    338.00  0    s     0.194     0    0    2.00 0.005    1  EcuHid   ecuador 
+SANTGO      2027         1       2029    12   SANTGO   1590.00  0    s     0.794     0    0    2.00 0.005    1  EcuHid   ecuador 
+SANTGO      2030         1       2030    12   SANTGO   1950.00  0    s     0.974     0    0    2.00 0.005    1  EcuHid   ecuador 
+SANTGO      2031         1       2033    12   SANTGO   2400.00  0    s     1.200     0    0    2.00 0.005    1  EcuHid   ecuador 
+SANTGO      2034         1       2036    12   SANTGO   2900.00  0    s     1.450     0    0    2.00 0.005    1  EcuHid   ecuador 
+SANTGO      2037         1       2050    12   SANTGO   3600.00  0    s     1.800     0    0    2.00 0.005    1  EcuHid   ecuador 
+P_CARD      2015         1       2022    12   P_CARD     0.01   0    s    3.000     0    0    2.00 0.08     1  EcuHid   ecuador  /* Ingreso nuevos proyectos */
+P_CARD      2023         1       2050    12   P_CARD     596.0  0    s    3.750     0    0    2.00 0.08     1  EcuHid   ecuador  /* Ingreso nuevos proyectos */
+PAUTEM      2015         1       2042    12   PAUTEM     0.01   0    s    2.042     0    0    2.00 0.08     1  EcuHid   ecuador  /* Ingreso nuevos proyectos */
+PAUTEM      2043         1       2050    12   PAUTEM     750    0    s   16.500     0    0    2.00 0.08     1  EcuHid   ecuador  /* Ingreso nuevos proyectos */
+CCSFIC      2015         1       2038    12   CCSFIC     0.01   0    s    1.200     0    0    2.00 0.005    1  EcuHid   ecuador /* Central Coca Codo Sinclair FIC que se usara para equilibrar */
+CCSFIC      2039         1       2040    12   CCSFIC    500.0   0    s    1.375     0    0    2.00 0.005    1  EcuHid   ecuador /* Central Coca Codo Sinclair FIC que se usara para equilibrar */
+CCSFIC      2041         1       2045    12   CCSFIC   1000.0   0    s    2.750     0    0    2.00 0.005    1  EcuHid   ecuador /* Central Coca Codo Sinclair FIC que se usara para equilibrar */
+CCSFIC      2046         1       2048    12   CCSFIC   1750.0   0    s    4.800     0    0    2.00 0.005    1  EcuHid   ecuador /* Central Coca Codo Sinclair FIC que se usara para equilibrar */
+CCSFIC      2049         1       2050    12   CCSFIC   2200.0   0    s    5.555     0    0    2.00 0.005    1  EcuHid   ecuador /* Central Coca Codo Sinclair FIC que se usara para equilibrar */
+
+/*          PANAMA       */
+
+Fortuna     2015         1       2050    12   Fortuna    300    0    s    6.6667    0    0    0.00 0.04828  3  PanHid   panama
+            0            200     300
+            0.0026       0.137   0.8604
+            6.6667       6.6667  6.6667
+Bayano      2015         1       2050    12   Bayano     260    0    s    0.4924    0    0    0.00 0.04828  3  PanHid   panama
+            0            173.3   260
+            0.0026       0.137   0.8604
+            0.4924       0.4924  0.4924
+LaEstre     2015         1       2050    12   LaEstre    42     0    s    2.9576    0    0    0.00 0.04828  3  PanHid   panama
+            0            21      42
+            0.0026       0.0914  0.906
+            2.9576       2.9576  2.9576
+LosVall     2015         1       2050    12   LosVall    48     0    s    2.1433    0    0    0.00 0.04828  3  PanHid   panama
+            0            24      48
+            0.0026       0.0914  0.906
+            2.1433       2.1433  2.1433
+Canjilo     2015         1       2050    12   Canjilo    120    0    s    1.0169    0    0    0.00 0.04828  3  PanHid   panama
+            0            60      120
+            0.0026       0.0914  0.906
+            1.0169       1.0169  1.0169
+Gualaca     2015         1       2050    12   Gualaca    24     0    s    0.192     0    0    0.00 0.04828  3  PanHid   panama
+            0            0       24
+            0.0026       0.0457  0.9517
+            0.192        0.192   0.192
+LosAnil     2015         1       2050    12   LosAnil    34     0    s    0.2608    0    0    0.00 0.04828  3  PanHid   panama  /* lorena */
+            0            0       34
+            0.0026       0.0457  0.9517
+            0.2608       0.2608  0.2608
+Chiriqu     2015         1       2050    12   Chiriqu    56     0    s    0.3613    0    0    0.00 0.04828  3  PanHid   panama  /* ch prudencia */
+            0            28      56
+            0.0026       0.0914  0.906
+            0.3613       0.3613  0.3613
+SantaMa     2015         1       2050    12   SantaMa    30.5   0    s    0.3837    0    0    0.00 0.04828  3  PanHid   panama
+            0            15.25   30.5
+            0.0026      0.091362 0.906
+            0.3837       0.3837  0.3837
+Pando       2015         1       2050    12   Pando      32     0    s    2.4849    0    0    0.00 0.04828  3  PanHid   panama
+            0            16      32
+            0.0026       0.0914  0.906
+            2.4849       2.4849  2.4849
+MonteLi     2015         1       2050    12   MonteLi    50     0    s    2.6782    0    0    0.00 0.04828  3  PanHid   panama
+            0            25      50
+            0.0026       0.0914  0.906
+            2.6782       2.6782  2.6782
+Chan75      2015         1       2050    12   Chan75     158    0    s    0.798     0    0    0.00 0.04828  3  PanHid   panama
+            0            79      158
+            0.0026       0.0914  0.906
+            0.798        0.798   0.798
+Chan140     2015         1       2050    12   Chan140    132    0    s    0.6197    0    0    0.00 0.04828  3  PanHid   panama
+            0            66      132
+            0.0026       0.0914  0.906
+            0.6197       0.6197  0.6197
+Chan220     2015         1       2050    12   Chan220    126    0    s    0.9474    0    0    0.00 0.04828  3  PanHid   panama
+            0            63      126
+            0.0026       0.0914  0.906
+            0.9474       0.9474  0.9474
+Bonyic      2015         1       2050    12   Bonyic     30     0    s    1.2       0    0    0.00 0.04828  3  PanHid   panama
+            0            15      30
+            0.0026       0.0914  0.906
+            1.2          1.2     1.2
+LaEsper     2015         1       2050    12   LaEsper    0.1    0    s    0.001     0    0    0.00 0        3  PanHid   panama
+            0            0       0.1
+            0            0       1
+            0.001        0.001   0.001
+BjoMina     2015         1       2050    12   BjoMina    51     0    s    0.7907    0    0    0.00 0.04828  3  PanHid   panama
+            0            34      51
+            0.0026       0.137   0.8604
+            0.7907       0.7907  0.7907
+/*
+Baru        2015         1       2050    12   Baru       150    0    s    1.9455    0    0    0.00 0.04828  3  PanHid   panama
+            0            100     150
+            0.0026       0.137   0.8604
+            1.9455       1.9455  1.9455
+*/
+Elsindi     2015         1       2050    12   Elsindi    10     0    s    1.976     0    0    0.00 0.04828  3  PanHid   panama
+            0            5       10
+            0.0026       0.0914  0.906
+            1.976        1.976   1.976
+Elalto      2015         1       2050    12   Elalto     60     0    s    1.053     0    0    0.00 0.04828  3  PanHid   panama
+            0            40      60
+            0.0026       0.137   0.8604
+            1.053        1.053   1.053
+mendre      2015         1       2050    12   mendre     19.8   0    s    0.500     0    0    0.00 0.04828  1  PanHid   panama
+pedrg1      2015         1       2050    12   pedrg1     20     0    s    0.600     0    0    0.00 0.04828  1  PanHid   panama
+pedrg2      2015         1       2050    12   pedrg2     13     0    s    0.330     0    0    0.00 0.04828  1  PanHid   panama
+ch0712      2015         1       2050    12   ch0712     34.5   0    s    0.270     0    0    0.00 0.04828  1  PanHid   panama  /* otras pequeñas */
+baitun      2015         1       2050    12   baitun     86     0    s    2.093     0    0    0.00 0.04828  1  PanHid   panama
+bafrio      2015         1       2050    12   bafrio     56     0    s    0.560     0    0    0.00 0.04828  1  PanHid   panama
+burica      2015         1       2050    12   burica     50     0    s    0.800     0    0    0.00 0.04828  1  PanHid   panama
+tabII       2015         1       2050    12   tabII      34.5   0    s    0.274     0    0    0.00 0.04828  1  PanHid   panama
+
+findato
+
+/*          TERMICAS        */
+datterm
+/* Nombre      AnoI    MesI      AnoF    MesF        Sort        Pmax   Pmin Tipo Cesp      Cvnc   Tind     Np   Prop*11  Barra */
+/*          COLOMBIA   */     
+bquill3     2015    1         2050    12          bquill3      8.00  0    s    10.4846    11.95  0.15445  3    gecelca  colomb1
+            0.0000    6.9043     8.00
+            0.0770    0.5655     0.3575
+            11.800    11.800     11.800
+bquil3A     2015    1         2050    12          bquill3     20.00  0    s    10.4846    11.95  0.15445  3    gecelca  colomb1
+            0.0000    17.2622    20.00
+            0.0770    0.5655     0.3575
+            10.480    10.480     10.480
+bquil3B     2015    1         2050    12          bquill3     32.00  0    s    10.4846    11.95  0.15445  3    gecelca  colomb1
+            0.0000    27.6173    32.00
+            0.0770    0.5655     0.3575
+            11.800    11.800     11.800
+bquill4     2015    1         2050    12          bquill4      8.00  0    s    11.8308    11.95  0.17713  3    gecelca  colomb1
+            0.0000    5.9559       8.00
+            0.0650    0.4387     0.4963
+            11.830    11.830     11.830
+bquil4A     2015    1         2050    12          bquill4     20.00  0    s    11.8308    11.95  0.17713  3    gecelca  colomb1
+            0.0000   14.8881      20.00
+            0.0650    0.4387     0.4963
+            11.830    11.830     11.830
+bquil4B     2015    1         2050    12          bquill4     32.00  0    s    11.8308    11.95  0.17713  3    gecelca  colomb1
+            0.0000   23.8209      32.00
+            0.0650    0.4387     0.4963
+            11.830    11.830     11.830
+
+/* ------------------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------ SIMULACION CARTAGENA -------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------ */
+ctgena1     2015    1         2018    12          ctgena1     56.00  0    s    14.4046    15.23  0.164    1    emgesa   colomb1
+ctgena1     2019    1         2019    12          ctgena1     56.00  0    s    14.4046    15.23  0.213    1    emgesa   colomb1
+ctgena1     2020    1         2020    12          ctgena1     56.00  0    s    14.4050    15.23  0.053    1    emgesa   colomb1
+ctgena1     2021    1         2021    12          ctgena1     56.00  0    s    14.5235    15.23  0.053    1    emgesa   colomb1
+ctgena1     2022    1         2022    12          ctgena1     56.00  0    s    13.6511    15.23  0.08529    1    emgesa   colomb1
+ctgena1     2023    1         2023    12          ctgena1     56.00  0    s    13.7701    15.23  0.08894    1    emgesa   colomb1
+ctgena1     2024    1         2024    12          ctgena1     56.00  0    s    13.8890    15.23  0.08873    1    emgesa   colomb1
+ctgena1     2025    1         2025    12          ctgena1     56.00  0    s    14.0080    15.23  0.08529    1    emgesa   colomb1
+ctgena1     2026    1         2026    12          ctgena1     56.00  0    s    15.1184    15.23  0.08529    1    emgesa   colomb1
+ctgena1     2027    1         2027    12          ctgena1     56.00  0    s    15.2373    15.23  0.053    1    emgesa   colomb1
+ctgena1     2028    1         2028    12          ctgena1     56.00  0    s    15.3563    15.23  0.053    1    emgesa   colomb1
+ctgena1     2029    1         2029    12          ctgena1     56.00  0    s    15.4753    15.23  0.053    1    emgesa   colomb1
+ctgena1     2030    1         2030    12          ctgena1     56.00  0    s    15.5943    15.23  0.053    1    emgesa   colomb1
+ctgena1     2031    1         2031    12          ctgena1     56.00  0    s    15.7132    15.23  0.053    1    emgesa   colomb1
+ctgena1     2032    1         2032    12          ctgena1     56.00  0    s    15.8322    15.23  0.053    1    emgesa   colomb1
+ctgena1     2033    1         2033    12          ctgena1     56.00  0    s    15.9512    15.23  0.053    1    emgesa   colomb1
+ctgena1     2034    1         2034    12          ctgena1     56.00  0    s    16.0701    15.23  0.053    1    emgesa   colomb1
+ctgena1     2035    1         2035    12          ctgena1     56.00  0    s    16.1891    15.23  0.053    1    emgesa   colomb1
+ctgena1     2036    1         2036    12          ctgena1     56.00  0    s    16.3081    15.23  0.053    1    emgesa   colomb1
+ctgena1     2037    1         2037    12          ctgena1     56.00  0    s    16.4270    15.23  0.053    1    emgesa   colomb1
+ctgena1     2038    1         2038    12          ctgena1     56.00  0    s    16.5460    15.23  0.053    1    emgesa   colomb1
+ctgena1     2039    1         2039    12          ctgena1     56.00  0    s    16.6650    15.23  0.053    1    emgesa   colomb1
+ctgena1     2040    1         2050    12          ctgena1     56.00  0    s    16.7840    15.23  0.053    1    emgesa   colomb1
+
+ctgen1A     2015    1         2050    12          ctgen1A     0.001  0    s    14.4050    11.95  0.443    1    emgctg   colomb1
+ctgen1B     2015    1         2050    12          ctgen1B     0.001  0    s    14.4050    11.95  0.443    1    emgctg   colomb1
+
+ctgena2     2015    1         2018    12          ctgena2     62.00  0    s    13.6880    15.23  0.164    1    emgesa   colomb1
+ctgena2     2019    1         2019    12          ctgena2     62.00  0    s    13.6880    15.23  0.213    1    emgesa   colomb1
+ctgena2     2020    1         2020    12          ctgena2     62.00  0    s    13.6880    15.23  0.070    1    emgesa   colomb1
+ctgena2     2021    1         2021    12          ctgena2     62.00  0    s    13.8069    15.23  0.070    1    emgesa   colomb1
+ctgena2     2022    1         2022    12          ctgena2     62.00  0    s    13.9259    15.23  0.05744    1    emgesa   colomb1
+ctgena2     2023    1         2023    12          ctgena2     62.00  0    s    14.0449    15.23  0.06018    1    emgesa   colomb1
+ctgena2     2024    1         2024    12          ctgena2     62.00  0    s    14.1638    15.23  0.06004    1    emgesa   colomb1
+ctgena2     2025    1         2025    12          ctgena2     62.00  0    s    14.2828    15.23  0.05744    1    emgesa   colomb1
+ctgena2     2026    1         2026    12          ctgena2     62.00  0    s    14.4018    15.23  0.06018    1    emgesa   colomb1
+ctgena2     2027    1         2027    12          ctgena2     62.00  0    s    14.5208    15.23  0.070    1    emgesa   colomb1
+ctgena2     2028    1         2028    12          ctgena2     62.00  0    s    14.6397    15.23  0.070    1    emgesa   colomb1
+ctgena2     2029    1         2029    12          ctgena2     62.00  0    s    14.7587    15.23  0.070    1    emgesa   colomb1
+ctgena2     2030    1         2030    12          ctgena2     62.00  0    s    14.8777    15.23  0.070    1    emgesa   colomb1
+ctgena2     2031    1         2031    12          ctgena2     62.00  0    s    14.9966    15.23  0.070    1    emgesa   colomb1
+ctgena2     2032    1         2032    12          ctgena2     62.00  0    s    15.1156    15.23  0.070    1    emgesa   colomb1
+ctgena2     2033    1         2033    12          ctgena2     62.00  0    s    15.2346    15.23  0.070    1    emgesa   colomb1
+ctgena2     2034    1         2034    12          ctgena2     62.00  0    s    15.3535    15.23  0.070    1    emgesa   colomb1
+ctgena2     2035    1         2035    12          ctgena2     62.00  0    s    15.4725    15.23  0.070    1    emgesa   colomb1
+ctgena2     2036    1         2036    12          ctgena2     62.00  0    s    15.5915    15.23  0.070    1    emgesa   colomb1
+ctgena2     2037    1         2037    12          ctgena2     62.00  0    s    15.7105    15.23  0.070    1    emgesa   colomb1
+ctgena2     2038    1         2038    12          ctgena2     62.00  0    s    15.8294    15.23  0.070    1    emgesa   colomb1
+ctgena2     2039    1         2039    12          ctgena2     62.00  0    s    15.9484    15.23  0.070    1    emgesa   colomb1
+ctgena2     2040    1         2050    12          ctgena2     62.00  0    s    16.0674    15.23  0.070    1    emgesa   colomb1
+
+ctgen2A     2015    1         2050    12          ctgen2A     0.001  0    s    14.4050    11.95  0.443    1    emgctg   colomb1
+ctgen2B     2015    1         2050    12          ctgen2B     0.001  0    s    14.4050    11.95  0.443    1    emgctg   colomb1
+
+ctgena3     2015    1         2018    12          ctgena3     66.00  0    s    13.6880    15.23  0.164    1    emgesa   colomb1
+ctgena3     2019    1         2019    12          ctgena3     66.00  0    s    13.6880    15.23  0.213    1    emgesa   colomb1
+ctgena3     2020    1         2020    12          ctgena3     66.00  0    s    13.6880    15.23  0.053    1    emgesa   colomb1
+ctgena3     2021    1         2021    12          ctgena3     66.00  0    s    13.8069    15.23  0.053    1    emgesa   colomb1
+ctgena3     2022    1         2022    12          ctgena3     66.00  0    s    13.9259    15.23  0.07838    1    emgesa   colomb1
+ctgena3     2023    1         2023    12          ctgena3     66.00  0    s    14.0449    15.23  0.07564    1    emgesa   colomb1
+ctgena3     2024    1         2024    12          ctgena3     66.00  0    s    14.1638    15.23  0.07547    1    emgesa   colomb1
+ctgena3     2025    1         2025    12          ctgena3     66.00  0    s    14.2828    15.23  0.07290    1    emgesa   colomb1
+ctgena3     2026    1         2026    12          ctgena3     66.00  0    s    14.4018    15.23  0.07290    1    emgesa   colomb1
+ctgena3     2027    1         2027    12          ctgena3     66.00  0    s    14.5208    15.23  0.053    1    emgesa   colomb1
+ctgena3     2028    1         2028    12          ctgena3     66.00  0    s    14.6397    15.23  0.053    1    emgesa   colomb1
+ctgena3     2029    1         2029    12          ctgena3     66.00  0    s    14.7587    15.23  0.053    1    emgesa   colomb1
+ctgena3     2030    1         2030    12          ctgena3     66.00  0    s    14.8777    15.23  0.053    1    emgesa   colomb1
+ctgena3     2031    1         2031    12          ctgena3     66.00  0    s    14.9966    15.23  0.053    1    emgesa   colomb1
+ctgena3     2032    1         2032    12          ctgena3     66.00  0    s    15.1156    15.23  0.053    1    emgesa   colomb1
+ctgena3     2033    1         2033    12          ctgena3     66.00  0    s    15.2346    15.23  0.053    1    emgesa   colomb1
+ctgena3     2034    1         2034    12          ctgena3     66.00  0    s    15.3535    15.23  0.053    1    emgesa   colomb1
+ctgena3     2035    1         2035    12          ctgena3     66.00  0    s    15.4725    15.23  0.053    1    emgesa   colomb1
+ctgena3     2036    1         2036    12          ctgena3     66.00  0    s    15.5915    15.23  0.053    1    emgesa   colomb1
+ctgena3     2037    1         2037    12          ctgena3     66.00  0    s    15.7105    15.23  0.053    1    emgesa   colomb1
+ctgena3     2038    1         2038    12          ctgena3     66.00  0    s    15.8294    15.23  0.053    1    emgesa   colomb1
+ctgena3     2039    1         2039    12          ctgena3     66.00  0    s    15.9484    15.23  0.053    1    emgesa   colomb1
+ctgena3     2040    1         2050    12          ctgena3     66.00  0    s    16.0674    15.23  0.053    1    emgesa   colomb1
+
+ctgen3A     2015    1         2050    12          ctgen3A     0.001  0    s    14.4050    11.95  0.443    1    emgctg   colomb1
+ctgen3B     2015    1         2050    12          ctgen3B     0.001  0    s    14.4050    11.95  0.443    1    emgctg   colomb1
+/* ------------------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------ FINAL DE LA SIMUALCION ------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------------------ */
+
+flores1     2015    1         2050    12          flores1     128    0    s   7.3505     10.93  0.10046   3    gecelca  colomb1  /* Act Efi 7.3752 a 7.772 e IHF de 0.0720 a 0.0727 */
+            0.0000     73.63      128.0
+            0.0886    0.0279     0.8835
+            7.3505    7.3505     7.3505
+flor1cb     2015    1         2050    12          flores1     32     0    s   7.3505     10.93  0.10046   3    gecelca  colomb1  /* Act Efi 7.3752 a 7.772 e IHF de 0.0720 a 0.0727 */
+            0.0000     18.41      32.00
+            0.0886    0.0279     0.8835
+            7.3505    7.3505     7.3505
+palenq3     2015    1         2050    12          palenq3     1.62   0    s    14.31     10.93  0.0067   1    otros    colomb1
+palen3A     2015    1         2050    12          palenq3     4.88   0    s    14.31     10.93  0.0067   1    otros    colomb1
+palen3B     2015    1         2050    12          palenq3     6.5    0    s    14.31     10.93  0.0067   1    otros    colomb1
+
+/*          TEBSA CON GENERACION DE SEGURIDAD   */
+tebsa       2015    1         2050    12          tebsa       350    0    s    0.00        0.00   0.03812  1    corelca  colomb1
+tebsacb     2015    1         2050    12          tebsa       441    0    s    7.2131      10.93  0.03812  1    corelca  colomb1  /* Act. pot de 440 a 441, Efi de 7.8 a 7.2678  */
+
+termebr     2015    1         2023    11          termebr    0.001   0    s   8.0091    10.93  0.2000   1    Oleollano   colomb1 /* Subastas 2022-2023 */
+termebr     2023   12         2050    12          termebr    19.40   0    s   8.0091    10.93  0.2000   3    Oleollano   colomb1 /* Subastas 2022-2023 */
+            0.0000      5.00      19.40
+            0.1000    0.1347     0.7653
+            8.0091    8.0091     8.0091
+termopr     2015    1         2023    11          termopr    0.001   0    s   8.0091    10.93  0.2000   1     Oleollano   colomb1 /* Subastas 2022-2023 */
+termopr     2023   12         2050    12          termopr    19.40   0    s   8.0091    10.93  0.2000   3     Oleollano   colomb1 /* Subastas 2022-2023 */
+            0.0000      5.00      19.40
+            0.1000    0.1347     0.7653
+            8.0091    8.0091     8.0091
+tdorada     2015    1         2050    12          tdorada    44.00   0    s   10.255    10.93  0.2000   3    epm      colomb1  /* Se mantiene como tdorada */
+            0.0000   11.4765      44.00
+            0.1004    0.1347     0.7649
+            10.255    10.255     10.255
+tsierra     2015    1         2050    12          tsierra     321.67  0    s  6.78527   10.93  0.15846   3   epm      colomb1
+            0.0000    216.34     321.67
+            0.0378    0.3685     0.5937
+            6.78527   6.78527    6.78527
+tsierrb     2015    1         2050    12          tsierra      31.33  0    s  6.78527   10.93  0.15846   3   epm      colomb1  /* la central usa el 20% del tiempo Gas */
+            0.0000    21.0715      31.33
+            0.0378    0.3685     0.5937
+            6.78527   6.78527    6.78527
+merilec     2015    1         2050    12          merilec     21.12  0    s    9.7655    10.93  0.02094   3    merilec  colomb1
+            0.0000     15.46      21.12
+            0.0198    0.0043     0.9759
+            9.7655    9.7655     9.7655
+merileA     2015    1         2050    12          merilec     62.38  0    s    9.7655    10.93  0.02094   3    merilec  colomb1
+            0.0000     45.65      62.38
+            0.0198    0.0043     0.9759
+            9.7655    9.7655     9.7655
+merileB     2015    1         2050    12          merilec     83.5   0    s    9.7655    10.93  0.02094   3   merilec  colomb1
+            0.0000     61.11      83.50
+            0.0198    0.0043     0.9759
+            9.7655    9.7655     9.7655
+emcali      2015    1         2050    12          emcali     170.00  0    s    7.4640    10.93  0.0595   1    otros    colomb1
+emcalib     2015    1         2050    12          emcali      43.00  0    s    7.4640    10.93  0.0595   1    otros    colomb1  /* la central usa el 20% del tiempo Gas */
+tcentro     2015    1         2022    11          tcentro    132.68  0    s    7.6331    10.93  0.24129  3    isagen   colomb1  /* sale en nov20 segun ISAGEN, no participó en Sub CxC  */
+            0.0000     74.68     132.68
+            0.0556    0.4248     0.5196
+            7.6331    7.6331     7.6331
+tcentro     2022   12         2050    12          tcentro    0.001   0    s    7.6331    10.93  0.24129   1    isagen   colomb1
+candel1     2015    1         2022    11          candel1    157.00  0    s   10.2219    11.95  0.04242   3    candel1  colomb1
+            0.0000     75.36     157.00
+            0.0419    0.0010     0.9571
+           10.2219   10.2219    10.2219
+candel1     2022   12         2050    12          candel1     0.001  0    s   10.2219    11.95  0.04242   1    candel1  colomb1  /* Cierre Ciclo Subasta CxC */
+candel2     2015    1         2022    11          candel2    157.00  0    s   10.2165    11.95  0.04902   3    candel2  colomb1
+            0.0000     75.36     157.00
+            0.0485    0.0010     0.9505
+           10.2165   10.2165    10.2165
+candel2     2022   12         2050    12          candel2     0.001  0    s   10.2165    11.95  0.04902   1    candel2  colomb1  /* Cierre Ciclo Subasta CxC */
+ccandel     2015    1         2022    11          ccandel     0.001  0    s    6.6850    11.95  0.05000   1    ccandel  colomb1
+ccandel     2022   12         2050    12          ccandel    555.00  0    s    6.6850    11.95  0.05000   3    ccandel  colomb1  /* Cierre Ciclo Subasta CxC */
+            0.0000    266.83     555.00
+            0.0419    0.0156     0.9425
+            6.6850    6.6850     6.6850
+proele1     2015    1         2050    12          proele1     5.62   0    s    8.1666    10.93  0.07887  3    otros    colomb1
+            0.0000      2.86       5.62
+            0.0773    0.0032     0.9195
+            8.1666    8.1666     8.1666
+proel1A     2015    1         2050    12          proele1     16.88  0    s    7.9419    10.93  0.07887  3    otros    colomb1
+            0.0000     8.488      16.88
+            0.0773    0.0032     0.9195
+            7.9419    7.9419     7.9419
+proel1B     2015    1         2050    12          proele1     22.5   0    s    7.9419    10.93  0.07887  3    otros    colomb1
+            0.0000    11.313      22.50
+            0.0773    0.0032     0.9195
+            7.9419    7.9419     7.9419
+proele2     2015    1         2050    12          proele2     5.62   0    s    7.9419    10.93  0.13138  3    otros    colomb1
+            0.0000      2.45       5.62
+            0.1293    0.0036     0.8670
+            7.9419    7.9419     7.9419
+proel2A     2015    1         2050    12          proele2     16.88  0    s    7.9419    10.93  0.13138  3    otros    colomb1
+            0.0000      7.35      16.88
+            0.1293    0.0036     0.8670
+            7.9419    7.9419     7.9419
+proel2B     2015    1         2050    12          proele2     22.5   0    s    7.9419    10.93  0.13138  3    otros    colomb1
+            0.0000      9.80      22.50
+            0.1293    0.0036     0.8670
+            7.9419    7.9419     7.9419
+tvalle2     2015    1        2050    12          tvalle2     94.11  0    s     6.68120   10.93  0.05655   3    otros    colomb1  /* Subasta CxC 2022-2023 */
+            0.0000     57.65      94.11
+            0.0452    0.0293     0.9255
+            6.68120   6.68120    6.68120
+tval2cb     2015    1         2050    12          tvalle2   145.00   0    s    6.68120   10.93  0.05655   3    otros    colomb1  /* Subasta CxC 2022-2023 */
+            0.0000    88.831     145.00
+            0.0452    0.0293     0.9255
+            6.68120   6.68120    6.68120
+yopal2      2015    1         2022    11          yopal2      3.75   0    s    12.0234    10.93  0.16448   3    otros    colomb1
+            0.0000      2.04     3.7500
+            0.1621    0.0053     0.8326
+           12.0234   12.0234    12.0234
+yopal2      2022   12         2050    12          yopal2     0.001   0    s    12.0234    10.93  0.16448   1    otros    colomb1 /* Yopal 3,4,5 Subasta CxC 2022-2023 */
+yopal2A     2015    1         2022    11          yopal2     24.25   0    s    12.0234    10.93  0.16448   3    otros    colomb1
+            0.0000   13.3604      24.25
+            0.1621    0.0053     0.8326
+           12.0234   12.0234    12.0234
+yopal2A     2022   12         2050    12          yopal2     0.001   0    s    12.0234    10.93  0.16448   1    otros    colomb1 /* Yopal 3,4,5 Subasta CxC 2022-2023 */
+yopal3      2015    1         2020     8          yopal3     0.001   0    s     8.1000    10.93  0.05000   1    otros    colomb1
+yopal3      2020    9         2050    12          yopal3     50.00   0    s     8.1000    10.93  0.05000   3    otros    colomb1 /* Yopal 3 Subasta CxC 2022-2023 */
+            0.0000      5.46      50.00
+            0.0100    0.0449     0.9451
+            8.1000    8.1000     8.1000
+yopal4      2015    1         2020     8          yopal4     0.001   0    s     8.1000    10.93  0.05000   1    otros    colomb1
+yopal4      2020    9         2050    12          yopal4     50.00   0    s     8.1000    10.93  0.05000   3    otros    colomb1 /* Yopal 4 Subasta CxC 2022-2023 */
+            0.0000      5.46      50.00
+            0.0100    0.0449     0.9451
+            8.1000    8.1000     8.1000
+yopal5      2015    1         2020    10          yopal5     0.001   0    s     8.1000    10.93  0.05000   1    otros    colomb1
+yopal5      2020   11         2050    12          yopal5     50.00   0    s     8.1000    10.93  0.05000   3    otros    colomb1 /* Yopal 5 Subasta CxC 2022-2023 */
+            0.0000      5.46      50.00
+            0.0100    0.0449     0.9451
+            8.1000    8.1000     8.1000
+
+/*          Termica      Carbon    */
+paipa1      2015    1         2050    12          paipa1      36     0    s    0.47822   12.53   0.48943     3    otros    colomb1     /* Act. pot de 35 a 31    */
+            0.0000     30.41      36.00
+            0.4210    0.4408     0.1382
+            0.47822   0.47822   0.47822
+paipa2      2015    1         2050    12          paipa2      72     0    s    0.43167   12.53   0.09744   3    otros    colomb1     /* Act. pot de 68 a 72    */
+            0.0000     52.86      72.00
+            0.0867    0.0404     0.8729
+           0.43167   0.43167    0.43167
+paipa3      2015    1         2050    12          paipa3      70     0    s    0.49086   12.53  0.19824    3    otros    colomb1     /* Act. pot de 68 a 70    */
+            0.0000     50.83      70.00
+            0.1866    0.0424     0.7710
+            0.49086   0.49086   0.49086
+paipa4      2015    1         2050    12          paipa4      160    0    s    0.38142     12.53  0.07181    3    otros    colomb1     /* Act. pot de 150 a 154  */
+            0.0000    88.44      160.00
+            0.0699    0.0042     0.9258
+            0.38142   0.38142   0.38142
+tasaje1     2015    1         2050    12          tasaje1     165    0    s    0.36507   12.53  0.13548     3    tasaje1  colomb1
+            0.0000    78.5173    165.00
+            0.1294    0.0116     0.8590
+            0.36507   0.36507   0.36507
+tasaje2     2015    1         2050    12          tasaje2     170    0    s    0.3820    12.53   0.11872     3    tasaje1  colomb1     /* Act. pot de 160 a 165 e IHF de 0.05 a 0.05 */
+            0.0000     92.83     170.00
+            0.1148    0.0087     0.8765
+            0.3820    0.3820     0.3820
+/* ------------------------------------------------------------------------------------------------------------------------ */
+/* ---------------------------------- SIMULACION DE BEEP + LIFE EXTENSION DE TERMOZIPA ------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------------------ */
+
+zipaem2     2015    1         2020    12          zipaem2     34.70  0    s    0.4450    15.23  0.1640    1    emgesa   colomb1
+zipaem2     2021    1         2021    12          zipaem2     36.00  0    s    0.4820    15.23  0.0676   1    emgesa   colomb1
+zipaem2     2022    1         2022    12          zipaem2     36.00  0    s    0.4850    15.23  0.0613   1    emgesa   colomb1
+zipaem2     2023    1         2023    12          zipaem2     36.00  0    s    0.4880    15.23  0.0702   1    emgesa   colomb1
+zipaem2     2024    1         2024    12          zipaem2     36.00  0    s    0.4910    15.23  0.0754   1    emgesa   colomb1
+zipaem2     2025    1         2025    12          zipaem2     36.00  0    s    0.4940    15.23  0.0320   1    emgesa   colomb1
+zipaem2     2026    1         2026    12          zipaem2     36.00  0    s    0.5164    15.23  0.0359   1    emgesa   colomb1
+zipaem2     2027    1         2027    12          zipaem2     36.00  0    s    0.5190    15.23  0.0539    1    emgesa   colomb1
+zipaem2     2028    1         2028    12          zipaem2     36.00  0    s    0.5216    15.23  0.0526    1    emgesa   colomb1
+zipaem2     2029    1         2029    12          zipaem2     36.00  0    s    0.5242    15.23  0.0628    1    emgesa   colomb1
+zipaem2     2030    1         2030    12          zipaem2     36.00  0    s    0.5268    15.23  0.0835    1    emgesa   colomb1
+zipaem2     2031    1         2031    12          zipaem2     36.00  0    s    0.5294    15.23  0.0643   1    emgesa   colomb1
+zipaem2     2032    1         2032    12          zipaem2     36.00  0    s    0.5321    15.23  0.0509   1    emgesa   colomb1
+zipaem2     2033    1         2033    12          zipaem2     36.00  0    s    0.5347    15.23  0.0704   1    emgesa   colomb1
+zipaem2     2034    1         2034    12          zipaem2     36.00  0    s    0.5374    15.23  0.0609   1    emgesa   colomb1
+zipaem2     2035    1         2050    12          zipaem2     36.00  0    s    0.5401    15.23  0.0616   1    emgesa   colomb1
+
+zipaem3     2015    1         2020    12          zipaem3     63.27  0    s    0.4780    15.23  0.2620    1    emgesa   colomb1
+zipaem3     2021    1         2021    12          zipaem3     63.00  0    s    0.5330    15.23  0.1153    1    emgesa   colomb1
+zipaem3     2022    1         2022    12          zipaem3     64.00  0    s    0.5360    15.23  0.0993   1    emgesa   colomb1
+zipaem3     2023    1         2023    12          zipaem3     64.00  0    s    0.5390    15.23  0.1008   1    emgesa   colomb1
+zipaem3     2024    1         2024    12          zipaem3     64.00  0    s    0.5420    15.23  0.0789   1    emgesa   colomb1
+zipaem3     2025    1         2025    12          zipaem3     64.00  0    s    0.5460    15.23  0.0579   1    emgesa   colomb1
+zipaem3     2026    1         2026    12          zipaem3     64.00  0    s    0.5205    15.23  0.0766   1    emgesa   colomb1
+zipaem3     2027    1         2027    12          zipaem3     64.00  0    s    0.5231    15.23  0.1156    1    emgesa   colomb1
+zipaem3     2028    1         2028    12          zipaem3     64.00  0    s    0.5257    15.23  0.1212    1    emgesa   colomb1
+zipaem3     2029    1         2029    12          zipaem3     64.00  0    s    0.5284    15.23  0.0820    1    emgesa   colomb1
+zipaem3     2030    1         2030    12          zipaem3     64.00  0    s    0.5310    15.23  0.1141    1    emgesa   colomb1
+zipaem3     2031    1         2031    12          zipaem3     64.00  0    s    0.5337    15.23  0.0982   1    emgesa   colomb1
+zipaem3     2032    1         2032    12          zipaem3     64.00  0    s    0.5363    15.23  0.1162   1    emgesa   colomb1
+zipaem3     2033    1         2033    12          zipaem3     64.00  0    s    0.5390    15.23  0.1102   1    emgesa   colomb1
+zipaem3     2034    1         2034    12          zipaem3     64.00  0    s    0.5417    15.23  0.1171   1    emgesa   colomb1
+zipaem3     2035    1         2050    12          zipaem3     64.00  0    s    0.5444    15.23  0.1193   1    emgesa   colomb1
+
+zipaem4     2015    1         2020    12          zipaem4     63.96  0    s    0.4770    15.23  0.1380    1    emgesa   colomb1
+zipaem4     2021    1         2021    12          zipaem4     64.00  0    s    0.5010    15.23  0.1138    1    emgesa   colomb1
+zipaem4     2022    1         2022    12          zipaem4     64.00  0    s    0.5040    15.23  0.0822   1    emgesa   colomb1
+zipaem4     2023    1         2023    12          zipaem4     64.00  0    s    0.5070    15.23  0.0826   1    emgesa   colomb1
+zipaem4     2024    1         2024    12          zipaem4     64.00  0    s    0.5100    15.23  0.0785   1    emgesa   colomb1
+zipaem4     2025    1         2025    12          zipaem4     64.00  0    s    0.5130    15.23  0.0478   1    emgesa   colomb1
+zipaem4     2026    1         2026    12          zipaem4     64.00  0    s    0.4888    15.23  0.0462   1    emgesa   colomb1
+zipaem4     2027    1         2027    12          zipaem4     64.00  0    s    0.4913    15.23  0.0898    1    emgesa   colomb1
+zipaem4     2028    1         2028    12          zipaem4     64.00  0    s    0.4937    15.23  0.0982    1    emgesa   colomb1
+zipaem4     2029    1         2029    12          zipaem4     64.00  0    s    0.4962    15.23  0.0951    1    emgesa   colomb1
+zipaem4     2030    1         2030    12          zipaem4     64.00  0    s    0.4987    15.23  0.1146    1    emgesa   colomb1
+zipaem4     2031    1         2031    12          zipaem4     64.00  0    s    0.5012    15.23  0.1029   1    emgesa   colomb1
+zipaem4     2032    1         2032    12          zipaem4     64.00  0    s    0.5037    15.23  0.0799   1    emgesa   colomb1 
+zipaem4     2033    1         2033    12          zipaem4     64.00  0    s    0.5062    15.23  0.1256   1    emgesa   colomb1 
+zipaem4     2034    1         2034    12          zipaem4     64.00  0    s    0.5087    15.23  0.0888   1    emgesa   colomb1 
+zipaem4     2035    1         2050    12          zipaem4     64.00  0    s    0.5113    15.23  0.0935   1    emgesa   colomb1 
+
+
+zipaem5     2015    1         2020    12          zipaem5     63.14  0    s    0.4920    15.23  0.1260    1    emgesa   colomb1
+zipaem5     2021    1         2021    12          zipaem5     63.00  0    s    0.5170    15.23  0.1113    1    emgesa   colomb1
+zipaem5     2022    1         2022    12          zipaem5     64.00  0    s    0.5020    15.23  0.1252   1    emgesa   colomb1
+zipaem5     2023    1         2023    12          zipaem5     64.00  0    s    0.5050    15.23  0.1053   1    emgesa   colomb1
+zipaem5     2024    1         2024    12          zipaem5     64.00  0    s    0.5080    15.23  0.1105   1    emgesa   colomb1
+zipaem5     2025    1         2025    12          zipaem5     64.00  0    s    0.5110    15.23  0.0664   1    emgesa   colomb1
+zipaem5     2026    1         2026    12          zipaem5     64.00  0    s    0.5210    15.23  0.0415   1    emgesa   colomb1
+zipaem5     2027    1         2027    12          zipaem5     64.00  0    s    0.4937    15.23  0.1253    1    emgesa   colomb1
+zipaem5     2028    1         2028    12          zipaem5     64.00  0    s    0.4962    15.23  0.1281    1    emgesa   colomb1
+zipaem5     2029    1         2029    12          zipaem5     64.00  0    s    0.4987    15.23  0.0913    1    emgesa   colomb1
+zipaem5     2030    1         2030    12          zipaem5     64.00  0    s    0.5012    15.23  0.1452    1    emgesa   colomb1
+zipaem5     2031    1         2031    12          zipaem5     64.00  0    s    0.5037    15.23  0.0747   1    emgesa   colomb1
+zipaem5     2032    1         2032    12          zipaem5     64.00  0    s    0.5062    15.23  0.0874   1    emgesa   colomb1
+zipaem5     2033    1         2033    12          zipaem5     64.00  0    s    0.5087    15.23  0.1181   1    emgesa   colomb1
+zipaem5     2034    1         2034    12          zipaem5     64.00  0    s    0.5113    15.23  0.0806   1    emgesa   colomb1
+zipaem5     2035    1         2050    12          zipaem5     64.00  0    s    0.5138    15.23  0.1236   1    emgesa   colomb1
+
+/* ------------------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------ FINAL DE LA SIMUALCION ------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------------------ */
+
+guajic1     2015    1         2050    12          guajic1     145    0    s    0.3763    12.53  0.32303    3    corelca  colomb1  /* Act. pot de 151 a 143 e IHF de 0.295 a 0.295  */
+            0.0000    105.78     145.00
+            0.2800    0.1592     0.5608
+            0.4000    0.4000     0.4000
+guajic2     2015    1         2050    12          guajic2     145    0    s    0.3678    12.53  0.32672    3    corelca  colomb1 /* Act. pot de 127 a 143 e IHF de 0.123 a 0.123  */
+            0.0000    103.77     145.00
+            0.3035    0.0818     0.6148
+            0.3920    0.3920     0.3920
+
+/*          Termica Menor     */
+tpiedra     2015    1         2050    12          tpiedra     3.75   0    s    1         10.93  0.35     1    otros    colomb1
+yopal1      2015    1         2022    11          yopal1      3.00   0    s    1         10.93  0.35     1    otros    colomb1
+yopal1      2022   12         2050    12          yopal1     0.001   0    s    1         10.93  0.35     1    otros    colomb1
+yopal1A     2015    1         2022    11          yopal1      4.25   0    s    1         10.93  0.35     1    otros    colomb1
+yopal1A     2022   12         2050    12          yopal1     0.001   0    s    1         10.93  0.35     1    otros    colomb1
+
+/* ERNC propuesta por Enel    */
+
+biom_nc     2015    1         2050    12          biom_nc     0.001  0    s    1          15.0  0.372    1    biom_nc  colomb1
+geot_nc     2015    1         2050    12          geot_nc     0.001  0    s    1          15.0  0.200    1    geot_nc  colomb1
+elmorro     2015    1         2050    12          elmorro    19.30   0    s    1         10.93  0.35     1    otros    colomb1 /* Mechero 3 (19.3 MW) */
+elmorrA     2015    1         2050    12          elmorro    38.60   0    s    1         10.93  0.35     1    otros    colomb1 /* Mechero 4 y 5 (38.6 MW) */
+
+/*          Hidraulica  Menor     */
+cqrchec     2015    1         2050    12          cqrchec    58.65   0    s    1         6.80   0.35     1    epm      colomb1
+narino      2015    1         2050    12          narino      3.15   0    s    1         6.80   0.35     1    epm      colomb1
+cauca       2015    1         2050    12          cauca      34.77   0    s    1         6.80   0.35     1    otros    colomb1
+tulua       2015    1         2050    12          tulua      39.80   0    s    1         6.80   0.35     1    epsa     colomb1 /* menor alto tulua */
+nordest     2015    1         2050    12          nordest    62.70   0    s    1         6.80   0.35     1    otros    colomb1
+huila       2015    1         2050    12          huila      11.14   0    s    1         6.80   0.35     1    epm      colomb1
+epsa        2015    1         2050    12          epsa       23.37   0    s    1         6.80   0.35     1    epsa     colomb1
+tolima      2015    1         2050    12          tolima     12.88   0    s    1         6.80   0.35     1    otros    colomb1
+antioqu     2015    1         2020     9          antioqu   302.79   0    s    1         6.80   0.35     1    epm      colomb1
+antioqu     2020   10         2020    11          antioqu   307.79   0    s    1         6.80   0.35     1    epm      colomb1 /* H Bello (5 MW) */
+antioqu     2020   12         2021     6          antioqu   312.79   0    s    1         6.80   0.35     1    epm      colomb1 /* H Barranca (5 MW) */
+antioqu     2021    7         2050    12          antioqu   327.79   0    s    1         6.80   0.35     1    epm      colomb1 /* PCH La Chorrera (15 MW) */
+epmvuel     2015    1         2050    12          epmvuel     11.6   0    s    1         6.80   0.35     1    epm      colomb1 /* Menor la vuelta */
+epmherr     2015    1         2050    12          epmherr     19.8   0    s    1         6.80   0.35     1    epm      colomb1
+otrosm      2015    1         2020    12          otrosm     86.29   0    s    1         6.80   0.35     1    otros    colomb1
+otrosm      2021    1         2021     3          otrosm     89.29   0    s    1         6.80   0.35     1    otros    colomb1  /* H Cauya (2 MW) y H Pocune (1 MW) */
+otrosm      2021    4         2022     3          otrosm     99.29   0    s    1         6.80   0.35     1    otros    colomb1  /* Expansión Doña Juana II (10 MW) */
+otrosm      2022    4         2050    12          otrosm    109.79   0    s    1         6.80   0.35     1    otros    colomb1  /* TZ II (10.5 MW) */
+riopied     2015    1         2050    12          otrosm      19.9   0    s    1         6.80   0.35     1    otros    colomb1
+caruqui     2015    1         2050    12          caruqui      9.5   0    s    1         6.80   0.35     1    otros    colomb1
+guanaqu     2015    1         2050    12          guanaqu      9.5   0    s    1         6.80   0.35     1    otros    colomb1
+barroso     2015    1         2050    12          barroso     19.9   0    s    1         6.80   0.35     1    BARROSO  colomb1
+
+/*          Cogeneradores   */
+cproenc     2015    1         2050    12          cproenc      19.9  0    s    1        10.93   0.35     1    otros     colomb1
+incauca     2015    1         2021     7          incauca      35.0  0    s    1        10.93   0.35     1    otros     colomb1
+incauca     2021    8         2050    12          incauca      45.0  0    s    1        10.93   0.35     1    otros     colomb1  /* Expansión Cog Incauca (60 MW) */
+risarld     2015    1         2050    12          risarld      17.0  0    s    1        10.93   0.35     1    otros     colomb1  /* Aumento capacidad Ingenio Risarla 15 MW total */
+mayaguz     2015    1         2050    12          mayaguz      19.9  0    s    1        10.93   0.35     1    otros     colomb1
+ingprov     2015    1         2050    12          ingprov      19.9  0    s    1        10.93   0.35     1    otros     colomb1
+scarlos     2015    1         2050    12          scarlos       2.0  0    s    1        10.93   0.35     1    otros     colomb1
+cotros      2015    1         2050    12          cotros      49.37  0    s    1        10.93   0.35     1    otros     colomb1
+cognuev     2015    1         2050    12          cognuev      60.3  0    s    1        10.93   0.35     1    otros     colomb1
+
+/*          termicas e hidro  Futuras segun plan de obras confirmado   */
+flores4     2015    1         2050    12          flores4     450    0    s    6.9107    10.93  0.13803     3    flores4  colomb1   /* Act. pot de 441 a 450 e IHF de 0.05 a 0.072 */
+            0.0000    225.49     450.00
+            0.0901    0.0960     0.8139
+            6.9107    6.9107     6.9107
+termoco     2015    1         2050    12          termoco     0.001  0    s   10.300     10.93  0.05       1    tg-dies  colomb1
+gecelc3     2015    1         2050    12          gecelc3     164.0  0    s   0.3815     12.53  0.71594     3    gecelca  colomb1    /* Act. pot 150 a 164 e IHF 0.05 a 0.05 */
+            0.0000    103.84     164.00
+            0.7079    0.0219     0.2702
+            0.3815    0.3815     0.3815
+gecel32     2015    1         2050    12          gecel32     273.0  0    s   0.3387     12.53  0.10     1    gecelca  colomb1
+/*    Central  de  GAS de ajuste  */
+tpwcon3     2015    1         2029    11          tpwcon3     0.001  0    s   9.3120     12.53  0.20     1    Maaestria  colomb1
+tpwcon3     2029   12         2030    11          tpwcon3     200.0  0    s   9.3120     12.53  0.20     1    Maaestria  colomb1  /* CS2020 */
+tpwcon3     2030   12         2032    11          tpwcon3     420.0  0    s   9.3120     12.53  0.20     1    Maaestria  colomb1  /* CS2020 */
+tpwcon3     2032   12         2034    11          tpwcon3     620.0  0    s   9.3120     12.53  0.20     1    Maaestria  colomb1  /* CS2020 */
+tpwcon3     2034   12         2036    11          tpwcon3     800.0  0    s   9.3120     12.53  0.20     1    Maaestria  colomb1  /* CS2020 */
+tpwcon3     2036   12         2037    11          tpwcon3     850.0  0    s   9.3120     12.53  0.20     1    Maaestria  colomb1  /* CS2020 */
+tpwcon3     2037   12         2038    11          tpwcon3     950.0  0    s   9.3120     12.53  0.20     1    Maaestria  colomb1  /* CS2020 */
+tpwcon3     2038   12         2040    11          tpwcon3    1050.0  0    s   9.3120     12.53  0.20     1    Maaestria  colomb1  /* CS2020 */
+tpwcon3     2040   12         2050    12          tpwcon3    1200.0  0    s   9.3120     12.53  0.20     1    Maaestria  colomb1  /* CS2020 */
+/*    --------------------------  */
+tesorit     2015    1         2023    11          tesorit     0.001  0    s   9.3740     12.53  0.05     1    SanAndres  colomb1  /* El Tesorito subasta 2022-2023 */
+tesorit     2023   12         2050    12          tesorit     200.0  0    s   9.3740     12.53  0.05     1    SanAndres  colomb1  /* El Tesorito subasta 2022-2023 */
+
+tersolo     2015    1         2022    11          tersolo     0.001  0    s   8.3220     12.53  0.20     1    multiprop  colomb1  /*  TERMOSOLO 1,2 subasta 2022-2023 */
+tersolo     2022   12         2023    11          tersolo      80.0  0    s   8.3220     12.53  0.20     1    multiprop  colomb1  /*  TERMOSOLO 1 subasta 2022-2023 */
+tersolo     2023   12         2050    12          tersolo     228.0  0    s   8.3220     12.53  0.20     1    multiprop  colomb1  /*  TERMOSOLO 2 subasta 2022-2023 */
+
+tcaribe     2015    1         2022    11          tcaribe     0.001  0    s   8.4200     12.53  0.20     1    Termocari  colomb1  /*  TERMO CARIBE 3 subasta 2022-2023 */
+tcaribe     2022   12         2050    12          tcaribe     42.00  0    s   8.4200     12.53  0.20     1    Termocari  colomb1  /*  TERMO CARIBE 3 subasta 2022-2023 */
+amaime1     2015    1         2050    12          amaime1     19.17  0    s   1          6.80   0.35     1    epsa       colomb1
+mitulua     2015    1         2050    12          mitulua     0.001  0    s   5.6900     6.80   0.35     1    epsa       colomb1
+termono     2015    1         2050    12          termono     88.00  0    s   7.61       10.00  0.20     1    termono    colomb1
+
+/*    Central  de  CARBÓN de ajuste  */
+TerCesa     2015    1         2025    11          TerCesa     0.01  0    s    0.35295    12.53  0.150    1    TerCesa  colomb1
+TerCesa     2025   12         2036    11          TerCesa    330.0  0    s    0.35295    12.53  0.150    1    TerCesa  colomb1     /* Entrada de TermoLuna */
+TerCesa     2036   12         2050    12          TerCesa    580.0  0    s    0.35295    12.53  0.150    1    TerCesa  colomb1     /* CS2020 */
+/*    -----------------------------  */
+paipa5      2015    1         2050    12          paipa5      0.01  0    s    0.35260    12.53  0.019    1    otros    colomb1      /* Se reemplaza la tvcar-3 por paipa 5 de acuerdo  LP */
+tasaje3     2015    1         2050    12          tasaje3     0.01  0    s    0.37370    12.53  0.050    1    tasaje1  colomb1      /* Se reemplaza la tvcar-4 por tasajero 3 de acuerdo LP */
+
+/* UNIDAD DE AJUSTE UNIDAD_LPB  tvcar-4 2009 1 2050 12 tvcar-4 1.0000 0.0 s 0.35295 6.7600 0.0211 1 tvcar-4 colomb1 */
+/* tvcar-6     2015    1         2050    12          tvcar-6     500.0  0    s    0.35295     6.76  0.0211    1    tvcar-6  colomb1      Se deja la tvcar-6 como una genérica de carbón acuerdo LP */
+/* tvcar-7     2015    1         2050    12          tvcar-7     328.8  0    s    0.35295     6.76  0.0211    1    tvcar-7  colomb1     */
+/* tvcar-8     2015    1         2050    12          tvcar-8     3.288  0    s    0.35295     6.76  0.0211    1    UNIDAD_LPB  colomb1  */    /* Vapor-Carbón */
+/* tvcar-8     2015    1         2050    12          tvcar-8     1.000  0    s    0.35295     6.76  0.00000   1    UNIDAD_LPB  colomb1  */    /* Mix2022      */
+
+/*          ECUADOR         */
+ctcente     2015    1         2050    12          ctcente     150    0    s    1          8.47  1.00     1    otros    ecuador
+corozo1     2015    1         2050    12          corozo1     150    0    s    1          8.47  1.00     1    otros    ecuador
+cadafe1     2015    1         2050    12          cadafe1     36     0    s    1          8.47  1.00     1    otros    ecuador
+
+atinaj1     2015    1         2050    12          atinaj1     46.50  0.0  s    70.822    8.97   0.0250   1    EcuTer   ecuador /* Incluye A. TINAJERO1 */
+atinaj2     2015    1         2050    12          atinaj2     34.00  0.0  s    90.009    6.70   0.0250   1    EcuTer   ecuador /* Incluye A. TINAJERO2 */
+vasanto     2015    1         2050    12          vasanto     32.50  14.1 s    79.177    10.26  0.0200   1    EcuTer   ecuador /* Incluye A. V.A SANTOS */
+asanto1     2015    1         2050    12          asanto1     20.00  0.0  s    95.969    4.21   0.0230   1    EcuTer   ecuador /* Incluye A. SANTOS 1 */
+asanto2     2015    1         2050    12          asanto2     20.00  0.0  s    101.010   4.30   0.0230   1    EcuTer   ecuador /* Incluye A. SANTOS 2 */
+asanto3     2015    1         2050    12          asanto3     20.00  0.0  s    101.936   4.41   0.0230   1    EcuTer   ecuador /* Incluye A. SANTOS 3 */
+asanto5     2015    1         2050    12          asanto5     18.00  0.0  s    102.249   4.14   0.0360   1    EcuTer   ecuador /* Incluye A. SANTOS 5 */
+asanto6     2015    1         2050    12          asanto6     18.00  0.0  s    105.263   4.32   0.0360   1    EcuTer   ecuador /* Incluye A. SANTOS 6 */
+bolivar     2015    1         2050    12          bolivar    100.00  0.0  s    80.444    10.90  0.0360   1    EcuTer   ecuador /* Incluye BABAHOYO I (20 MW), BABAHOYO RDP(80MW) (EXPANSION) */
+catam10     2015    1         2050    12          catam10     2.00   0.0  s    77.173    20.79  0.0700   1    EcuTer   ecuador /* Incluye CATAMAYO 10 */
+catam2      2015    1         2050    12          catam2      1.00   0.0  s    68.792    25.03  0.0700   1    EcuTer   ecuador /* Incluye CATAMAYO 2 */
+catam4      2015    1         2050    12          catam4      1.00   0.0  s    83.453    27.04  0.0700   1    EcuTer   ecuador /* Incluye CATAMAYO 4 */
+catam5      2015    1         2050    12          catam5      1.00   0.0  s    83.136    26.33  0.0700   1    EcuTer   ecuador /* Incluye CATAMAYO 5 */
+catam6      2015    1         2050    12          catam6      2.30   0.0  s    67.122    21.43  0.0700   1    EcuTer   ecuador /* Incluye CATAMAYO 6 */
+catam7      2015    1         2050    12          catam7      2.30   0.0  s    70.643    20.51  0.0700   1    EcuTer   ecuador /* Incluye CATAMAYO 7 */
+catam8      2015    1         2050    12          catam8      2.20   0.0  s    79.872    19.22  0.0700   1    EcuTer   ecuador /* Incluye CATAMAYO 8 */
+catam9      2015    1         2050    12          catam9      2.00   0.0  s    77.440    20.90  0.0700   1    EcuTer   ecuador /* Incluye CATAMAYO 9 */
+descan1     2015    1         2050    12          descan1     4.30   0.0  s    60.753    9.25   0.0422   1    EcuTer   ecuador /* Incluye EL DESCANSO 1 */
+descan2     2015    1         2050    12          descan2     4.30   0.0  s    57.241    10.63  0.0454   1    EcuTer   ecuador /* Incluye EL DESCANSO 2 */
+descan3     2015    1         2050    12          descan3     4.30   0.0  s    57.737    9.07   0.0302   1    EcuTer   ecuador /* Incluye EL DESCANSO 3 */
+descan4     2015    1         2050    12          descan4     4.30   0.0  s    58.343    10.72  0.0418   1    EcuTer   ecuador /* Incluye EL DESCANSO 4 */
+elquil1     2015    1         2050    12          elquil1     47.60  0.0  s    74.129    12.12  0.0200   1    EcuTer   ecuador  /* Incluye ELECTROQUIL1 (EXPANSIÓN) */
+elquil2     2015    1         2050    12          elquil2     48.80  0.0  s    69.735    12.06  0.0200   1    EcuTer   ecuador  /* Incluye ELECTROQUIL2 (EXPANSIÓN) */
+elquil3     2015    1         2050    12          elquil3     47.50  0.0  s    70.572    12.07  0.0200   1    EcuTer   ecuador  /* Incluye ELECTROQUIL3 (EXPANSIÓN) */
+elquil4     2015    1         2050    12          elquil4     48.50  0.0  s    72.780    12.10  0.0200   1    EcuTer   ecuador  /* Incluye ELECTROQUIL4 (EXPANSIÓN) */
+enrgarc     2015    1         2050    12          enrgarc     96.00  0.0  s    84.818    5.57   0.0235   1    EcuTer   ecuador  /* Incluye ENRIQUE GARCIA */
+esme_ec     2015    1         2050    12          esme_ec     232.70 52.3 s    63.371    3.77   0.0350   1    EcuTer   ecuador  /* Incluye ESMERALDAS */
+gzeval4     2015    1         2050    12          gzeval4     20.00  0.0  s    106.157   3.30   0.0200   1    EcuTer   ecuador /* Incluye G. ZEVALLTG4 */
+gzeval2     2015    1         2050    12          gzeval2     65.00  15.0 s    75.358    9.74   0.0009   1    EcuTer   ecuador /* Incluye G. ZEVAL.TV2 */
+gzeval3     2015    1         2050    12          gzeval3     66.00  16.2 s    76.046    9.80   0.0001   1    EcuTer   ecuador /* Incluye G. ZEVAL.TV3 */
+gherna1     2015    1         2050    12          gherna1     5.20   0.0  s    60.827    20.91  0.0061   1    EcuTer   ecuador /* Incluye G. HERNADEZ 1 */
+gherna2     2015    1         2050    12          gherna2     5.20   0.0  s    60.314    20.87  0.0116   1    EcuTer   ecuador /* Incluye G. HERNADEZ 2 */
+gherna3     2015    1         2050    12          gherna3     5.20   0.0  s    61.805    21.08  0.0118   1    EcuTer   ecuador /* Incluye G. HERNADEZ 3 */
+gherna4     2015    1         2050    12          gherna4     5.20   0.0  s    61.013    20.97  0.0129   1    EcuTer   ecuador /* Incluye G. HERNADEZ 4 */
+gherna5     2015    1         2050    12          gherna5     5.20   0.0  s    61.162    20.99  0.0176   1    EcuTer   ecuador /* Incluye G. HERNADEZ 5 */
+gherna6     2015    1         2050    12          gherna6     5.20   0.0  s    60.827    20.94  0.0091   1    EcuTer   ecuador /* Incluye G. HERNADEZ 6 */
+guango1     2015    1         2050    12          guango1     5.10   0.0  s    58.720    20.47  0.0310   1    EcuTer   ecuador /* Incluye GUANGOPOLO1 */
+guango2     2015    1         2050    12          guango2     5.10   0.0  s    58.720    21.39  0.0720   1    EcuTer   ecuador /* Incluye GUANGOPOLO2 (EXPANSIÓN) */
+guango3     2015    1         2050    12          guango3     5.10   0.0  s    58.720    21.56  0.0370   1    EcuTer   ecuador /* Incluye GUANGOPOLO3 */
+guango4     2015    1         2050    12          guango4     5.00   0.0  s    58.720    21.61  0.0580   1    EcuTer   ecuador /* Incluye GUANGOPOLO4 */
+guango5     2015    1         2050    12          guango5     5.10   0.0  s    58.720    21.45  0.0620   1    EcuTer   ecuador /* Incluye GUANGOPOLO5 (EXPANSIÓN) */
+guango6     2015    1         2050    12          guango6     6.50   0.0  s    58.720    21.50  0.0540   1    EcuTer   ecuador /* Incluye GUANGOPOLO6 Y  GUANGOPOLO7  */
+liber1      2015    1         2050    12          liber1      1.80   0.0  s    75.586    4.88   0.0500   1    EcuTer   ecuador /* Incluye CELSO CAS U1 */
+liber10     2015    1         2050    12          liber10     1.80   0.0  s    77.519    2.04   0.0500   1    EcuTer   ecuador /* Incluye CELSO CAS U2 */
+liber9      2015    1         2050    12          liber9      1.80   0.0  s    75.930    2.56   0.0500   1    EcuTer   ecuador /* Incluye CELSO CAS U3 */
+lligua1     2015    1         2050    12          lligua1     1.80   0.0  s    77.280    23.06  0.0700   1    EcuTer   ecuador /* Incluye LLIGUA 1 */
+lulun11     2015    1         2050    12          lulun11     1.80   0.0  s    73.314    10.46  0.0303   1    EcuTer   ecuador /* Incluye CELSO CAS U4 */
+lligua2     2015    1         2050    12          lligua2     1.60   0.0  s    79.681    35.54  0.0700   1    EcuTer   ecuador /* Incluye LLIGUA 2 */
+lulun13     2015    1         2050    12          lulun13    400.0   0.0  s    74.516    10.51  0.0303   1    EcuTer   ecuador /* Incluye CHORRILL RDP (EXPANSION) */
+miraf10     2015    1         2050    12          miraf10     6.50   0.0  s    82.645    7.78   0.1012   1    EcuTer   ecuador /* Incluye MIRAFLORES 10 Y MIRAFLORES 11 */
+miraf12     2015    1         2050    12          miraf12     4.50   0.0  s    67.797    10.64  0.1012   1    EcuTer   ecuador /* Inluye MIRAFLORES 12 */
+miraf13     2015    1         2050    12          miraf13     1.90   0.0  s    82.645    7.78   0.1012   1    EcuTer   ecuador /* Inluye MIRAFLORES 13 */
+miraf14     2015    1         2050    12          miraf14     1.90   0.0  s    82.645    7.78   0.1012   1    EcuTer   ecuador /* Inluye MIRAFLORES 14 */
+miraf15     2015    1         2050    12          miraf15     2.00   0.0  s    82.645    7.78   0.1012   1    EcuTer   ecuador /* Inluye MIRAFLORES 15 */
+miraf16     2015    1         2050    12          miraf16     1.90   0.0  s    82.645    8.10   0.1012   1    EcuTer   ecuador /* Inluye MIRAFLORES 16 */
+miraf18     2015    1         2050    12          miraf18     1.90   0.0  s    82.645    8.11   0.1012   1    EcuTer   ecuador /* Inluye MIRAFLORES 18 */
+miraf22     2015    1         2050    12          miraf22     1.90   0.0  s    82.645    7.93   0.1012   1    EcuTer   ecuador /* Inluye MIRAFLORES 22 */
+miraf7      2015    1         2050    12          miraf7      2.00   0.0  s    82.645    8.46   0.1012   1    EcuTer   ecuador /* Inluye MIRAFLORES 7 (EXPANSIÓN) */
+miraf8      2015    1         2050    12          miraf8      1.90   0.0  s    82.645    9.33   0.1012   1    EcuTer   ecuador /* Inluye MIRAFLORES 8 */
+monay2      2015    1         2050    12          monay2      1.00   0.0  s    78.003    9.38   0.0700   1    EcuTer   ecuador /* Inluye DAYUMA U1 */
+monay3      2015    1         2050    12          monay3      1.00   0.0  s    74.963    9.31   0.0700   1    EcuTer   ecuador /* Inluye DAYUMA U2 */
+monay4      2015    1         2050    12          monay4      48.0   0.0  s    103.092   18.65  0.0700   1    EcuTer   ecuador /* Inluye ESME II U1 */
+monay6      2015    1         2050    12          monay6      48.0   0.0  s    107.991   18.77  0.0700   1    EcuTer   ecuador /* Inluye ESME II U2 */
+orocam3     2015    1         2050    12          orocam3    100.0   0.0  s    73.801    13.22  0.0700   1    EcuTer   ecuador /* Inluye ESCLUSAS RDP (EXPANSION) */
+orocam4     2015    1         2050    12          orocam4    150.0   0.0  s    76.315    14.12  0.0700   1    EcuTer   ecuador /* Inluye GT FO6 ARREN (EXPANSIÓN) */
+oromac4     2015    1         2050    12          oromac4     8.00   0.0  s    77.821    17.97  0.0700   1    EcuTer   ecuador /* GUANGO II U1 */
+oromac5     2015    1         2050    12          oromac5     2.00   0.0  s    75.700    16.28  0.0700   1    EcuTer   ecuador /* Incluye LORETO U1 Y LORETO U2 */
+posorg5     2015    1         2050    12          posorg5    37.60   0.0  s    78.064    4.86   0.0700   1    EcuTer   ecuador /* Incluye MANTA2 Y MANTA GETG1 */
+riobamb     2015    1         2050    12          riobamb     1.80   0.0  s    81.367    15.87  0.0700   1    EcuTer   ecuador /* Incluye PAYAMINO */
+sfranci     2015    1         2050    12          sfranci     7.70   0.0  s    91.996    14.56  0.0089   1    EcuTer   ecuador /* Incluye PROPICIA1, PROPICIA2 PROPICIA3 */
+strosa1     2015    1         2050    12          strosa1     17.00  0.0  s    98.814    7.28   0.0230   1    EcuTer   ecuador /* Incluye STA. ROSA 1 */
+strosa2     2015    1         2050    12          strosa2     17.00  0.0  s    98.814    7.26   0.0110   1    EcuTer   ecuador /* Incluye STA. ROSA 2 */
+strosa3     2015    1         2050    12          strosa3     17.00  0.0  s    98.717    6.74   0.0160   1    EcuTer   ecuador /* Incluye STA. ROSA 3 */
+trinita     2015    1         2050    12          trinita    133.00  37.5 s    60.864    7.67   0.0119   1    EcuTer   ecuador /* Incluye TRINITARIA */
+victor2     2015    1         2050    12          victor2    102.00  0.0  s    96.525    14.18  0.0200   1    EcuTer   ecuador /* Incluye VICTORIA II */
+eeqvice     2015    1         2050    12          eeqvice     70.00  0.0  s    1.000     0.00   0.0011   1    EcuTer   ecuador /* Incluye EEQVICENTINA */
+eeqmovi     2015    1         2050    12          eeqmovi     27.40  0.0  s    1.000     0.00   0.0011   1    EcuTer   ecuador /* Incluye EEQMOVIL */
+riobamh     2015    1         2050    12          riobamh     13.40  0.0  s    1.000     0.00   0.0050   1    EcuTer   ecuador /* Incluye RIOBAMBA H */
+cotopax     2015    1         2050    12          cotopax      9.00  0.0  s    1.000     0.00   0.0050   1    EcuTer   ecuador /* Incluye COTOPAXI */
+rnibarr     2015    1         2050    12          rnibarr      8.00  0.0  s    1.000     0.00   0.0084   1    EcuTer   ecuador /* Inlcuye RNIBARRA */
+rntulca     2015    1         2050    12          rntulca      4.10  0.0  s    1.000     0.00   0.0084   1    EcuTer   ecuador /* Incluye RNTULCAN */
+ambato      2015    1         2050    12          ambato       3.20  0.0  s    1.000     0.00   0.0050   1    EcuTer   ecuador /* Incluye AMBATO */
+bolivah     2015    1         2050    12          bolivah      1.35  0.0  s    1.000     0.00   0.0050   1    EcuTer   ecuador /* Incluye BOLIVAR H  */
+emaapq      2015    1         2050    12          emaapq       6.00  0.0  s    1.000     0.00   0.0161   1    EcuTer   ecuador /* Incluye LA ESPERANZA  (EXPANSION) */
+regsur      2015    1         2050    12          regsur       2.40  0.0  s    1.000     0.00   0.0050   1    EcuTer   ecuador /* Incluye REG SUR */
+edc         2015    1         2017     4          edc        344.40 0.0  s    6.000     6.00   0.0300   1    EcuTer   ecuador /* Incluye EDC 1 y EDC2 */
+edc         2017    5         2050    12          edc        344.40 0.0  s    6.000     6.00   0.0300   1    EcuTer   ecuador /* Incluye EDC3 */
+edc1        2015    1         2050    12          edc1        0.01  0.0  s    10.960    3.32   0.0300   1    EcuTer   ecuador
+edc2        2015    1         2050    12          edc2        0.01  0.0  s    11.260    3.33   0.0300   1    EcuTer   ecuador
+elecaus     2015    1         2050    12          elecaus     39.40  0.0  s    1.000     0.00   0.0030   1    EcuTer   ecuador /* Incluye ELECAUSTRO */
+powerba     2015    1         2050    12          powerba    102.00  0.0  s    99.305    13.67  0.0278   1    EcuTer   ecuador /* Incluye VICTORIAD */
+sphle       2015    1         2050    12          sphle       34.80  0.0  s    1.000     0.00   0.0000   1    EcuTer   ecuador /* Incluye ECUDOS */
+ecoluz      2015    1         2050    12          ecoluz       8.30  0.0  s    1.000     0.00   0.0050   1    EcuTer   ecuador /* Incluye ECOLUZ */
+powerb2     2015    1         2050    12          powerb2     0.01  0.0  s    58.820    17.45  0.0116   1    EcuTer   ecuador
+keppels     2015    1         2018     4          keppels     0.01 0.0  s    67.240    14.24  0.0000   1    EcuTer   ecuador
+keppels     2018    5         2050    12          keppels     324  0.0  s    67.240    14.24  0.0000   1    EcuTer   ecuador /* Inlcuye CC TGMACHALA */
+/* keppels     2031    1         2031     4          keppels     375.00 0.0  s    67.240    14.24  0.0000   1    EcuTer   ecuador /* Incluye CCGASNATURAL */
+sancar      2015    1         2050    12          sancar      36.00  0.0  s    1.000     0.00   0.0000   1    EcuTer   ecuador /* Incluye SAN CARLOS */
+lucega      2015    1         2050    12          lucega      8.30   0.0  s    1.000     0.00   0.0000   1    EcuTer   ecuador /* Incluye EL CARMEN */
+salinas     2015    1         2050    12          salinas     0.01  0.0  s    1.000     0.00   0.0000   1    EcuTer   ecuador
+ecoelect    2015    1         2050    12          ecoelec    36.50   0.0  s    1.000     0.00   0.0000   1    EcuTer   ecuador /* Incluye ECOELECTRIC */
+salegre     2015    1         2050    12          salegre     3.50   0.0  s    59.067    22.28  0.0000   1    EcuTer   ecuador /* Incluye SALEGRE */
+r-fuer1     2015    1         2050    12          r-fuer1     4.20   0.0  s    66.220    10.75  0.0500   1    EcuTer   ecuador /* Incluye GENEROCA1 */
+r-fuer2     2015    1         2050    12          r-fuer2     4.20   0.0  s    66.220    10.75  0.0500   1    EcuTer   ecuador /* Incluye GENEROCA2 */
+r-fuer3     2015    1         2050    12          r-fuer3     4.70   0.0  s    66.220    9.91   0.0500   1    EcuTer   ecuador /* Incluye GENEROCA3 */
+r-fuer4     2015    1         2050    12          r-fuer4     4.50   0.0  s    66.220    10.27  0.0500   1    EcuTer   ecuador /* Incluye GENEROCA4 */
+r-fuer5     2015    1         2050    12          r-fuer5     4.20   0.0  s    66.220    10.75  0.0500   1    EcuTer   ecuador /* Incluye GENEROCA5 */
+r-fuer6     2015    1         2050    12          r-fuer6     4.20   0.0  s    66.220    10.75  0.0500   1    EcuTer   ecuador /* Incluye GENEROCA6 */
+r-fuer7     2015    1         2050    12          r-fuer7     4.20   0.0  s    66.220    10.75  0.0500   1    EcuTer   ecuador /* Incluye GENEROCA7 */
+r-fuer8     2015    1         2050    12          r-fuer8     4.20   0.0  s    66.220    10.75  0.0500   1    EcuTer   ecuador /* Incluye GENEROCA8 */
+jaramij     2015    1         2050    12          jaramij   134.28   0.0  s    62.500     5.24  0.0500   1    EcuTer   ecuador /* Incluye JARAMIJO */
+pascual     2015    1         2050    12          pascual   120.00   0.0  s    79.000    10.75  0.0500   1    EcuTer   ecuador  /* Incluye PASCUAL RDP (EXPANSIÓN) */
+selena      2015    1         2050    12          selena    110.70   0.0  s    79.000    10.75  0.0500   1    EcuTer   ecuador /* Incluye STA ELENA 2, 3, 3.1 , 3.2 */
+queved      2015    1         2050    12          queved     75.00   0.0  s    62.500     5.24  0.0500   1    EcuTer   ecuador /* Incluye QUEVEDO */
+jivino      2015    1         2050    12          jivino     55.60   0.0  s    62.500     5.24  0.0500   1    EcuTer   ecuador /* Incluye JIVINO I U1 U2, JIVINO II U1 U2, JIVINO III 1-2-3-4 */
+eguayaq     2015    1         2050    12          eguayaq   150.00   0.0  s    62.500     5.24  0.0500   1    EcuTer   ecuador /* Incluye TERMOGUAYAS1, TERMOGUAYAS2, TERMOGUAYAS3 Y TERMOGUAYAS4 */
+andpetr     2015    1         2050    12          andpetr    20.00   0.0  s    10.960     4.24  0.0500   1    EcuTer   ecuador /* Incluye TGMACH U1 */
+petroam     2015    1         2050    12          petroam    20.00   0.0  s    10.960     4.24  0.0500   1    EcuTer   ecuador /* Incluye TGMACH U2 */
+machacc     2015    1         2050    12          machacc    20.00   0.0  s     6.805     4.24  0.0500   1    EcuTer   ecuador /* Incluye TGMACH U3 */
+/*          CC ajuste ECUADOR         */
+cc-ec1a     2015    1         2050    12          cc-ec1a     20.0  0    s    6.805     4.00   0.05     1    cc-ec1   ecuador /* Incluye TGMACH U4 */
+cc-ec1b     2015    1         2050    12          cc-ec1a     20.0   0    s    6.805     4.00   0.05     1    cc-ec1   ecuador /* Incluye TGMACH U5 */
+cc-ec2a     2015    1         2050    12          cc-ec2a     19.0   0    s    6.805     4.00   0.05     1    cc-ec2   ecuador /* Incluye TGMACH U6 */
+cc-ec2b     2015    1         2050    12          cc-ec2a     20.0   0    s    6.805     4.00   0.05     1    cc-ec2   ecuador /* Incluye TGMACH U7 (EXPANSIÓN) */
+
+/*          PANAMA     */
+
+BLM2        2015    1         2050    12          BLM2        38.24  14.3 s    0.340     4.42   0.0900   1    PanTer   panama
+BLM3        2015    1         2050    12          BLM3        39.53  14.8 s    0.340     4.42   0.1400   1    PanTer   panama
+BLM4        2015    1         2050    12          BLM4        38.00  14.3 s    0.340     4.42   0.4000   1    PanTer   panama
+BMLCarb     2015    1         2050    12          BMLCarb     111.34 46.4 s    0.505     4.80   0.0300   1    PanTer   panama
+ccds_blm    2015    1         2050    12          ccds_blm    153.26 38.8 s    0.248     6.00   0.0000   1    PanTer   panama
+Copesa      2015    1         2050    12          Copesa      38.67  10.5 s    0.340     12.40  0.0100   1    PanTer   panama
+PanAm       2015    1         2050    12          PanAm       91.83  11.5 s    0.230     23.28  0.0800   1    PanTer   panama
+ACP         2015    1         2050    12          ACP         83.00  30.0 s    0.491     0.00   0.0000   1    PanTer   panama
+ACP2        2015    1         2050    12          ACP2        56.34  9.7  s    0.369     5.00   0.0000   1    PanTer   panama
+PACORA-     2015    1         2050    12          PACORA-     51.77  9.7  s    0.216     7.20   0.0700   1    PanTer   panama
+SEMPMMV     2015    1         2050    12          SEMPMMV     27.84  14.8 s    0.571     5.49   0.0300   1    PanTer   panama
+tgpanam     2015    1         2050    12          tgpanam     40.00  0    s    0.230     23.2   0.0500   1    PanTer   panama
+tggiral     2015    1         2050    12          tggiral     50.40  0    s    0.234     10.0   0.0500   1    PanTer   panama
+cativa      2015    1         2050    12          cativa      87.00  0    s    0.225      4.2   0.0500   1    PanTer   panama
+cccolon     2015    1         2050    12          cccolon    152.70  50.0 s    0.208      6.8   0.0500   1    PanTer   panama
+cerrazu     2015    1         2050    12          cerrazu     66.20  0    s    0.230     23.2   0.0500   1    PanTer   panama
+charazu     2015    1         2050    12          charazu     44.20  0    s    0.230     23.2   0.0500   1    PanTer   panama
+eol1pan     2015    1         2050    12          eol1pan    150.00  0    s    0.230     6.80   0.749    1    PanTer   panama
+eol2pan     2015    1         2050    12          eol2pan     40.00  0    s    0.230     6.80   0.749    1    PanTer   panama
+eol3pan     2015    1         2050    12          eol3pan     80.00  0    s    0.230     6.80   0.749    1    PanTer   panama
+eol4pan     2015    1         2050    12          eol4pan    120.00  0    s    0.230     6.80   0.749    1    PanTer   panama
+
+/*          CC ajuste PANAMA          */
+cc-pa1a     2015    1         2017    12          cc-pa1a     0.01   0    s    0.391     5.24   0.05     1    cc-pa1   panama
+cc-pa1a     2018    1         2020     5          cc-pa1a    250.0   0    s    0.391     5.24   0.05     1    cc-pa1   panama
+cc-pa1a     2020    6         2022    12          cc-pa1a    500.0   0    s    0.391     5.24   0.05     1    cc-pa1   panama
+cc-pa1a     2023    1         2024    12          cc-pa1a    750.0   0    s    0.391     5.24   0.05     1    cc-pa1   panama
+cc-pa1a     2025    1         2026    12          cc-pa1a   1000.0   0    s    0.391     5.24   0.05     1    cc-pa1   panama
+cc-pa1a     2027    1         2028    12          cc-pa1a   1250.0   0    s    0.391     5.24   0.05     1    cc-pa1   panama
+cc-pa1a     2029    1         2050    12          cc-pa1a   1500.0   0    s    0.391     5.24   0.05     1    cc-pa1   panama
+cc-pa1b     2015    1         2050    12          cc-pa1a     0.01   0    s    0.391    14.20   0.05     1    cc-pa1   panama
+
+findato
+
+dateoli
+
+
+/* EOLICAS */
+eoljepi     2015    1         2023     8          eoljepi   18.42  0    s  1.000  0  0  5.0   0.10  1   epm         colomb1
+eoljepi     2023    9         2050    12          eoljepi   0.001  0    s  0.001  0  0  5.0   0.10  1   epm         colomb1
+
+windpes     2015    1         2022     4          windpes   0.001  0    s  0.001  0  0  5.0   0.10  1   EGP         colomb1
+windpes     2022    5         2050    12          windpes  195.00  0    s  0.823  0  0  5.0   0.10  1   EGP         colomb1
+
+celec       2015    1         2024     3          celec     0.001  0    s  0.001  0  0  5.0   0.10  1   PACIF       colomb1
+celec       2024    4         2050    12          celec    176.00  0    s  0.898  0  0  5.0   0.10  1   PACIF       colomb1
+apoto       2015    1         2024     3          apoto     0.001  0    s  0.001  0  0  5.0   0.10  1   aes         colomb1
+apoto       2024    4         2050    12          apoto     75.00  0    s  0.383  0  0  5.0   0.10  1   aes         colomb1 /* curva de casa electrica */
+
+alpha       2015    1         2023    11          alpha     0.001  0    s  0.001  0  0  5.0   0.10  1   EOLOS       colomb1
+alpha       2023   12         2050    12          alpha    212.00  0    s  1.000  0  0  5.0   0.10  1   EOLOS       colomb1
+beta        2015    1         2023    11          beta      0.001  0    s  0.001  0  0  5.0   0.10  1   EOLOS       colomb1
+beta        2023   12         2050    12          beta     280.00  0    s  1.000  0  0  5.0   0.10  1   EOLOS       colomb1
+
+acas2       2015    1         2022    12          acas2     0.001  0    s  0.001  0  0  5.0   0.10  1   PACIF       colomb1
+acas2       2023    1         2050    12          acas2     80.00  0    s  0.377  0  0  5.0   0.10  1   PACIF       colomb1 /* curva de windpeshi */
+cameli      2015    1         2023    11          cameli    0.001  0    s  0.001  0  0  5.0   0.10  1   PACIF       colomb1
+cameli      2023   12         2050    12          cameli   250.00  0    s  0.942  0  0  5.0   0.10  1   PACIF       colomb1 /* curva de windpeshi */
+
+tumawd      2015    1         2024     3          tumawd    0.001  0    s  0.001  0  0  5.0   0.10  1   EGP         colomb1
+tumawd      2024    4         2050    12          tumawd   198.00  0    s  0.893  0  0  5.0   0.10  1   EGP         colomb1
+chemes      2015    1         2024     3          chemes    0.001  0    s  0.001  0  0  5.0   0.10  1   EGP         colomb1
+chemes      2024    4         2050    12          chemes    99.00  0    s  0.885  0  0  5.0   0.10  1   EGP         colomb1
+
+irrai       2015    1         2024     7          irrai     0.001  0    s  0.001  0  0  5.0   0.10  1   aes         colomb1
+irrai       2024    8         2050    12          irrai     99.00  0    s  0.885  0  0  5.0   0.10  1   aes         colomb1 /* curva de chemesky */
+carriz      2015    1         2024     7          carriz    0.001  0    s  0.001  0  0  5.0   0.10  1   aes         colomb1
+carriz      2024    8         2050    12          carriz   195.00  0    s  1.743  0  0  5.0   0.10  1   aes         colomb1 /* curva de chemesky */
+eoi200      2015    1         2024     7          eoi200    0.001  0    s  0.001  0  0  5.0   0.10  1   epm         colomb1
+eoi200      2024    8         2050    12          eoi200   200.00  0    s  0.754  0  0  5.0   0.10  1   epm         colomb1 /* curva de windpeshi */
+
+/*      EOLICAS     GENERICAS     EXPANSION      LP     */
+eolguaj     2015    1         2022     1          eolguaj   0.001  0    s  0.001  0  0  5.0   0.10  1   EOLICA     colomb1
+eolguaj     2022    2         2029    11          eolguaj   20.00  0    s   0.20  0  0  5.0   0.10  1   EOLICA     colomb1    /* Guajira I (20 MW) */
+eolguaj     2029    12        2033    11          eolguaj  420.00  0    s   4.20  0  0  5.0   0.10  1   EOLICA     colomb1
+eolguaj     2033    12        2035    11          eolguaj  620.00  0    s   6.20  0  0  5.0   0.10  1   EOLICA     colomb1
+eolguaj     2035    12        2039    11          eolguaj 1120.00  0    s  11.20  0  0  5.0   0.10  1   EOLICA     colomb1
+eolguaj     2039    12        2050    12          eolguaj 1320.00  0    s  13.20  0  0  5.0   0.10  1   EOLICA     colomb1
+
+eolcari     2015    1         2050    12          eolcari   0.001  0    s  0.001  0  0  5.0   0.10  1   EOLICA     colomb1
+/* eolcari     2032    12        2035    11          eolcari   400.0  0    s  4.000  0  0  5.0   0.10  1   EOLICA     colomb1 */
+/* eolcari     2035    12        2036    11          eolcari   700.0  0    s  7.000  0  0  5.0   0.10  1   EOLICA     colomb1 */
+/* eolcari     2036    12        2037    11          eolcari  1000.0  0    s  10.00  0  0  5.0   0.10  1   EOLICA     colomb1 */
+/* eolcari     2037    12        2038    11          eolcari  1100.0  0    s  11.00  0  0  5.0   0.10  1   EOLICA     colomb1 */
+/* eolcari     2038    12        2039    11          eolcari  1500.0  0    s  15.00  0  0  5.0   0.10  1   EOLICA     colomb1 */
+/* eolcari     2039    12        2040    11          eolcari  1730.0  0    s  17.30  0  0  5.0   0.10  1   EOLICA     colomb1 */
+/* eolcari     2040    12        2050    12          eolcari  2230.0  0    s  22.30  0  0  5.0   0.10  1   EOLICA     colomb1 */
+
+
+/* EOLICA ECUADOR */
+eol1ecu     2015    1         2021    12          eol1ecu  200.00  0    s  13.300 0  0  5.0   0.10  1   EOLICA      ecuador
+eol1ecu     2022    1         2029    12          eol1ecu  400.00  0    s  26.600 0  0  5.0   0.10  1   EOLICA      ecuador
+eol1ecu     2030    1         2030    12          eol1ecu  600.00  0    s  39.900 0  0  5.0   0.10  1   EOLICA      ecuador
+eol1ecu     2031    1         2050    12          eol1ecu  900.00  0    s  59.900 0  0  5.0   0.10  1   EOLICA      ecuador
+
+/* Solares */
+
+pasosol     2015    1         2019     6          pasosol   0.001  0    s  0.001  0  0  5.0   0.10  1   EGP         colomb1
+pasosol     2019    7         2050    12          pasosol   68.00  0    s  1.000  0  0  5.0   0.10  1   EGP         colomb1
+
+laloma      2015    1         2021    12          laloma    0.001  0    s  0.001  0  0  5.0   0.10  1   EGP         colomb1
+laloma      2022    1         2050    12          laloma    150.0  0    s  1.165  0  0  5.0   0.10  1   EGP         colomb1
+
+campano     2015    1         2021    12          campano   0.001  0    s  0.001  0  0  5.0   0.10  1   TRN         colomb1
+campano     2022    1         2050    12          campano   99.00  0    s  1.360  0  0  5.0   0.10  1   TRN         colomb1 /* curva de el paso */
+
+sanflp      2015    1         2021    12          sanflp    0.001  0    s  0.001  0  0  5.0   0.10  1   TRN         colomb1
+sanflp      2022    1         2050    12          sanflp    90.00  0    s  1.380  0  0  5.0   0.10  1   TRN         colomb1 /* curva de el paso */
+
+cartago     2015    1         2021    12          cartago   0.001  0    s  0.001  0  0  5.0   0.10  1   TRN         colomb1
+cartago     2022    1         2050    12          cartago   99.00  0    s  1.486  0  0  5.0   0.10  1   TRN         colomb1 /* curva de el paso */
+
+portsol     2015    1         2022    11          portsol   0.001  0    s  0.001  0  0  5.0   0.10  1   ELN         colomb1
+portsol     2022   12         2050    12          portsol   102.0  0    s  1.142  0  0  5.0   0.10  1   ELN         colomb1 /* curva de el paso */
+
+guayep1     2015    1         2022    12          guayep1   0.001  0    s  0.001  0  0  5.0   0.10  1   EGP         colomb1
+guayep1     2023    1         2050    12          guayep1   200.0  0    s  1.104  0  0  5.0   0.10  1   EGP         colomb1 /* curva de el paso */
+
+guayep2     2015    1         2023     2          guayep2   0.001  0    s  0.001  0  0  5.0   0.10  1   EGP         colomb1
+guayep2     2023    3         2050    12          guayep2   200.0  0    s  1.104  0  0  5.0   0.10  1   EGP         colomb1 /* curva de el paso */
+
+sablarg     2015    1         2023    11          sablarg   0.001  0    s  0.001  0  0  5.0   0.10  1   ELN         colomb1 /* curva de el paso */
+sablarg     2023   12         2050    12          sablarg   200.0  0    s  1.104  0  0  5.0   0.10  1   ELN         colomb1
+
+bllanos     2015    1         2020     8          bllanos   0.001  0    s  0.001  0  0  5.0   0.10  1   ELN         colomb1 /* curva de el paso */
+bllanos     2020    9         2020     9          bllanos    19.9  0    s  0.274  0  0  5.0   0.10  1   ELN         colomb1
+bllanos     2020   10         2020    10          bllanos    38.8  0    s  0.535  0  0  5.0   0.10  1   ELN         colomb1
+bllanos     2020   11         2021     9          bllanos    59.7  0    s  0.823  0  0  5.0   0.10  1   ELN         colomb1
+bllanos     2021   10         2050    12          bllanos    98.7  0    s  1.365  0  0  5.0   0.10  1   ELN         colomb1 
+
+solgen1     2015    1         2020    9           solgen1  27.76      0    s  0.2776  0  0  5.0   0.10  1   SOLAR       colomb1    /* Celsia Yumbo (9.8 MW) + Bolivar (8.06 MW) + Espinal (9.9 MW) */
+solgen1     2020   10         2021    1           solgen1  30.76      0    s  0.3076  0  0  5.0   0.10  1   SOLAR       colomb1    /* Bayunca (3 MW) */
+solgen1     2021    2         2021    2           solgen1  50.66      0    s  0.5066  0  0  5.0   0.10  1   SOLAR       colomb1    /* El Carmelo (9.9 MW) + Petalo Cordoba (10 MW) */
+solgen1     2021    3         2021    4           solgen1  76.81      0    s  0.7681  0  0  5.0   0.10  1   SOLAR       colomb1    /* Belmonte (6.25 MW) + La Sierpe (19.9 MW) */
+solgen1     2021    5         2021    7           solgen1  109.81     0    s  1.0981  0  0  5.0   0.10  1   SOLAR       colomb1    /* Zambrano (15 MW)  + Trebol (18 MW) */
+solgen1     2021    8         2021    12          solgen1  119.71     0    s  1.1971  0  0  5.0   0.10  1   SOLAR       colomb1    /* La Paila (9.9 MW) */
+solgen1     2022    1         2027    11          solgen1  168.31     0    s  1.6831  0  0  5.0   0.10  1   SOLAR       colomb1    /* Polo Nuevo (10 MW) + Baranoa 1 (19.3 MW) + Helios1 (19.3 MW) */
+solgen1     2027   12         2028    11          solgen1  168.31     0    s  1.6831  0  0  5.0   0.10  1   SOLAR       colomb1
+solgen1     2028   12         2029    11          solgen1  168.31     0    s  1.6831  0  0  5.0   0.10  1   SOLAR       colomb1
+solgen1     2029   12         2030    11          solgen1  681.08     0    s  6.8108  0  0  5.0   0.10  1   SOLAR       colomb1
+solgen1     2030   12         2031    11          solgen1  1504.9     0    s  15.049  0  0  5.0   0.10  1   SOLAR       colomb1
+solgen1     2031   12         2032    11          solgen1  3020.9     0    s  30.209  0  0  5.0   0.10  1   SOLAR       colomb1
+solgen1     2032   12         2033    11          solgen1  4285.0     0    s  42.85   0  0  5.0   0.10  1   SOLAR       colomb1
+solgen1     2033   12         2034    11          solgen1  4864.2     0    s  48.642  0  0  5.0   0.10  1   SOLAR       colomb1
+solgen1     2034   12         2035    11          solgen1  5387.6     0    s  53.876  0  0  5.0   0.10  1   SOLAR       colomb1
+solgen1     2035   12         2036    11          solgen1  6639.1     0    s  66.391  0  0  5.0   0.10  1   SOLAR       colomb1
+solgen1     2036   12         2037    11          solgen1  7254.2     0    s  72.542  0  0  5.0   0.10  1   SOLAR       colomb1
+solgen1     2037   12         2038    11          solgen1  8434.9     0    s  84.349  0  0  5.0   0.10  1   SOLAR       colomb1
+solgen1     2038   12         2039    11          solgen1  9884.2     0    s  98.842  0  0  5.0   0.10  1   SOLAR       colomb1
+solgen1     2039   12         2040    11          solgen1  12008.5    0    s  120.085 0  0  5.0   0.10  1   SOLAR       colomb1
+solgen1     2040   12         2050    12          solgen1  12614.5    0    s  126.145 0  0  5.0   0.10  1   SOLAR       colomb1
+
+findato
